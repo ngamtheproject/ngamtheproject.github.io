@@ -14,7 +14,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Đồng sáng lập
+role: Nhà sáng lập
 
 # Organizations/Affiliations
 organizations:
