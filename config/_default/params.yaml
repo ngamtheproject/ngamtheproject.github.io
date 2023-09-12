@@ -21,9 +21,9 @@ marketing:
     description: 'Charity Organization.'
     twitter: ''
   analytics:
-    google_analytics: ''
+    google_analytics: 'G-74NLCD7XMJ'
     baidu_tongji: ''
-    google_tag_manager: ''
+    google_tag_manager: 'GTM-NM9CN7SM'
     microsoft_clarity: ''
   verification:
     google: ''
