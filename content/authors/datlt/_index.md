@@ -19,7 +19,7 @@ role: Nhà sáng lập
 # Organizations/Affiliations
 organizations:
   - name: Ngăm
-    url: 'https://ngam.netlify.app'
+    url: 'https://ngamtheproject.github.io'
 
 # Short bio (displayed in user profile at end of posts)
 bio: Không có gì để tả.
