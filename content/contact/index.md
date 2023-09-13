@@ -14,7 +14,7 @@ sections:
         Email: ngam.theproject@gmail.com<br>
         Hotline: (+84) 97 476 4823 (Bảo Ngọc)<br>
       email: ngam.theproject@gmail.com
-      phone: (+84) 97 476 4823 (Bảo Ngọc)
+      phone: 0974764823
       address:
         street: TT. Đức Hoà
         city: Đức Hoà
@@ -39,13 +39,13 @@ sections:
       autolink: true
     
       # Email form provider
-      form:
-        provider: netlify
-        formspree:
-          id:
-        netlify:
-          # Enable CAPTCHA challenge to reduce spam?
-          captcha: false
+#      form:
+#        provider: netlify
+#        formspree:
+#          id:
+#        netlify:
+#          # Enable CAPTCHA challenge to reduce spam?
+#          captcha: false
     design:
       columns: '1'
 
