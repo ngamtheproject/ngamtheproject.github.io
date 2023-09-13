@@ -2,7 +2,7 @@ backend:
   name: github
   repo: ngamtheproject/ngamtheproject.github.io
   branch: main
-  base_url: https://ngam-cms-auth.miti99.workers.dev/
+  base_url: https://ngam-cms-auth.miti99.workers.dev
   squash_merges: true
 media_folder: 'assets/media'
 public_folder: '/media'
