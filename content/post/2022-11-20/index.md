@@ -1,5 +1,5 @@
 ---
-title: Ngăm ghé thăm DakLak.
+title: Tây Nguyên đón chào Ngăm bằng những nụ cười thật tươi
 date: 2022-11-20
 ---
 
