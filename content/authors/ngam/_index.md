@@ -1,20 +1,20 @@
 ---
 # Display name
-title: Lê Thành Đạt
+title: Ngăm
 
 # Full name (for SEO)
-first_name: Đạt
-last_name: Lê Thành
+first_name: Ngăm
+last_name: 
 
 # Username (this should match the folder name)
 authors:
-  - datlt
+  - ngam
 
 # Is this the primary user of the site?
-superuser: false
+superuser: true
 
 # Role/position
-role: Nhà sáng lập
+role:
 
 # Organizations/Affiliations
 organizations:
@@ -22,17 +22,20 @@ organizations:
     url: 'https://ngamtheproject.github.io'
 
 # Short bio (displayed in user profile at end of posts)
-bio: Không có gì để tả.
+bio:
+  Đủ nắng hoa sẽ nở<br>
+  Đủ gió chong chóng sẽ quay<br>
+  Đủ yêu thương hạnh phúc sẽ đong đầy...
 
 interests:
-  - Tin học
-  - Hoạt động thiện nguyện
+  - 
+  - 
 
 education:
   courses:
-    - course: THPT
-      institution: THPT Đức Hoà
-      year: 2021-Nay
+    - course: 
+      institution: 
+      year: 
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -41,10 +44,10 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:test@example.org'
+    link: 'mailto:ngam.theproject@gmail.com'
   - icon: facebook
     icon_pack: fab
-    link: https://facebook.com/Test
+    link: https://www.facebook.com/ngam.theproject
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -57,8 +60,5 @@ email: ''
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Nhà sáng lập
-  - Thành viên
+  - Nhóm
 ---
-
-Đang học lớp 12TNA1 tại trường THPT Đức Hoà, Long An.
