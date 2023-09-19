@@ -18,7 +18,7 @@ organizations:
     url: 'https://vng.com.vn'
 
 # Short bio (displayed in user profile at end of posts)
-bio: Wibu :D
+bio: Một anh dev với ước mơ trở thành phù thuỷ.
 
 interests:
   - Game Server Development
@@ -27,7 +27,7 @@ interests:
 education:
   courses:
     - course: BEng in Computer Science
-      institution: Ho Chi Minh city University of Technology
+      institution: Ho Chi Minh City University of Technology
       year: 2017
 
 # Social/Academic Networking
@@ -62,4 +62,4 @@ user_groups:
   - Website Maintainer
 ---
 
-Wibu :D
+😸 Wibu 😸
