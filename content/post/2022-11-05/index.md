@@ -3,8 +3,6 @@ title: Sê-ri - Chuyện của núi cao. Chặng 1 - Chuyện về Đôi dép
 date: 2022-11-05
 ---
 
-![feature](feature.jpg)
-
 “Sao bé con lại đi chân đất?”
 
 “Em thích đi thế này, thoải mái hơn. Đi dép vào em chẳng thấy quen gì cả.”
