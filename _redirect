@@ -1,1 +1,2 @@
-https://ngamtheproject.netlify.app/* https://ngamtheproject.org/:splat 301!
+ngamtheproject.netlify.app/* https://ngamtheproject.org/:splat 301!
+www.ngamtheproject.org/* https://ngamtheproject.org/:splat 301!
