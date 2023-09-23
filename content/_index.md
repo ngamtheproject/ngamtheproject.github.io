@@ -9,8 +9,8 @@ sections:
     content:
       title: |
         Ngăm
-#      image:
-#        filename: welcome.jpg
+      image:
+        filename: logo.png
       text: |
         <br>
         
@@ -22,8 +22,8 @@ sections:
   
   - block: collection
     content:
-      title: Tin mới nhất
-      subtitle:
+      title: Bài viết gần đây
+      subtitle: Cùng điểm lại những tin mới nhất nhé
       text:
       count: 5
       filters:
@@ -64,7 +64,7 @@ sections:
       title:
       subtitle:
       text: |
-        {{% cta cta_link="./people/" cta_text="Gặp gỡ team →" %}}
+        {{% cta cta_link="./people/" cta_text="Gặp gỡ team ➡️" %}}
     design:
       columns: '1'
 ---

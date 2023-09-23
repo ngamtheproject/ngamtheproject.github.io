@@ -1,34 +1,37 @@
 ---
 # Display name
-title: MiTi99
+title: Nguyễn Lưu Bảo Ngọc
 
-# Full Name (for SEO)
-first_name: Tien
-last_name: Nguyen Minh
+# Full name (for SEO)
+first_name: Ngọc
+last_name: Nguyễn Lưu Bảo
+
+# Username (this should match the folder name)
+authors:
+  - ngocnlb
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Senior Software Engineer
+role: Nhà sáng lập
 
 # Organizations/Affiliations
 organizations:
-  - name: VNG Corporation
-    url: 'https://vng.com.vn'
+  - name: Ngăm
+    url: 'https://ngamtheproject.github.io'
 
 # Short bio (displayed in user profile at end of posts)
-bio: Một anh dev với ước mơ trở thành phù thuỷ.
+bio: Đồng sáng lập của Ngăm
 
 interests:
-  - Game Server Development
-  - Blog Writing
+  - Hoạt động thiện nguyện
 
 education:
   courses:
-    - course: BEng in Computer Science
-      institution: Ho Chi Minh City University of Technology
-      year: 2017
+    - course: THPT
+      institution: THPT chuyên Lê Hồng Phong
+      year: 2021-Nay
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -37,13 +40,10 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:tiennm99@outlook.com'
-  - icon: github
-    icon_pack: fab
-    link: https://github.com/tiennm99
+    link: 'mailto:test@example.org'
   - icon: facebook
     icon_pack: fab
-    link: https://fb.com/tiennm99
+    link: https://facebook.com/Test
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -51,15 +51,13 @@ social:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: 'tiennm99@outlook.com'
-
-# Highlight the author in author lists? (true/false)
-highlight_name: false
+email: ''
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Web Developer
+  - Nhà sáng lập
+  - Thành viên
 ---
 
-😸 Wibu 😸
+Đang tại trường THPT chuyên Lê Hồng Phong.
