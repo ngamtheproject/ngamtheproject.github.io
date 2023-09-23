@@ -2,10 +2,9 @@
 abstract: Toả
 slides: null
 url_pdf: ""
-summary: Ngăm ghé thăm DakLak.
+summary: Toả - Một chuyến đi ngày Tết ở Đắk Lắk
 title: Toả - Hành trình gieo yêu thương đến khắp mảnh đất Tây Nguyên
-location: Trường Tiểu học La Văn Cầu (thôn 10, xã Krong Buk, huyện Krông Pắk,
-  tỉnh Đắk Lắk)
+location: Trường Tiểu học La Văn Cầu (thôn 10, xã Krong Buk, huyện Krông Pắk, tỉnh Đắk Lắk)
 date: 2023-01-14T00:00:00.000Z
 date_end: 2023-01-14T00:00:00.000Z
 all_day: true
@@ -25,7 +24,6 @@ image:
   focal_point: Right
 url_code: ""
 ---
-
 
 Trở về nhà sau chuyến đi khảo sát lần trước, Ngăm đã suy nghĩ rất nhiều về những gì mình sẽ có thể mang đến cho các em nhỏ Tây Nguyên. Để thực hiện được nhiều điều hơn nữa, Ngăm xin được thông báo với các cô các chú về chuyến đi thiện nguyện sắp tới của tụi con, chuyến đi mang tên: “Toả”.
 
