@@ -1,5 +1,5 @@
 ---
-title: Sê-ri - Chuyện của núi cao. Chặng 1 - Chuyện về Đôi dép
+title: "[Sê-ri: Chuyện của núi cao]\n Chặng 1: Chuyện về Đôi dép"
 date: 2022-11-05
 ---
 
