@@ -8,6 +8,6 @@ Website for [Ngăm](https://ngamtheproject.github.io) - a charity organization f
 - [Wowchemy](https://wowchemy.com/): Our Hugo theme.
 - [GitHub Pages](https://pages.github.com/): Our hosting.
 - [Cloudflare Workers](https://workers.cloudflare.com/): Our cms authentication.
-- [Cloudflare Pages](https://pages.cloudflare.com/): (coming soon).
+- [Netlify](https://www.netlify.com/): Our new hosting (coming soon).
 
 We are grateful to the creators and maintainers of these tools and services for making our project possible.
