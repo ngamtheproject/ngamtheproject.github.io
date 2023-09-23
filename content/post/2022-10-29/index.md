@@ -3,10 +3,10 @@ title: Ngăm - Ý nghĩa cái tên và thông điệp về "chong chóng"
 date: 2022-10-29
 ---
 
-Chẳng biết từ khi nào, chúng mình lại gọi nhau bằng “Ngăm” - một cái tên như chứa đựng hết mọi hương vị của đất rừng Tây Nguyên, một cái tên mang theo cả những niềm tin to lớn của 5 đứa trẻ chúng mình với mảnh đất và con người nơi đây.
+Chẳng biết từ khi nào, chúng mình lại gọi nhau bằng "Ngăm" - một cái tên như chứa đựng hết mọi hương vị của đất rừng Tây Nguyên, một cái tên mang theo cả những niềm tin to lớn của 5 đứa trẻ chúng mình với mảnh đất và con người nơi đây.
 Nhắc về Tây Nguyên là nhắc đến cái nắng hanh trên những dãy cao su mênh mông bạt ngàn và những bức tranh thiên nhiên hùng vĩ. Ai đã được biết đến vùng đất đỏ bazan này có lẽ cũng từng nghe qua tiếng cồng chiêng hoà nhịp với những điệu xoang ngày lễ hội.
 Nhắc về Tây Nguyên cũng là nhắc đến cái nước da nâu rám nắng muôn đời chưa từng thay đổi của người dân nơi đây. Nét màu ấy, có thể nói là sắc da thuần Việt đẹp nhất mà Ngăm có thể trông thấy. Đẹp, không chỉ bởi vẻ bề ngoài nồng hậu mà còn là vẻ đẹp nơi tâm hồn chất phác, cần cù và luôn chăm chỉ nỗ lực. Những con người quanh năm chỉ bán mặt cho đất, bán lưng cho trời ấy, thế mà lại có trong mình một sức sống mãnh liệt đến vô ngần.
-Từ những ấn tượng sâu sắc về vùng đất đại ngàn sâu thẳm này, chúng mình đã cùng với nhau, và rồi “Ngăm” chính thức được ra đời.
+Từ những ấn tượng sâu sắc về vùng đất đại ngàn sâu thẳm này, chúng mình đã cùng với nhau, và rồi "Ngăm" chính thức được ra đời.
 
 # Điều Ngăm luôn mong ước
 
@@ -19,7 +19,7 @@ Từ thông điệp với hình ảnh nụ hoa, chong chóng và hạnh phúc, N
 ![ve-cai-ten-ngam](ve-cai-ten-ngam.jpg)
 
 Ngăm, vốn dĩ chỉ là từ chứa đựng một nét gì đó rất giản đơn, gần gũi và đời thường. Không cao siêu, không mỹ miều, cũng chẳng quá lớn lao.
-Ngăm, là màu da ngăm “cà phê” đặc trưng của người dân xứ này.
+Ngăm, là màu da ngăm "cà phê" đặc trưng của người dân xứ này.
 Ngăm, là màu của những vùng đất đỏ bạt ngàn.
 Ngăm, là màu của những xóm nhà mộc mạc.
 Ngăm, là màu của Tây Nguyên.
