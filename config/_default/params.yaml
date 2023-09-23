@@ -73,7 +73,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/tiennm99/ngam'
+    url: 'https://github.com/ngamtheproject/ngamtheproject.github.io'
     content_dir: content
     branch: main
   avatar:
@@ -109,9 +109,9 @@ features:
 # Extensions
 
 extensions:
-#  cms:
-#    branch: main
-#    local_backend: false
+  cms:
+    branch: main
+    local_backend: false
   academicons:
     enable: false
 
