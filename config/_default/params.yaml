@@ -26,7 +26,7 @@ marketing:
     google_tag_manager: 'GTM-NM9CN7SM'
     microsoft_clarity: ''
   verification:
-    google: ''
+    google: 'google-site-verification=rJLpgi-ueiGhmcOD6aUKMi0Ox7T9AVpfsHZFn34RTo8'
     baidu: ''
 
 # Site header
@@ -79,17 +79,17 @@ features:
     gravatar: false
     shape: circle
   comment:
-    provider: ''
+    provider: 'giscus'
     disqus:
       shortname: ''
       show_count: true
     commento:
       url: ''
     giscus:
-      repo: ''
-      repo_id: ''
-      category: ''
-      category_id: ''
+      repo: 'ngamtheproject/ngamtheproject.github.io'
+      repo_id: 'R_kgDOKSl_1A'
+      category: 'Announcements'
+      category_id: 'DIC_kwDOKSl_1M4CZj76'
   search:
     provider: wowchemy
     algolia:
@@ -105,9 +105,9 @@ features:
 # Extensions
 
 extensions:
-  cms:
-    branch: main
-    local_backend: false
+#  cms:
+#    branch: main
+#    local_backend: false
   academicons:
     enable: true
 
