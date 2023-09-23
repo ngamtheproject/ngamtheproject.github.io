@@ -1,4 +1,4 @@
-module github.com/ngamtheproject/ngamtheproject.github.io
+module github.com/ngamtheproject/ngamtheproject
 
 go 1.15
 

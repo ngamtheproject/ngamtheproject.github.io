@@ -19,7 +19,7 @@ role: Nhà sáng lập
 # Organizations/Affiliations
 organizations:
   - name: Ngăm
-    url: 'https://ngamtheproject.github.io'
+    url: 'https://www.facebook.com/ngam.theproject'
 
 # Short bio (displayed in user profile at end of posts)
 bio: Đồng sáng lập của Ngăm
