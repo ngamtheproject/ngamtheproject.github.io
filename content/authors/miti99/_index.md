@@ -1,6 +1,6 @@
 ---
 # Display name
-title: MiTi99
+title: miti99
 
 # Full Name (for SEO)
 first_name: Tien
@@ -62,4 +62,4 @@ user_groups:
   - Web Developer
 ---
 
-😸 Wibu 😸
+Nguyễn Minh Tiến. 😸 Wibu 😸

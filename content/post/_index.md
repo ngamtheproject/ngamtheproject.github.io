@@ -1,5 +1,5 @@
 ---
-title: Tin mới nhất
+title: Bài viết gần đây
 
 # Listing view
 view: compact
