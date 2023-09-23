@@ -1,7 +1,7 @@
-# [Ngăm](https://ngamtheproject.netlify.app)
+# [Ngăm](https://ngamtheproject.org)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/81ac1ab8-b624-4dd7-b97f-6a6a95a99597/deploy-status)](https://app.netlify.com/sites/ngamtheproject/deploys)
 
-Website for [Ngăm](https://ngamtheproject.netlify.app) - a charity organization founded by high school students.
+Website for [Ngăm](https://ngamtheproject.org) - a charity organization founded by high school students.
 
 ## Powered By
 
