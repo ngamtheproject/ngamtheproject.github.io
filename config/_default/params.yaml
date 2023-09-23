@@ -64,9 +64,9 @@ locale:
 features:
   syntax_highlighter:
     enable: false
-    extra_languages:
-      - r
-      - latex
+#    extra_languages:
+#      - r
+#      - latex
   math:
     enable: false
   privacy_pack:
@@ -109,7 +109,7 @@ extensions:
 #    branch: main
 #    local_backend: false
   academicons:
-    enable: true
+    enable: false
 
 # Citation style
 

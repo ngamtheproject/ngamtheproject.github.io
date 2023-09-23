@@ -10,13 +10,13 @@ Từ những ấn tượng sâu sắc về vùng đất đại ngàn sâu thẳm
 
 # Điều Ngăm luôn mong ước
 
-![dieu-ngam-luon-mong-uoc](dieu-ngam-luon-mong-uoc.jpg)
+{{< figure src="dieu-ngam-luon-mong-uoc.jpg" id="dieu-ngam-luon-mong-uoc" >}}
 
 Từ thông điệp với hình ảnh nụ hoa, chong chóng và hạnh phúc, Ngăm mong rằng tình yêu thương sẽ được phân phát đến những đứa trẻ xứng đáng có cuộc sống tốt đẹp hơn, và những hạt hi vọng sẽ được nảy mầm từ trong mọi ngóc ngách của đất trời.
 
 # Về cái tên "Ngăm"
 
-![ve-cai-ten-ngam](ve-cai-ten-ngam.jpg)
+{{< figure src="ve-cai-ten-ngam.jpg" id="ve-cai-ten-ngam" >}}
 
 Ngăm, vốn dĩ chỉ là từ chứa đựng một nét gì đó rất giản đơn, gần gũi và đời thường. Không cao siêu, không mỹ miều, cũng chẳng quá lớn lao.
 Ngăm, là màu da ngăm "cà phê" đặc trưng của người dân xứ này.
@@ -32,7 +32,7 @@ Một lần nữa, chúng mình là Ngăm.
 
 # Về biểu tượng chong chóng
 
-![ve-bieu-tuong-chong-chong](ve-bieu-tuong-chong-chong.jpg)
+{{< figure src="ve-bieu-tuong-chong-chong.jpg" id="ve-bieu-tuong-chong-chong" >}}
 
 Nhắc về chong chóng, chợt nhớ về những buổi chiều gặp gỡ vài đứa bạn quanh xóm, cùng tỉ mỉ tự tay làm ra cái chong chóng tuổi thơ. Thanh âm nói cười hồn nhiên ấy sao thật tinh khôi, trong vắt như ánh nắng ban mai đang chiếu rọi. Giữa mặt đất, từng dải nắng vắt trên hiên nhà, trên những chồi non và bông hoa đang chớm nở. Ta đứng đó, ngắm nhìn những cánh chong chóng quay tít trong gió, tựa như bao ấp ủ, mơ mộng non nớt đang vần trôi giữa cuộc đời.
 
