@@ -25,7 +25,7 @@ image:
 url_code: ""
 ---
 
-Trở về nhà sau chuyến đi khảo sát lần trước, Ngăm đã suy nghĩ rất nhiều về những gì mình sẽ có thể mang đến cho các em nhỏ Tây Nguyên. Để thực hiện được nhiều điều hơn nữa, Ngăm xin được thông báo với các cô các chú về chuyến đi thiện nguyện sắp tới của tụi con, chuyến đi mang tên: “Toả”.
+Trở về nhà sau chuyến đi khảo sát lần trước, Ngăm đã suy nghĩ rất nhiều về những gì mình sẽ có thể mang đến cho các em nhỏ Tây Nguyên. Để thực hiện được nhiều điều hơn nữa, Ngăm xin được thông báo với các cô các chú về chuyến đi thiện nguyện sắp tới của tụi con, chuyến đi mang tên: "Toả".
 
 Với Toả, đầu tiên nhất là niềm yêu thương và những suy nghĩ của Ngăm về Tây Nguyên, về tụi nhỏ, về mảnh đất xa xôi kia. Chính từ [](<>)hơi ấm tình thương ấy, nó như điều gì thôi thúc chúng mình đặt chân đến mảnh đất cao nguyên này
 
@@ -33,7 +33,7 @@ Với Toả, Ngăm hi vọng các em sẽ nhận được hơi ấm và tình y�
 
 Với Toả, Ngăm ước rằng tình thương ấy sẽ được lan toả khắp vùng đất đại ngàn sâu thẳm, những điều đáng quý và đẹp tươi sẽ được sẻ chia đến buôn làng, để mùa Tết này, đứa trẻ nào cũng sẽ được yêu thương.
 
-THÔNG TIN VỀ CHUYẾN ĐI “TOẢ”
+THÔNG TIN VỀ CHUYẾN ĐI "TOẢ"
 
 \- Thời gian: 14/01/2023
 
@@ -45,13 +45,13 @@ NGĂM SẼ LÀM GÌ TRONG CHUYẾN ĐI NÀY?
 
 Vào chuyến đi lần trước để trò chuyện, gặp gỡ những em học sinh có hoàn cảnh đặc biệt ở trường, Ngăm đã vô cùng xúc động khi được lắng nghe về ước mơ của tụi nhỏ. Tất cả ước mơ ấy tưởng chừng đều rất đỗi giản đơn, nhưng lại có gì đó xa vời đối với mấy đứa trẻ nơi này. Chuyến đi lần này, Ngăm đã chuẩn bị rất kỹ càng để quyết tâm làm được một thứ: đem những ao ước, những hy vọng ấy trở thành sự thật đến cho tụi nhỏ. Và đó cũng chính là lời hứa mà Ngăm đã hứa với các em.
 
-Những hoạt động của Ngăm trong chuyến đi “Toả":
+Những hoạt động của Ngăm trong chuyến đi "Toả":
 
 Giao lưu với 305 em nhỏ
 
 Tổ chức cho các em chơi trò chơi theo trạm
 
-Cho các bé tô màu, vẽ tranh theo chủ đề “Tô vẽ ước mơ”
+Cho các bé tô màu, vẽ tranh theo chủ đề "Tô vẽ ước mơ"
 
 Chiêu đãi các em một bữa ăn thật ngon
 
