@@ -110,7 +110,8 @@ features:
 
 extensions:
   cms:
-    branch: cms
+    branch: main
+    publish_mode: editorial_workflow
     local_backend: false
   academicons:
     enable: false
