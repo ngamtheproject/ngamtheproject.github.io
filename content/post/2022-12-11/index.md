@@ -1,5 +1,5 @@
 ---
-title: NGĂM TÌM BẠN!
+title: Ngăm tìm bạn!
 date: 2022-12-11
 draft: false
 featured: false
@@ -14,7 +14,7 @@ Như các bạn đều đã biết, tháng 1 này Ngăm sẽ đến Tây Nguyên
 
 Đi với Ngăm, tụi mình tin chắc rằng các bạn sẽ có những trải nghiệm đáng nhớ đó nhen! Nếu những mùa Tết trước, chúng ta cùng nhau quây quần bên gia đình để thưởng thức những bữa ăn thật ngon, cùng sum vầy bên người thân, thì năm nay, các bạn có thể cùng với Ngăm mang một cái Tết thật đủ đầy, thật trọn vẹn lên Tây Nguyên cho các em.
 
-Chuyến đi này sẽ rất vui khi Ngăm có thêm bạn đồng hành đó hì hì! Chỉ cần là một người năng động, có quan tâm đến những công việc tình nguyện và không ngại nắng gió là bạn hoàn toàn có thể đi cùng với Ngăm nè! Chúng ta sẽ được cùng với nhau lan tỏa ấm áp, tình yêu thương để giúp đỡ, hỗ trợ cho tụi nhỏ ở Tây Nguyên có một mùa Tết thật ý nghĩa. “Tỏa” không đơn thuần là một chuyến đi đem những giá trị về vật chất đến cho các em, mà còn là cơ hội để Ngăm tụi mình và những bạn trẻ ngoài kia được tận mắt chứng kiến một cuộc sống thật khác, ở một nơi thật khác.
+Chuyến đi này sẽ rất vui khi Ngăm có thêm bạn đồng hành đó hì hì! Chỉ cần là một người năng động, có quan tâm đến những công việc tình nguyện và không ngại nắng gió là bạn hoàn toàn có thể đi cùng với Ngăm nè! Chúng ta sẽ được cùng với nhau lan tỏa ấm áp, tình yêu thương để giúp đỡ, hỗ trợ cho tụi nhỏ ở Tây Nguyên có một mùa Tết thật ý nghĩa. "Tỏa" không đơn thuần là một chuyến đi đem những giá trị về vật chất đến cho các em, mà còn là cơ hội để Ngăm tụi mình và những bạn trẻ ngoài kia được tận mắt chứng kiến một cuộc sống thật khác, ở một nơi thật khác.
 
 🌻 Thời gian dự kiến:
 
@@ -22,7 +22,7 @@ Xuất phát từ TP HCM tối thứ 6, 13.1.2022
 
 Trở về TPHCM vào tối Chủ Nhật, 15.1.2022
 
-🌻 Thông tin cụ thể về chuyến đi “Tỏa”:
+🌻 Thông tin cụ thể về chuyến đi "Tỏa":
 
 [https://tinyurl.com/cungngamtoatet2023](https://tinyurl.com/cungngamtoatet2023)
 
