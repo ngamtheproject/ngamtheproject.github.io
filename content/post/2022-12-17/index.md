@@ -33,10 +33,10 @@ https://tinyurl.com/ngamthongkequyengop
 {{<figure src="chi-tiet-du-chi.jpg">}}
 
 _______
-Đừng quên rằng, Ngăm vẫn đang tìm bạn đồng hành cùng với chúng mình trong chuyến đi "Tỏa" dịp Tết 2023 nhé!
-🌻Thời gian dự kiến:
-Xuất phát từ TP HCM tối thứ 6, 13.1.2022
-Trở về TPHCM vào tối Chủ Nhật, 15.1.2022
-🌻Thông tin cụ thể về chuyến đi "Tỏa": https://tinyurl.com/cungngamtoatet2023
+Đừng quên rằng, Ngăm vẫn đang tìm bạn đồng hành cùng với chúng mình trong chuyến đi "Tỏa" dịp Tết 2023 nhé!  
+🌻Thời gian dự kiến:  
+Xuất phát từ TP HCM tối thứ 6, 13.1.2022  
+Trở về TPHCM vào tối Chủ Nhật, 15.1.2022  
+🌻Thông tin cụ thể về chuyến đi "Tỏa": https://tinyurl.com/cungngamtoatet2023  
 🌻Đồng hành cùng tụi mình tại: https://tinyurl.com/ngamtimban
 _______
