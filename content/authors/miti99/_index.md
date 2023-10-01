@@ -10,12 +10,12 @@ last_name: Nguyen Minh
 superuser: false
 
 # Role/position
-role: Senior Software Engineer
+role: Dev
 
 # Organizations/Affiliations
 organizations:
-  - name: VNG Corporation
-    url: 'https://vng.com.vn'
+  - name: Ngăm
+    url: 'https://ngamtheproject.org'
 
 # Short bio (displayed in user profile at end of posts)
 bio: Một anh dev với ước mơ trở thành phù thuỷ.
@@ -59,7 +59,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Web Developer
+  - Dev
 ---
 
-Nguyễn Minh Tiến. 😸 Wibu 😸
+😸 Wibu 😸
