@@ -10,15 +10,11 @@ sections:
       title: |
         Ngăm
       image:
-        filename: logo.png
+        filename: homepage/dieu-ngam-luon-mong-uoc.jpg
       text: |
         <br>
         
         **Ngăm** là dự án thiện nguyện được thành lập bởi các bạn học sinh cấp ba với mong muốn được mang lại hạnh phúc cho trẻ Tây Nguyên.
-        
-        *Đủ nắng hoa sẽ nở<br>
-        Đủ gió chong chóng sẽ quay<br>
-        Đủ yêu thương hạnh phúc sẽ đong đầy...*
   
   - block: collection
     content:
