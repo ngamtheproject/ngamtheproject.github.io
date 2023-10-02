@@ -7,12 +7,18 @@ main:
   - name: Bài viết
     url: post
     weight: 10
-  - name: Thành viên
-    url: people
-    weight: 20
   - name: Sự kiện
     url: event
+    weight: 20
+  - name: Thư viện ảnh
+    url: gallery
     weight: 30
+  - name: Giới thiệu
+    url: about
+    weight: 40
+  - name: Thành viên
+    url: people
+    weight: 50
   - name: Liên hệ
     url: contact
-    weight: 40
+    weight: 60
