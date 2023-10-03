@@ -9,8 +9,8 @@ sections:
     content:
       title: Thành viên
       user_groups:
-          - Nhà sáng lập
-          - Thành viên
+          - Người sáng lập
+          - Đồng sáng lập
       sort_by: Params.last_name
       sort_ascending: true
     design:

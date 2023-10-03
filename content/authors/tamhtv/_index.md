@@ -1,20 +1,20 @@
 ---
 # Display name
-title: Nguyễn Lưu Bảo Ngọc
+title: Vương Ngọc Thiên Kim
 
 # Full name (for SEO)
-first_name: Ngọc
-last_name: Nguyễn Lưu Bảo
+first_name: Kim
+last_name: Vương Ngọc Thiên
 
 # Username (this should match the folder name)
 authors:
-  - ngocnlb
+  - kimvnt
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Người sáng lập
+role: Đồng sáng lập
 
 # Organizations/Affiliations
 organizations:
@@ -22,16 +22,16 @@ organizations:
     url: 'https://www.facebook.com/ngam.theproject'
 
 # Short bio (displayed in user profile at end of posts)
-bio: Người sáng lập của Ngăm
+bio: Đồng sáng lập Ngăm
 
 interests:
   - Hoạt động thiện nguyện
 
 education:
   courses:
-    - course: THPT
-      institution: THPT chuyên Lê Hồng Phong
-      year: 2021-Nay
+#    - course: THPT
+#      institution: THPT Đức Hoà
+#      year: 2021-Nay
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -56,7 +56,7 @@ email: ''
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Người sáng lập
+  - Đồng sáng lập
 ---
 
-Đang tại trường THPT chuyên Lê Hồng Phong.
+TODO.

@@ -14,7 +14,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Nhà sáng lập
+role: Đồng sáng lập
 
 # Organizations/Affiliations
 organizations:
@@ -57,8 +57,7 @@ email: ''
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Nhà sáng lập
-  - Thành viên
+  - Đồng sáng lập
 ---
 
 Đang học lớp 12TNA1 tại trường THPT Đức Hoà, Long An.

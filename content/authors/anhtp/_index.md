@@ -1,20 +1,20 @@
 ---
 # Display name
-title: Nguyễn Minh Trung
+title: Trần Phương Anh
 
 # Full name (for SEO)
-first_name: Trung
-last_name: Nguyễn Minh
+first_name: Anh
+last_name: Trần Phương
 
 # Username (this should match the folder name)
 authors:
-  - trungnm
+  - anhtp
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Thành viên
+role: Đồng sáng lập
 
 # Organizations/Affiliations
 organizations:
@@ -22,17 +22,16 @@ organizations:
     url: 'https://www.facebook.com/ngam.theproject'
 
 # Short bio (displayed in user profile at end of posts)
-bio: Thành viên của Ngăm
+bio: Đồng sáng lập Ngăm
 
 interests:
-  - Toán
   - Hoạt động thiện nguyện
 
 education:
   courses:
-    - course: THPT
-      institution: THPT Đức Hoà
-      year: 2021-Nay
+#    - course: THPT
+#      institution: THPT Đức Hoà
+#      year: 2021-Nay
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -57,7 +56,7 @@ email: ''
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Thành viên
+  - Đồng sáng lập
 ---
 
-Đang học lớp 12TNA1 tại trường THPT Đức Hoà, Long An.
+TODO.
