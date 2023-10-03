@@ -67,7 +67,7 @@ sections:
     content:
       title: Từ khoá phổ biến
       subtitle:
-      text:
+      text: "[_Xem tất cả từ khoá_](/tags)"
       # Choose a taxonomy from the `taxonomies` list in `config.yaml` to display (e.g. tags, categories, authors)
       taxonomy: tags
       # Choose how many tags you would like to display (0 = all tags)
