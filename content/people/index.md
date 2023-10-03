@@ -11,7 +11,6 @@ sections:
       user_groups:
           - Nhà sáng lập
           - Thành viên
-          - Dev
       sort_by: Params.last_name
       sort_ascending: true
     design:

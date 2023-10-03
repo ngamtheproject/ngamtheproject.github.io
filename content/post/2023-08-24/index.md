@@ -5,7 +5,7 @@ date: 2023-08-24
 
 Ngăm xin chào cô chú, xin chào các bạn!
 
-Hẳn những ngày vừa qua, cả nhà đang rất trông chờ để cùng Ngăm nhìn lại sự kiện “Nắng" đã diễn ra ngày 11/8 tại trường La Ngâu phải không ạ? Ngăm chúng con thực lòng vẫn chưa thể quên được những cảm xúc ngày hôm ấy, khi mà chúng con được cùng các em nô đùa, được tổ chức những trò chơi thú vị và được thêm thời gian để ngắm nhìn tụi nhỏ nơi đây thật kĩ.
+Hẳn những ngày vừa qua, cả nhà đang rất trông chờ để cùng Ngăm nhìn lại sự kiện "Nắng" đã diễn ra ngày 11/8 tại trường La Ngâu phải không ạ? Ngăm chúng con thực lòng vẫn chưa thể quên được những cảm xúc ngày hôm ấy, khi mà chúng con được cùng các em nô đùa, được tổ chức những trò chơi thú vị và được thêm thời gian để ngắm nhìn tụi nhỏ nơi đây thật kĩ.
 
 Diễn ra vỏn vẹn trong 8 giờ đồng hồ, Nắng đã cho Ngăm cùng các em trải nghiệm được vô vàn khoảnh khắc đáng nhớ. Là những gian hàng trò chơi thú vị, là những món quà nhỏ xinh, là những bài hát chan hoà dư vị, là một bữa ăn ngon, và là những nụ cười sáng trong thật khó để bắt gặp ở bất kì nơi nào khác.
 

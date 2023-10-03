@@ -7,11 +7,11 @@ date: 2023-07-26
 
 Không biết là các bạn có mong chờ không, nhưng Ngăm thì háo hức đến ngày này vô cùng luôn đó. Và bây
 giờ đây, chúng mình xin chính thức thông báo đến các bạn, những ai muốn trở thành một phần của Ngăm
-trong chuyến đi “Nắng” - Hè 2023 lần này, Ngăm đang tìm các bạn!
+trong chuyến đi "Nắng" - Hè 2023 lần này, Ngăm đang tìm các bạn!
 Chỉ cần là một người năng động, có quan tâm đến những công việc tình nguyện và không ngại nắng gió
 là bạn hoàn toàn có thể đi cùng với Ngăm nè! Chúng ta sẽ được cùng với nhau lan tỏa ấm áp, tình yêu
 thương để giúp đỡ, hỗ trợ cho tụi nhỏ tại vùng đất La Ngâu, tỉnh Bình Thuận. Các bạn sẽ trở thành
-một “Ngăm con” chính hiệu và đồng thời mang về những bài học tinh thần, kỉ niệm đáng nhớ nữa đó
+một "Ngăm con" chính hiệu và đồng thời mang về những bài học tinh thần, kỉ niệm đáng nhớ nữa đó
 nhen!
 
 ☀️ Thời gian dự kiến:
@@ -27,7 +27,7 @@ nhen!
   tiên những bạn nhanh tay nộp đơn sớm nhất. Tuy nhiên, hãy đảm bảo chất lượng của đơn bằng cách suy
   nghĩ thật kĩ và đầu tư vào câu trả lời nữa nhé!
 
-☀️ Thông tin cụ thể về chuyến đi “Nắng”: https://tinyurl.com/ngamthungonang2023
+☀️ Thông tin cụ thể về chuyến đi "Nắng": https://tinyurl.com/ngamthungonang2023
 
 [//]: # (TODO)
 
@@ -35,8 +35,8 @@ nhen!
 
 [//]: # (TODO)
 
-Chuyến xe “Nắng” với điểm đến tại La Ngâu đang rục rịch khởi hành. Ngăm muốn hỏi các bạn rằng: “Có
-ai muốn đi cùng Ngăm đến đó chơi với các em nhỏ hông?” Nếu ai muốn đi thì giơ cánh tay lên cho chúng
+Chuyến xe "Nắng" với điểm đến tại La Ngâu đang rục rịch khởi hành. Ngăm muốn hỏi các bạn rằng: "Có
+ai muốn đi cùng Ngăm đến đó chơi với các em nhỏ hông?" Nếu ai muốn đi thì giơ cánh tay lên cho chúng
 mình xem, và nhớ canh đồng hồ để điền đơn ngay và luôn nhé!
 
 Ngăm chúng mình chờ các bạn!

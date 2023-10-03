@@ -7,7 +7,7 @@ gallery_item:
     caption: |
       Bình Phú Runners: 26.675.000 VND
 
-      Đây là lần đầu chúng con được kết hợp với các cô chú, anh chị để tạo nên một sự kiện đầy ý nghĩa như thế này. “Đường đến La Ngâu" là một ngày chạy bộ nhiều cảm xúc, ý nghĩa và trải nghiệm khó quên đối với chúng con. Sau ngày mưa tầm tã đáng nhớ ấy, Ngăm đã nhận được thêm thật nhiều tình thương cùng hướng đến trẻ em ở La Ngâu.
+      Đây là lần đầu chúng con được kết hợp với các cô chú, anh chị để tạo nên một sự kiện đầy ý nghĩa như thế này. "Đường đến La Ngâu" là một ngày chạy bộ nhiều cảm xúc, ý nghĩa và trải nghiệm khó quên đối với chúng con. Sau ngày mưa tầm tã đáng nhớ ấy, Ngăm đã nhận được thêm thật nhiều tình thương cùng hướng đến trẻ em ở La Ngâu.
       
       Ngăm xin cảm ơn Bình Phú Runners!
   - album: 2023-08-21
@@ -31,7 +31,7 @@ gallery_item:
     caption: |
       CLAOJ và anh Thuận: 5.100.000 VND
 
-      Là một sự kiện gây quỹ đầy mới mẻ và thú vị, cuộc thi “Coding Marathon - Đường đến La Ngâu" lần này Ngăm vinh dự được kết hợp cùng CLAOJ - các bạn trẻ tài năng cùng niềm đam mê mãnh liệt với lập trình. Sự kiện đã diễn ra thành công với sự tham gia của rất nhiều anh chị và bạn bè. Đặc biệt, Ngăm xin bày tỏ lòng mến mộ và cảm kích dành cho anh Thuận. Anh đã giúp đỡ và ủng hộ chúng em rất nhiều để hỗ trợ cho chuyến đi Nắng mùa hè này. Hi vọng Ngăm và anh, Ngăm và các bạn sẽ được đồng hành cùng nhau trong tương lai thêm lần nữa.
+      Là một sự kiện gây quỹ đầy mới mẻ và thú vị, cuộc thi "Coding Marathon - Đường đến La Ngâu" lần này Ngăm vinh dự được kết hợp cùng CLAOJ - các bạn trẻ tài năng cùng niềm đam mê mãnh liệt với lập trình. Sự kiện đã diễn ra thành công với sự tham gia của rất nhiều anh chị và bạn bè. Đặc biệt, Ngăm xin bày tỏ lòng mến mộ và cảm kích dành cho anh Thuận. Anh đã giúp đỡ và ủng hộ chúng em rất nhiều để hỗ trợ cho chuyến đi Nắng mùa hè này. Hi vọng Ngăm và anh, Ngăm và các bạn sẽ được đồng hành cùng nhau trong tương lai thêm lần nữa.
   
       Ngăm xin cảm ơn CLAOJ!
   

@@ -13,6 +13,6 @@ Chúng con đã thoạt đầu phấn khích, đến cả reo vui cảm động 
 
 Chúng con đã gặp gỡ được rất nhiều người, từ những bác, cô chú lớn tuổi hơn đến cả những người bạn đồng trang lứa với chúng con. Chẳng phân cao thấp, không kể ai đã từng quen với việc chạy bộ hay ai vừa mới được thử lần đầu, dưới cơn mưa ấy, tất cả như hoà chung làm một, đầu tiên là vì tinh thần thể thao sáng đẹp, tiếp đến là để hướng đến một thứ đích đến chung: giúp đỡ các em nhỏ khó khăn tại La Ngâu.
 
-☀️Lần nữa, Ngăm chúng con xin gửi cảm ơn sâu sắc đến các bác, các cô chú đến từ Binh Phu Runners vì đã hỗ trợ chúng con và cùng tổ chức nên một sự kiện đong đầy ý nghĩa. Đồng thời, chúng mình cũng biết ơn các bạn trẻ đã có mặt ngày hôm ấy và tham gia chạy. Tất cả những sự đóng góp của mọi người đều đã góp thêm chút “nắng", chút tình cảm và chút hi vọng đến cho chuyến đi “Nắng" sắp tới của Ngăm đó ạ!
+☀️Lần nữa, Ngăm chúng con xin gửi cảm ơn sâu sắc đến các bác, các cô chú đến từ Binh Phu Runners vì đã hỗ trợ chúng con và cùng tổ chức nên một sự kiện đong đầy ý nghĩa. Đồng thời, chúng mình cũng biết ơn các bạn trẻ đã có mặt ngày hôm ấy và tham gia chạy. Tất cả những sự đóng góp của mọi người đều đã góp thêm chút "nắng", chút tình cảm và chút hi vọng đến cho chuyến đi "Nắng" sắp tới của Ngăm đó ạ!
 
-☀️Có lẽ tại buổi chạy bộ hôm ấy, cơn mưa có thể khiến ngoài da ướt lạnh, nhưng bên trong lòng mỗi chúng ta lại thấy ấm áp đến lạ thường…
+☀️Có lẽ tại buổi chạy bộ hôm ấy, cơn mưa có thể khiến ngoài da ướt lạnh, nhưng bên trong lòng mỗi chúng ta lại thấy ấm áp đến lạ thường...

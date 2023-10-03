@@ -12,16 +12,16 @@ Hiện tại, Ngăm sẽ chỉ nhận các loại đồng phục cũ bao gồm: 
 ⭐️ Hình thức nhận đồ quyên góp:
 - Cô chú và các bạn vui lòng liên hệ qua Fanpage Ngăm hoặc số điện thoại: 0946861881 (bạn Phương Anh). Chúng con sẽ sắp xếp đến tận nơi để nhân quần áo ạ!
 
-☀️ Sự góp sức của các Quý mạnh thường quân, các cô chú và bạn bè của Ngăm sẽ chính là một phần không thể thiếu để chuyến đi “Nắng" sắp tới diễn ra thành công tốt đẹp. Chính vì thế, chúng con mong rằng mỗi người chúng ta sẽ cùng chung tay giúp đỡ các em nhỏ ở trường La Ngâu có một năm học mới trọn vẹn!
+☀️ Sự góp sức của các Quý mạnh thường quân, các cô chú và bạn bè của Ngăm sẽ chính là một phần không thể thiếu để chuyến đi "Nắng" sắp tới diễn ra thành công tốt đẹp. Chính vì thế, chúng con mong rằng mỗi người chúng ta sẽ cùng chung tay giúp đỡ các em nhỏ ở trường La Ngâu có một năm học mới trọn vẹn!
 _______
-Cô chú và các bạn đừng quên rằng Ngăm vẫn đang mở đơn gây quỹ cho chuyến đi “Nắng”  sắp tới đó ạ! Tụi con xin nhận đóng góp của mọi người tại đây:
+Cô chú và các bạn đừng quên rằng Ngăm vẫn đang mở đơn gây quỹ cho chuyến đi "Nắng"  sắp tới đó ạ! Tụi con xin nhận đóng góp của mọi người tại đây:
 - Ngân hàng thương mại cổ phần Á Châu, ACB
   STK: 1955 4387
   Tên tài khoản: Vương Ngọc Thiên Kim
 - Momo: 090 200 3538
-  Nội dung: “[Tên người quyên góp] gửi Ngăm + lời nhắn nhủ đến Ngăm”
+  Nội dung: "[Tên người quyên góp] gửi Ngăm + lời nhắn nhủ đến Ngăm"
 
-Thông tin chuyến đi “Nắng”:  https://tinyurl.com/nangthongtingayquy  
+Thông tin chuyến đi "Nắng":  https://tinyurl.com/nangthongtingayquy  
 Thống kê quyên góp: https://tinyurl.com/nangthongkequyengop 
 
 [//]: # (TODO: Embed Google Docs here)

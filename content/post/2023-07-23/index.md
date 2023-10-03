@@ -5,7 +5,7 @@ date: 2023-07-23
 
 Chào các bạn của Ngăm!
 
-🌻 Tính đến thời điểm hiện tại, cuộc thi Charity Coding Marathon “Đường đến La Ngâu” của Ngăm x CLAOJ đã được sự tham gia nhiệt liệt của các bạn. Chúng mình rất lấy làm biết ơn vì sự ủng hộ ấy. Chúng mình xin được phép cập nhật thêm một số thông tin về Phase 2 của cuộc thi:
+🌻 Tính đến thời điểm hiện tại, cuộc thi Charity Coding Marathon "Đường đến La Ngâu" của Ngăm x CLAOJ đã được sự tham gia nhiệt liệt của các bạn. Chúng mình rất lấy làm biết ơn vì sự ủng hộ ấy. Chúng mình xin được phép cập nhật thêm một số thông tin về Phase 2 của cuộc thi:
 
 🌻 Link contest: https://claoj.edu.vn/contest/claoj_ngam
 - Các bài tập trong đợt 2 của contest sẽ có độ khó cao hơn đợt 1.

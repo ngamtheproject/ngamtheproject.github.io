@@ -19,6 +19,7 @@ valid_emojis = re.compile(
   r'[\U0001F0CF]|'              # Playing Card Black Joker
   r'[\U0001F170-\U0001F251]'    # Enclosed Ideographic Supplement
 )
+other_characters = re.compile(r'[☀⭐➡️]')
 file_extensions = ('.md', '.txt')
 count_invalid = 0
 
@@ -26,7 +27,8 @@ count_invalid = 0
 def is_invalid(char):
   return (not valid_characters.match(char)
           and not valid_symbols.match(char)
-          and not valid_emojis.match(char))
+          and not valid_emojis.match(char)
+          and not other_characters.match(char))
 
 
 def process_text_file(file_path):

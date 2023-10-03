@@ -15,7 +15,7 @@ Bác Oanh: 22.000.000 VND (100.000 VND/km)
 Cụ thể các chi phí thay đổi so với dự chi của chuyến đi Nắng - Hè 2023:
 
 ☀️Chi phí quà tặng (sau những ủng hộ và hỗ trợ giá, giá chiết khấu): giảm 12.956.000 VND. Trong đó bao gồm:
-- Bút tím: lựa chọn mua bút chất lượng hơn nên giá thành tăng, được cô Lương hỗ trợ một nửa số lượng (giảm 284.000 ​​VND so với dự chi)
+- Bút tím: lựa chọn mua bút chất lượng hơn nên giá thành tăng, được cô Lương hỗ trợ một nửa số lượng (giảm 284.000 VND so với dự chi)
 - Vở ô ly: được cô Lương hỗ trợ (giảm 6.960.000 VND so với dự chi)
 - Kẹo: được cô Thiện hỗ trợ (giảm 2.000.000 VND so với dự chi)
 - Sữa: được gia đình anh Sơn Nguyên hỗ trợ (giảm 2.720.000 VND so với dự chi)
@@ -30,7 +30,7 @@ Cụ thể các chi phí thay đổi so với dự chi của chuyến đi Nắng
 - Dự chi: 79.880.000
 - Thực chi: 72.545.000
 
-➡️ Giảm ​​​​7.335.000 so với dự chi
+➡️ Giảm 7.335.000 so với dự chi
 
 ☀️Sau khi tổng kết, số tiền gây quỹ cho chuyến đi Nắng vừa qua là 154,665,130 VND. Và sau khi trừ những khoản chi cho chuyến đi cùng với số dư quỹ của chuyến đi trước là 20,572,000, số quỹ hiện tại của Ngăm là 102,602,130 VND. Toàn bộ số tiền này Ngăm chúng con sẽ giữ lại và sử dụng cho chuyến đi tiếp theo.
 
