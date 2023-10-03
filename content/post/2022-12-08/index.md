@@ -34,7 +34,9 @@ Tên tài khoản: Vương Ngọc Thiên Kim
 
 Nội dung: "\[Tên người quyên góp] gửi Ngăm"  
 Thông tin chuyến đi "Toả":  
-[https://tinyurl.com/ngamchuyenditoa](https://tinyurl.com/ngamchuyenditoa)
+https://tinyurl.com/ngamchuyenditoa
 
 Thống kê quyên góp:  
-[https://tinyurl.com/ngamthongkequyengop](https://tinyurl.com/ngamthongkequyengop)
+https://tinyurl.com/ngamthongkequyengop
+
+{{< gdocs src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTi28R-2H7E_L2453JsSpCDG5RtZKtTTvUKov4X15FBXbuNyBQ8XelyQInyzd6dUGO8Nz-Dok47eEYJ/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" >}}

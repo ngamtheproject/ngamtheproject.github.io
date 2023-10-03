@@ -28,6 +28,7 @@ _______
 
 Thống kê quyên góp: https://tinyurl.com/nangthongkequyengop
 
-[//]: # (TODO: Embed Google Docs here)
+{{< gdocs src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQdn8Bc71CarLVacNaHXwPXwSYjjCT_3WjPqgjMyhMnDFPeNBosqYZTPg5fFB-qqB_KlcBq9z7HtFHJ/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" >}}
+
 _______
 ☀️ Với chuyến đi Nắng - Hè 2023 lần này, Ngăm ước rằng chúng con sẽ thêm lần nữa được góp lại cùng nhau những điều be bé để gieo niềm hi vọng và yêu thương đến các em nhỏ. Hành trình này sẽ tốt biết bao nếu có sự giúp đỡ và yêu thương của các cô chú và các bạn. Bởi lẽ, sứ mệnh của Ngăm không chỉ là mang ước mơ của riêng tụi con đến mảnh đất này, mà còn lay động trái tim mọi người cùng làm đong đầy thêm cho chuyến đi "Nắng". Vì vậy mong rằng chúng con sẽ kêu gọi được nhiều nguồn yêu thương mới đồng hành. Ngăm xin chân thành cảm ơn mọi người!

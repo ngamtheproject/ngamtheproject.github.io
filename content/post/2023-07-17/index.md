@@ -21,8 +21,8 @@ Cô chú và các bạn đừng quên rằng Ngăm vẫn đang mở đơn gây q
   Nội dung: "[Tên người quyên góp] gửi Ngăm + lời nhắn nhủ đến Ngăm"
 
 Thông tin chuyến đi "Nắng": https://tinyurl.com/nangthongtingayquy  
-Thống kê quyên góp: https://tinyurl.com/nangthongkequyengop 
+Thống kê quyên góp: https://tinyurl.com/nangthongkequyengop
 
-[//]: # (TODO: Embed Google Docs here)
+{{< gdocs src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQdn8Bc71CarLVacNaHXwPXwSYjjCT_3WjPqgjMyhMnDFPeNBosqYZTPg5fFB-qqB_KlcBq9z7HtFHJ/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" >}}
 
 {{< gallery album="2023-07-17" >}}

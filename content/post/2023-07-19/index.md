@@ -24,4 +24,4 @@ Cô chú và các bạn đừng quên rằng Ngăm vẫn đang mở đơn gây q
 Thông tin chuyến đi "Nắng":  https://tinyurl.com/nangthongtingayquy  
 Thống kê quyên góp: https://tinyurl.com/nangthongkequyengop 
 
-[//]: # (TODO: Embed Google Docs here)
+https://www.facebook.com/ngam.theproject/posts/pfbid0wfi7HFDjSCQECsFuKgvFRxMQC1HJDgd6NY8L3F9ytDhy4Kg9VLXuc3YNoNxdYGHvl

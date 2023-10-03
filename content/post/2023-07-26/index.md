@@ -29,11 +29,9 @@ nhen!
 
 ☀️ Thông tin cụ thể về chuyến đi "Nắng": https://tinyurl.com/ngamthungonang2023
 
-[//]: # (TODO)
+{{< gdocs src="https://drive.google.com/file/d/1PlFTqec2euIKm7DHb8kZSJdVYX7WV5Qp/preview" >}}
 
 ☀️ Đồng hành cùng tụi mình tại: https://tinyurl.com/donnangcungngam2023
-
-[//]: # (TODO)
 
 Chuyến xe "Nắng" với điểm đến tại La Ngâu đang rục rịch khởi hành. Ngăm muốn hỏi các bạn rằng: "Có
 ai muốn đi cùng Ngăm đến đó chơi với các em nhỏ hông?" Nếu ai muốn đi thì giơ cánh tay lên cho chúng

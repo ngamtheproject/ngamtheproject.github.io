@@ -38,5 +38,6 @@ _______
 Xuất phát từ TP HCM tối thứ 6, 13.1.2022  
 Trở về TPHCM vào tối Chủ Nhật, 15.1.2022  
 🌻Thông tin cụ thể về chuyến đi "Tỏa": https://tinyurl.com/cungngamtoatet2023  
+{{< gdocs src="https://drive.google.com/file/d/1IG_2zRYOQAnN4F0R3Ay0Q400Eb5xwXiJ/preview" >}}
 🌻Đồng hành cùng tụi mình tại: https://tinyurl.com/ngamtimban
 _______
