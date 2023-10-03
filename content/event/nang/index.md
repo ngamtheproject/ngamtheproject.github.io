@@ -1,10 +1,10 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Toả - Hành trình gieo yêu thương đến khắp mảnh đất Tây Nguyên"
-event: "Toả"
-event_url: https://www.facebook.com/ngam.theproject/posts/1458133374596441
-location: Trường Tiểu học La Văn Cầu (thôn 10, xã Krong Buk, huyện Krông Pắk, tỉnh Đắk Lắk)
+title: "Nắng 2023 | La Ngâu chờ bạn!"
+event: "Nắng"
+event_url: https://www.facebook.com/ngam.theproject/posts/pfbid02cd3nBGpKPDRSMUS8eAseL4Rww8PQQLiCmtvPeB1sGgzWDX3uHVPkJDNRsMHus2LVl
+location: Trường TH & THCS La Ngâu (Bình Thuận)
 address:
   street:
   city:
@@ -16,15 +16,15 @@ abstract:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2023-01-14
-date_end:
-all_day: true
+date: 2023-08-10
+date_end: 2023-08-11
+all_day: false
 
 # Schedule page publish date (NOT event date).
-publishDate: 2022-11-20
+publishDate: 2023-07-26
 
 authors: []
-tags: ["Ngăm", "Toả", "Tết", "2023", "Đắk Lắk", "Tây Nguyên"]
+tags: ["Ngăm", "Nắng", "Hè", "2023", "La Ngâu", "Bình Thuận"]
 
 # Is this a featured event? (true/false)
 featured: false

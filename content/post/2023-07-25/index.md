@@ -19,8 +19,6 @@ Cùng theo đó, với 1623km, mạnh thường quân sẽ ủng hộ 1623 x 5.0
 
 Link bảng tính lưu kết quả và số tiền mọi người đã tích lũy và ủng hộ: https://tinyurl.com/giaichayduongdenlangau
 
-[//]: # (TODO)
-
 ☀️ Một lần nữa, Ngăm xin gửi lời cảm ơn rất chân thành đến các cô chú đến từ Binh Phu Runners và các bạn tham gia giải chạy. Sự kiện của chúng con để có thể thành công như thế, phần lớn là nhờ sự góp mặt của mọi người. Chúng con biết ơn mọi người thật nhiều vì đã cùng Ngăm tạo nên một hoạt động thật ý nghĩa. 
 
 {{< gallery album="2023-07-25" >}}

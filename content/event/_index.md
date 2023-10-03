@@ -1,5 +1,5 @@
 ---
-title: Sự kiện gần đây và sắp tới
+title: Sự kiện đã tổ chức và sắp tới
 
 # Listing view
 view: compact
