@@ -53,15 +53,6 @@ sections:
     design:
       view: card
       columns: '1'
-  
-  - block: markdown
-    content:
-      title:
-      subtitle:
-      text: |
-        {{% cta cta_link="./people/" cta_text="Gặp gỡ team ➡️" %}}
-    design:
-      columns: '1'
 
   - block: tag_cloud
     content:

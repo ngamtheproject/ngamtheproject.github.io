@@ -16,9 +16,6 @@ main:
   - name: Giới thiệu
     url: about
     weight: 40
-  - name: Thành viên
-    url: people
-    weight: 50
   - name: Liên hệ
     url: contact
-    weight: 60
+    weight: 50
