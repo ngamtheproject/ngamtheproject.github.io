@@ -9,10 +9,7 @@ sections:
     content:
       title: Contact
       text: |-
-        Mọi thông tin chi tiết xin vui lòng liên hệ:<br>
-        Fanpage: https://www.facebook.com/ngam.theproject<br>
-        Email: ngam.theproject@gmail.com<br>
-        Hotline: (+84) 97 476 4823 (Bảo Ngọc)<br>
+        Mọi thông tin chi tiết xin vui lòng liên hệ:
       email: ngam.theproject@gmail.com
       phone: '0974764823'
       address:
@@ -32,22 +29,30 @@ sections:
       contact_links:
         - icon: facebook
           icon_pack: fab
-          name: Fanpage
-          link: 'https://www.facebook.com/ngam.theproject'
+          name: https://www.facebook.com/ngam.theproject
+          link: https://www.facebook.com/ngam.theproject
     
       # Automatically link email and phone or display as text?
       autolink: true
     
       # Email form provider
       form:
-        provider: netlify
+        provider:
         formspree:
           id:
         netlify:
           # Enable CAPTCHA challenge to reduce spam?
           captcha: false
     design:
-      columns: '1'
+      columns: # '1'
+  - block: contact
+    content:
+      text: |-
+        Hoặc điền vào form sau, chúng mình sẽ liên lạc sớm nhất có thể:
+      form:
+        provider: netlify
+        netlify:
+          captcha: false
 
 #  - block: markdown
 #    content:
