@@ -1,0 +1,15 @@
+{{ $root := .root }}
+{{ $level := .level }}
+
+{{ $folders := readDir $root }}
+
+{{ range $folders | collections.Reverse }}
+  {{ $relativePath := printf "%s/%s" $root .Name }}
+  {{ if .IsDir }}
+    {{ partial "videos" (dict "root" $relativePath "level" (add $level 1)) }}
+  {{ else }}
+    {{ $name := replace $relativePath "assets/media/videos/" ""}}
+    <h2 id={{ print $name }}>{{ println $name }}</h2>
+    {{ partial "video" (dict "videoURL" (replace $relativePath "assets" "")) }}
+  {{ end }}
+{{ end }}

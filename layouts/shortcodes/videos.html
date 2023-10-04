@@ -5,9 +5,9 @@
     </ul>
   </nav>
 </details>
-{{ $root := "assets/media/albums" }}
+{{ $root := "assets/media/videos" }}
 {{ $level := 2 }}
 
-{{ $albums := partial "albums" (dict "root" $root "level" $level) }}
-{{ $albums }}
+{{ $videos := partial "videos" (dict "root" $root "level" $level) }}
+{{ $videos }}
 {{ partial "generate-toc" }}

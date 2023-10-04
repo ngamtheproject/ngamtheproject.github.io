@@ -10,12 +10,15 @@ main:
   - name: Sự kiện
     url: event
     weight: 20
-  - name: Thư viện ảnh
-    url: gallery
+  - name: Albums
+    url: albums
     weight: 30
+  - name: Videos
+    url: videos
+    weight: 40
   - name: Giới thiệu
     url: about
-    weight: 40
+    weight: 50
   - name: Liên hệ
     url: contact
-    weight: 50
+    weight: 60

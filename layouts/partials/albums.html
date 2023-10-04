@@ -6,7 +6,8 @@
 {{ range $folders | collections.Reverse }}
   {{ if .IsDir }}
     {{ $relativePath := printf "%s/%s" $root .Name }}
-    <h{{print $level}}>{{ printf "%s\n" (replace $relativePath "assets/media/albums/" "") }}</h{{print $level}}>
+    {{ $name := replace $relativePath "assets/media/albums/" ""}}
+    <h{{print $level}} id={{ print $name }}>{{ println $name }}</h{{print $level}}>
     {{ partial "image-gallery" (dict "gallery_dir" $relativePath) }}
     {{ partial "albums" (dict "root" $relativePath "level" (add $level 1)) }}
   {{ end }}
