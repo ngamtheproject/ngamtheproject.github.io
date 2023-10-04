@@ -1,0 +1,52 @@
+<details class="toc-inpage d-print-none">
+  <summary class="font-weight-bold">Mục Lục</summary>
+  <nav id="TableOfContents" class="nav flex-column">
+    <ul>
+    </ul>
+  </nav>
+</details>
+{{ $root := "assets/media/albums" }}
+{{ $level := 2 }}
+
+{{ $albums := partial "albums" (dict "root" $root "level" $level) }}
+{{ $albums }}
+<script>
+  function generateNestedTOC() {
+    const toc = document.getElementById("TableOfContents");
+    const headings = document.querySelectorAll("h2, h3, h4, h5, h6");
+
+    let currentLevel = 2;
+    let currentUl = toc.querySelector("ul");
+    headings.forEach((heading) => {
+      const level = parseInt(heading.tagName.charAt(1));
+      const li = document.createElement("li");
+      li.className = "nav-item";
+
+      const link = document.createElement("a");
+      link.href = `#${heading.id}`;
+      link.textContent = heading.textContent;
+      link.className = "nav-link";
+
+      li.appendChild(link);
+
+      if (level > currentLevel) {
+        const ul = document.createElement("ul");
+        ul.appendChild(li);
+        currentUl.lastElementChild.appendChild(ul);
+        currentUl = ul;
+      } else if (level < currentLevel) {
+        while (currentLevel > level) {
+          currentUl = currentUl.parentElement.parentElement;
+          currentLevel--;
+        }
+        currentUl.appendChild(li);
+      } else {
+        currentUl.appendChild(li);
+      }
+
+      currentLevel = level;
+    });
+  }
+
+  generateNestedTOC();
+</script>
