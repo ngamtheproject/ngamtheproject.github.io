@@ -1,6 +1,8 @@
 ---
 title: Nắng 2023 | La Ngâu chờ bạn!
 date: 2023-07-26
+image:
+  filename: albums/2023-07-26/featured.jpg
 ---
 
 ☀️ Lại là Ngăm đây!

@@ -1,9 +1,12 @@
 ---
 title: Tây Nguyên - Một ngày xuân ấm áp
 date: 2023-01-23
+image:
+  filename: logo.png
+  preview_only: true
 ---
 
-{{< video src="featured.mp4" controls="yes" >}}
+{{< video src="videos/2023-01-23/featured.mp4" controls="yes" >}}
 
 🌻Ngăm từng là vài ba cô cậu rủ rê nhau lên Tây Nguyên, lững thững đơn sơ với những đôi chân lấm tấm màu đất đỏ. Ngăm lúc ấy không mơ nhiều, Ngăm thuở ấy chỉ lấy những đứa nhỏ làm giấc mơ.
 

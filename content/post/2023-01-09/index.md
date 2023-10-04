@@ -1,6 +1,9 @@
 ---
 title: Những người bạn của Ngăm
 date: 2023-01-09
+image:
+  filename: albums/2023-01-09/0.jpg
+  preview_only: true
 ---
 
 Ngăm chúng mình không còn là hai ba cô cậu như buổi đầu nữa, Ngăm nay đã tề tựu với sự gắn kết của những người bạn. Và từ đó, chuyến xe lên Tây Nguyên càng lúc càng đong đầy nhiều tình thương. Tụi mình đã họp lại cùng nhau với hi vọng vào cuộc hẹn đầu xuân này, tụi nhỏ sẽ rạng rỡ những điệu cười thật tươi.

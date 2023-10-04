@@ -1,6 +1,9 @@
 ---
 title: Tình hình cơ sở vật chất tại trường TH&THCS La Ngâu
 date: 2023-07-12
+image:
+  filename: albums/2023-07-12/0.jpg
+  preview_only: true
 ---
 
 ☀️Ghé thăm ngôi trường Tiểu học & Trung học cơ sở La Ngâu vào một ngày hè yên tĩnh, khi học sinh không còn đến trường hằng ngày, Ngăm chúng con có dịp được quan sát và hiểu thêm về không gian học tập của các em nhỏ nơi đây. Chúng con được biết, vào những năm gần đây cơ sở vật chất của nhà trường đã không còn được chú trọng đầu tư. Xã La Ngâu là xã nghèo, người dân chỉ làm nông nghiệp, việc huy động đóng góp của phụ huynh học sinh và xã hội hóa dường như không đáng kể. Cho nên các năm gần đây, toàn bộ giáo viên và học sinh tại đây vẫn hằng ngày đến trường và nỗ lực học tập trong điều kiện không được đầy đủ.

@@ -1,6 +1,8 @@
 ---
 title: Ngăm đã sẵn sàng
 date: 2023-08-09
+image:
+  filename: albums/2023-08-09/featured.jpg
 ---
 
 Tuần vừa rồi thiệt là một tuần bận rộn của Ngăm chúng con đó cô chú ạ! Nào là chuẩn bị từng chút một cho chuyến đi Nắng, nào là cùng hoàn chỉnh kế hoạch trò chơi, cẩn thận xếp từng phần quà để sẵn sàng trao tận tay cho các bạn nhỏ ở La Ngâu. Dù có hơi "đuối" một tí, nhưng nghĩ đến một chuyến đi đầy ắp trải nghiệm và cảm xúc sắp tới, chúng con liền có động lực để hoàn tất mọi thứ.

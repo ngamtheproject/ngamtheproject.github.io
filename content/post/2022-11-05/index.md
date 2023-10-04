@@ -1,6 +1,8 @@
 ---
 title: "[Sê-ri: Chuyện của núi cao]\n Chặng 1: Chuyện về Đôi dép"
 date: 2022-11-05
+image:
+  filename: albums/2022-11-05/featured.jpg
 ---
 
 "Sao bé con lại đi chân đất?"

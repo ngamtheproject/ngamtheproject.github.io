@@ -1,6 +1,9 @@
 ---
 title: "Những \"Hậu phương vững chắc\" của Ngăm"
 date: 2023-08-21
+image:
+  filename: albums/2023-08-21/0.jpg
+  preview_only: true
 gallery_item:
   - album: 2023-08-21
     image: 0.jpg

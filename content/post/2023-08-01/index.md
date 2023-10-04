@@ -1,9 +1,12 @@
 ---
 title: Một cơn mưa lạnh - Trăm trái tim ấm
 date: 2023-08-01
+image:
+  filename: logo.png
+  preview_only: true
 ---
 
-{{< video src="featured.mp4" controls="yes" >}}
+{{< video src="videos/2023-08-01/featured.mp4" controls="yes" >}}
 
 ☀️Ngăm vẫn nhớ về ngày hôm đó, khi chúng con thoạt đầu lo lắng vì cơn mưa rả rích xuất hiện ngay từ giây phút bắt đầu. Nhưng may mắn thay, hình như những hạt mưa kia đã chẳng thể làm phai đi sự hăng hái và kiên quyết của tất cả mọi người tham gia.
 

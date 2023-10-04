@@ -4,7 +4,7 @@ date: 2022-12-11
 draft: false
 featured: false
 image:
-  filename: featured
+  filename: albums/2022-12-11/featured.jpg
   focal_point: Smart
   preview_only: false
 ---

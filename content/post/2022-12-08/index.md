@@ -1,6 +1,8 @@
 ---
 title: Gây quỹ cho chuyến đi "Toả" - Tết 2023
 date: 2022-12-08
+image:
+  filename: albums/2022-12-08/featured.jpg
 ---
 🌻 Mùa xuân này lên Tây Nguyên, Ngăm mong rằng sẽ mang thương yêu lan ra khắp đất rừng nơi đây.
 

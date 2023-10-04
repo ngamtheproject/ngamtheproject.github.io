@@ -1,6 +1,8 @@
 ---
 title: "\"Đường đến La Ngâu\" đang đến thật gần"
 date: 2023-07-21
+image:
+  filename: albums/2023-07-21/featured.jpg
 ---
 
 "Ngăm ơi, thứ Bảy thì máu chảy về đâu nhỉ?"

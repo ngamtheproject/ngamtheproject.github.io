@@ -1,6 +1,8 @@
 ---
 title: "Ngăm x CLAOJ: Charity Coding Marathon - Đường đến La Ngâu"
 date: 2023-07-20
+image:
+  filename: albums/2023-07-20/featured.jpg
 ---
 
 ☀️ Xin chào cô chú và tất cả các bạn "Ngăm con" !

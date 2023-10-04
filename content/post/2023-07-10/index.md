@@ -1,9 +1,12 @@
 ---
 title: Hành trình gặp gỡ La Ngâu
 date: 2023-07-10
+image:
+  filename: logo.png
+  preview_only: true
 ---
 
-{{< video src="featured.mp4" controls="yes" >}}
+{{< video src="videos/2023-07-10/featured.mp4" controls="yes" >}}
 
 ☀️ Chúng ta thường sẽ mong đợi điều gì khi đặt chân đến những vùng đất nhỏ? Thường muốn bắt gặp những khoảnh khắc thế nào trên hành trình trải nghiệm trong cuộc đời? Thường kì vọng vẻ đẹp của đất trời sẽ quy tụ hết ở nơi đâu, trong từng cơn sóng biển rì rào, màu nắng chiếu trên cánh ruộng ban chiều hay những thanh âm rộn rã?
 

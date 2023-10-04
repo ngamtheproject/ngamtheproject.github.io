@@ -1,9 +1,14 @@
 ---
 title: Số tiền quyên góp và dự chi của chuyến đi "Toả" - Tết 2023
 date: 2022-12-17
+image:
+  filename: albums/2022-12-17/du-chi.jpg
+  preview_only: true
 ---
 
 🌻 Sau thông báo nhận quyên góp từ các mạnh thường quân để gây quỹ cho chuyến đi "Tỏa" nhân dịp Tết 2023, Ngăm đã nhận được tổng  là 103.927.000đ giá trị hiện kim và một số hiện vật khác. Trước hết, chúng con xin dành lời cảm ơn chân thành đến các mạnh thường quân, các cô chú, anh chị và bạn bè gần xa đã ủng hộ cho Ngăm. Đối với Ngăm, đây là một sự tự hào và biết ơn đến tất cả những ai đã nhiệt tình chia sẻ, giúp đỡ chúng con để chuẩn bị cho chuyến đi thật tốt đẹp.
+
+{{<figure src="albums/2022-12-17/du-chi.jpg">}}
 
 🌻 Với con số được Ngăm đưa ra là 75.243.500đ cho tổng giá trị các phần quà, tính đến thời điểm hiện tại, số tiền gây quỹ ủng hộ chuyến đi "Tỏa" đã lên đến 103.927.000đ. Do khoản tiền Ngăm đã nhận được nhiều hơn mục tiêu ban đầu là 28.683.500đ, cho nên chúng con quyết định sẽ dùng số tiền này để tăng giá trị những suất quà dành đến các em nhỏ tại trường Tiểu học La Văn Cầu.
 
@@ -30,7 +35,7 @@ https://tinyurl.com/ngamthongkequyengop
 
 🌻 Một lần nữa, chúng con xin cảm ơn vì sự giúp đỡ, ủng hộ nhiệt tình của các mạnh thường quân. Những lời chúc, lời nhắn nhủ của tất cả mọi người đều sẽ được Ngăm ghi nhớ thật kĩ. Đó chính là nguồn động lực lớn lao để Ngăm chúng con có thể thực hiện thật tốt chuyến đi "Toả" lần này.
 
-{{<figure src="chi-tiet-du-chi.jpg">}}
+{{<figure src="albums/2022-12-17/chi-tiet-du-chi.jpg">}}
 
 _______
 Đừng quên rằng, Ngăm vẫn đang tìm bạn đồng hành cùng với chúng mình trong chuyến đi "Tỏa" dịp Tết 2023 nhé!  

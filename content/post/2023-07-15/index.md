@@ -1,6 +1,8 @@
 ---
 title: Gây quỹ cho chuyến đi "Nắng" - Hè 2023
 date: 2023-07-15
+image:
+  filename: albums/2023-07-15/featured.jpg
 ---
 
 ☀️ Tại trường TH & THCS La Ngâu vào một ngày hè bình yên và đầy nắng, Ngăm chúng con đã hỏi các em nhỏ ở đây rằng: "Có em nào muốn anh chị quay trở lại đây chơi với tụi em nữa không?"  

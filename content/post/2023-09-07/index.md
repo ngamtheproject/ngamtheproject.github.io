@@ -1,6 +1,8 @@
 ---
 title: Ngăm x Nhóm vẽ Lửng Lơ - Bức tường màu Nắng
 date: 2023-09-07
+image:
+  filename: albums/2023-09-07/featured.jpg
 ---
 
 Chuyến đi Nắng vừa qua mang Ngăm chúng con đến với La Ngâu chỉ vỏn vẹn hai ngày một đêm. Quãng thời gian ấy là một quá trình chúng con gieo lại cho tụi nhỏ ở nơi này một chút niềm vui, tiếng cười cùng những kí ức đẹp. Và bức tường cũ kĩ được "sửa soạn" cũng chính là một phần quà nhỏ chúng con dành tặng các em.

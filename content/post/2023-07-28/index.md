@@ -1,6 +1,9 @@
 ---
 title: Lời cảm ơn chân thành!
 date: 2023-07-28
+image:
+  filename: albums/2023-07-28/1.jpg
+  preview_only: true
 ---
 
 Từ những ngày đầu đến tận giây phút hiện tại, sở dĩ Ngăm có được như ngày hôm nay phần lớn nhờ sự yêu thương và trợ giúp từ tất cả mọi người.

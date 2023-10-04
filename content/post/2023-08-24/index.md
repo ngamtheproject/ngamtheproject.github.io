@@ -1,6 +1,9 @@
 ---
 title: Recep sự kiện tại trường - Nắng 2023
 date: 2023-08-24
+image:
+  filename: albums/2023-08-24/0.jpg
+  preview_only: true
 ---
 
 Ngăm xin chào cô chú, xin chào các bạn!

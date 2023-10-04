@@ -1,6 +1,9 @@
 ---
 title: "\"Ngăm con\" cùng hội ngộ"
 date: 2023-08-05
+image:
+  filename: albums/2023-08-05/0.jpg
+  preview_only: true
 ---
 
 Từng bước trên hành trình tìm gặp và trao yêu thương đến với trẻ em vùng sâu, Ngăm cảm thấy tự tin và hạnh phúc thật nhiều khi biết rằng, Ngăm không đơn độc đi trên con đường ấy, xung quanh chúng mình còn có những "Ngăm con" đầy nhiệt huyết và chân thành.

@@ -1,6 +1,9 @@
 ---
 title: "Recap sự kiện Ngăm x BINH PHU Runners | Giải chạy gây quỹ \"Đường đến La Ngâu\""
 date: 2023-07-25
+image:
+  filename: albums/2023-07-25/0.jpg
+  preview_only: true
 ---
 
 ☀️ Vào ngày 22/7 vừa qua, giải chạy bộ gây quỹ "Đường đến La Ngâu" do các cô chú từ Binh Phu Runners và Ngăm kết hợp tổ chức đã thành công vượt ngoài cả sự mong đợi của chúng con.

@@ -1,7 +1,10 @@
 ---
 title: Năm mới cùng những người bạn mới
 date: 2023-01-01
+image:
+  filename: albums/2023-01-01/featured.jpg
 ---
+
 Chào các cô chú, con là Ngăm đây ạ! Tự nhiên hôm nay con thấy nao nao trong lòng, ngoài phố cũng rộn ràng tiếng xe cộ, tiếng cười nói hơn hẳn. Thì ra, năm mới sắp đến rồi!
 
 Ngăm đã trải qua những tháng ngày thật đẹp ở năm 2022, con đã được lên Tây Nguyên thăm mấy em nè, lại được các cô các chú ủng hộ biết bao nhiêu là quà nữa. Và còn một điều rất đặc biệt, là ở những ngày cuối cùng trước khi khép lại 2022 này, con đã có thêm rất nhiều bạn mới đó! Những người bạn này ai cũng yêu quý Ngăm, ai cũng hết mình để cùng con chuẩn bị cho chuyến thăm mấy em lần tới. Con thấy biết ơn và vui dữ lắm!

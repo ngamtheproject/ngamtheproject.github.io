@@ -1,6 +1,10 @@
 ---
+title: Ngăm thay đổi logo
 date: 2023-07-02
+image:
+  filename: albums/2023-07-02/featured.jpg
 ---
+
 Ngăm vẫn là Ngăm, nhưng ở một nơi thật khác.
 
 Ngăm vẫn là Ngăm, nhưng cứng cỏi và khát khao.

@@ -1,6 +1,8 @@
 ---
 title: Phát động thu gom đồng phục cũ cho chuyến đi "Nắng" - Hè 2023
 date: 2023-07-19
+image:
+  filename: albums/2023-07-19/featured.jpg
 ---
 
 ☀️ Sau chuyến khảo sát lần trước đến khu vực trường La Ngâu, Ngăm được biết rằng các em học sinh theo học tại đây không có đồng phục để đến trường. Nhà trường chỉ khuyến khích cho các em mặc quần xanh và áo trắng khi đi học.

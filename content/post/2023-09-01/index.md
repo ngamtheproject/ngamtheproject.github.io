@@ -1,6 +1,9 @@
 ---
 title: Gửi Nắng đến tay em
 date: 2023-09-01
+image:
+  filename: albums/2023-09-01/0.jpg
+  preview_only: true
 ---
 
 Bồi hồi,  

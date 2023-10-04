@@ -1,9 +1,12 @@
 ---
 title: Một sứ mệnh cũ - Một vùng đất mới
 date: 2023-06-12
+image:
+  filename: logo.png
+  preview_only: true
 ---
 
-{{< video src="featured.mp4" controls="yes" >}}
+{{< video src="videos/2023-06-12/featured.mp4" controls="yes" >}}
 
 Ngăm thương chào các cô chú, anh chị và bạn bè thân quý!
 

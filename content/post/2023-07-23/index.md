@@ -1,6 +1,8 @@
 ---
 title: "Ngăm x CLAOJ: Charity coding marathon \"Đường đến La Ngâu\" - Phase 2"
 date: 2023-07-23
+image:
+  filename: albums/2023-07-23/featured.jpg
 ---
 
 Chào các bạn của Ngăm!

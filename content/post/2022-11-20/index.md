@@ -1,6 +1,8 @@
 ---
 title: Tây Nguyên đón chào Ngăm bằng những nụ cười thật tươi
 date: 2022-11-20
+image:
+  filename: albums/2022-11-20/featured.jpg
 ---
 
 Xin chào mấy cô mấy chú!

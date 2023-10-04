@@ -1,6 +1,8 @@
 ---
 title: Xin chào La Ngâu!
 date: 2023-07-05
+image:
+  filename: albums/2023-07-05/featured.jpg
 ---
 
 Xin chào các cô chú, anh chị và bạn bè gần xa, lại là con, Ngăm đây! Kể với cả nhà một chút, ngày 4/7 vừa qua, Ngăm vừa mới ghé thăm ngôi trường TH & THCS La Ngâu, huyện Tánh Linh, tỉnh Bình Thuận đó ạ!

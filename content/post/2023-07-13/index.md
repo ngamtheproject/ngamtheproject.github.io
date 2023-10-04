@@ -1,6 +1,8 @@
 ---
 title: Ngăm x BINH PHU Runners | Công bố giải chạy gây quỹ "Đường đến La Ngâu"
 date: 2023-07-13
+image:
+  filename: albums/2023-07-13/featured.jpg
 ---
 
 ☀️ Ngăm xin chào cô chú và các bạn! Hôm nay, Ngăm chúng con chính thức giới thiệu Giải Chạy Bộ Gây quỹ có tên "Đường đến La Ngâu". Và trong Giải chạy bộ lần này, chúng con vinh dự được kết hợp cùng Câu lạc bộ BINH PHU Runners (BPR).  

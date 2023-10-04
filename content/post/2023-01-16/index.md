@@ -1,6 +1,9 @@
 ---
 title: Recap sự kiện tại trường và thực chi chuyến đi Toả - Tết 2023
 date: 2023-01-16
+image:
+  filename: albums/2023-01-16/0.jpg
+  preview_only: true
 ---
 🌻Vươn vai thức dậy, những ngày vừa qua của Ngăm thật đẹp - cứ như một giấc mơ ban sớm đã khẽ trôi qua, nhẹ nhàng mà lắng đọng.
 

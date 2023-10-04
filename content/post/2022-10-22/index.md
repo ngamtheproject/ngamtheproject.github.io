@@ -1,6 +1,10 @@
 ---
 title: Ngăm - Hành trình chạm đến tâm hồn và mảnh đất Tây Nguyên
 date: 2022-10-22
+image:
+  filename: albums/2022-10-22/cau-chuyen-cua-ngam.jpg
+  preview_only: true
+tags: ["Ngăm", "Tây Nguyên"]
 ---
 
 Xin chào, con là Ngăm.
@@ -25,7 +29,7 @@ Hi vọng vào một ngày không xa, mọi người sẽ thấy Ngăm ở trể
 
 # Vậy Ngăm là ai?
 
-{{< figure src="tui-minh-la-ngam.jpg" id="tui-minh-la-ngam" >}}
+{{< figure src="albums/2022-10-22/tui-minh-la-ngam.jpg" id="tui-minh-la-ngam" >}}
 
 Ngăm là một tổ chức thiện nguyện được thành lập bởi một nhóm học sinh cấp 3. Chúng mình xây dựng dự án Ngăm với mong
 muốn giúp đỡ, hỗ trợ những hoàn cảnh khó khăn, đặc biệt là những trẻ em ở Tây Nguyên qua các hoạt động gây quỹ, từ thiện
@@ -33,7 +37,7 @@ và các dự án cộng đồng.
 
 # Câu chuyện của Ngăm
 
-{{< figure src="cau-chuyen-cua-ngam.jpg" id="cau-chuyen-cua-ngam" >}}
+{{< figure src="albums/2022-10-22/cau-chuyen-cua-ngam.jpg" id="cau-chuyen-cua-ngam" >}}
 
 Từ lâu, mọi người chắc hẳn đã từng nghe và biết đến về các hoạt động gây quỹ, các chiến dịch quyên góp quần áo cũ, sách vở hay những món đồ dùng học tập,... Nhưng không phải ai cũng đã thấy được điểm đến cuối cùng của những thứ ấy là đâu.
 
@@ -48,7 +52,7 @@ Thông qua những sự kiện gây quỹ khác nhau, Ngăm thật sự hi vọn
 
 # Tầm nhìn và sứ mệnh của Ngăm
 
-{{< figure src="tam-nhin-su-menh.jpg" id="tam-nhin-su-menh" >}}
+{{< figure src="albums/2022-10-22/tam-nhin-su-menh.jpg" id="tam-nhin-su-menh" >}}
 
 Ngăm được thành lập bởi những người trẻ, vì thế mà thời gian và năng lượng là hai thứ mà chúng mình sở hữu rất dồi dào. Còn với đa phần những cô, chú lớn tuổi hơn, mọi người có thêm điều kiện vật chất để giúp đỡ cho những hoàn cảnh khó khăn, nhưng vì công việc và cuộc sống bận bịu nên lại không có đủ thời gian để dành cho những hoạt động ấy. Bởi lẽ đó, Ngăm được xây dựng như một cầu nối để gắn kết cả những bạn trẻ và người lớn có tinh thần thiện nguyện, cũng như thực hiện được mong muốn đem lại cuộc sống đầy đủ, hạnh phúc hơn cho trẻ em khó khăn ở mảnh đất Tây Nguyên.
 
@@ -56,6 +60,6 @@ Qua những hoạt động của tổ chức, sứ mệnh mà Ngăm mang trong m
 
 # Ngăm yêu tụi nhỏ thiệt nhiều!
 
-{{< figure src="hen-may-em-o-mot-noi-cao-va-xa.jpg" id="hen-may-em-o-mot-noi-cao-va-xa" >}}
+{{< figure src="albums/2022-10-22/hen-may-em-o-mot-noi-cao-va-xa.jpg" id="hen-may-em-o-mot-noi-cao-va-xa" >}}
 
 Tụi em hãy chờ Ngăm vào một ngày gần nhất nhé! Ngăm sẽ cố gắng đến đó thật sớm thui 🌷

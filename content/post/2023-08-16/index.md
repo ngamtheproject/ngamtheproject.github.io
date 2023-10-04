@@ -1,6 +1,9 @@
 ---
 title: Tổng kết chuyến đi Nắng - Hè 2023
 date: 2023-08-16
+image:
+  filename: albums/2023-08-16/0.jpg
+  preview_only: true
 ---
 
 ☀️Vậy là chuyến đi Nắng - Hè 2023 đã kết thúc và thành công tốt đẹp, Ngăm chúng con xin phép được cập nhật đến quý mạnh thường quân, quý phụ huynh và các cô chú, anh chị về các khoản chi phí thực tế. Trong đó có những thay đổi và phát sinh so với dự chi của chúng con.

@@ -1,6 +1,9 @@
 ---
 title: Chân dung La Ngâu
 date: 2023-07-17
+image:
+  filename: albums/2023-07-17/0.jpg
+  preview_only: true
 ---
 
 Ngăm cũng chỉ là những cô, cậu bé đang chập chững bước những bước đầu tiên vào đời. Chúng con cứ ngỡ mình chẳng có gì hơn ngoài sức trẻ dồi dào và một trái tim đong đầy ước mơ. Cho đến khi Ngăm có cơ hội tiếp xúc và đi tìm, gặp gỡ những đứa trẻ khác - những đứa trẻ còn thiếu thốn đủ điều nhưng trong ánh mắt vẫn luôn rạng rỡ niềm tin.

@@ -1,6 +1,8 @@
 ---
 title: Chuyến xe đong đầy
 date: 2022-12-20
+image:
+  filename: albums/2022-12-20/featured.jpg
 ---
 
 Chuyến xe lên đất rừng Tây Nguyên đã đầy chỗ và Ngăm chúng mình lại có thêm những người bạn mới.

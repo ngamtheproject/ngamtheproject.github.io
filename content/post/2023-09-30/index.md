@@ -1,9 +1,12 @@
 ---
 title: Hành trình đón Nắng cùng Ngăm
 date: 2023-09-30
+image:
+  filename: logo.png
+  preview_only: true
 ---
 
-{{< video src="featured.mp4" controls="yes" >}}
+{{< video src="videos/2023-09-30/featured.mp4" controls="yes" >}}
 
 "Tụi con còn nhỏ mà biết cho đi như thế là quá tốt và và giỏi luôn!"  
 Đó là những lời mấy đứa Ngăm tụi con hay nhận được từ quý phụ huynh, các cô chú, các anh chị lớn hơn tụi con. Ngăm biết ơn và xúc động vì những lời khen ấy nhiều lắm! Nhưng cô chú biết không, mấy đứa nhỏ tụi con bằng một cách nào đó, luôn tự cảm thấy trong lòng rằng, ở Ngăm, chúng con nhận được nhiều hơn cả so với những gì chúng con đã cho đi...

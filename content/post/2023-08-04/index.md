@@ -1,6 +1,8 @@
 ---
 title: "Thống kê quyên góp đồng phục cũ cho chuyến đi \"Nắng\" - Hè 2023"
 date: 2023-08-04
+image:
+  filename: albums/2023-08-04/featured.jpg
 ---
 
 Trong những ngày vừa qua, Ngăm chúng con đã rất vui khi nhận được nhiều sự ủng hộ của tất cả mọi người trong đợt thu gom đồng phục cũ cho trẻ em vùng núi tại trường TH & THCS La Ngâu.

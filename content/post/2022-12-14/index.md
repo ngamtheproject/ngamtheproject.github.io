@@ -1,6 +1,8 @@
 ---
 title: Lời cảm ơn chân thành
 date: 2022-12-14
+image:
+  filename: albums/2022-12-14/loi-cam-on.jpg
 ---
 
 🌻 Khởi nguồn của Ngăm là đúc kết từ những thương yêu mềm dịu "tỏa" ra từ lòng những đứa trẻ. Tụi con vì thấy tình cảm tương đồng dành cho mảnh đất Tây Nguyên mà tìm thấy nhau và cùng nhau tụ lại.
@@ -31,11 +33,11 @@ Cả nhà tin Ngăm nhé! Sẽ sớm thôi, vào một ngày hoa cà phê trắn
 
 🌻 Hiện tại Ngăm sẽ không nhận thêm quyên góp cho chuyến đi "Toả" lần này. Ngoài ra, toàn bộ thông tin về số tiền tụi con nhận được nhiều hơn dự định sẽ được công khai kế hoạch sử dụng chi tiết ở bài viết sau.
 
-{{< figure src="hien-kim-1.jpg">}}
-{{< figure src="hien-kim-2.jpg">}}
-{{< figure src="hien-kim-3.jpg">}}
-{{< figure src="hien-kim-4.jpg">}}
-{{< figure src="hien-kim-5.jpg">}}
-{{< figure src="hien-kim-6.jpg">}}
-{{< figure src="hien-vat.jpg">}}
-{{< figure src="tui-con-cam-on.jpg">}}
+{{< figure src="albums/2022-12-14/hien-kim-1.jpg">}}
+{{< figure src="albums/2022-12-14/hien-kim-2.jpg">}}
+{{< figure src="albums/2022-12-14/hien-kim-3.jpg">}}
+{{< figure src="albums/2022-12-14/hien-kim-4.jpg">}}
+{{< figure src="albums/2022-12-14/hien-kim-5.jpg">}}
+{{< figure src="albums/2022-12-14/hien-kim-6.jpg">}}
+{{< figure src="albums/2022-12-14/hien-vat.jpg">}}
+{{< figure src="albums/2022-12-14/tui-con-cam-on.jpg">}}

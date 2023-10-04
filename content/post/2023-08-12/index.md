@@ -1,6 +1,8 @@
 ---
 title: "Khép lại hành trình \"Nắng\" 2023"
 date: 2023-08-12
+image:
+  filename: albums/2023-08-12/featured.jpg
 ---
 
 Có những ước mơ, chúng con mang theo và ấp ủ trong lòng...  

@@ -1,6 +1,9 @@
 ---
 title: Hành trình "Toả" - Lời cảm ơn
 date: 2023-01-20
+image:
+  filename: logo.png
+  preview_only: true
 ---
 🌻 Chuyến đi Toả đầu Xuân 2023 chỉ diễn ra trong 2 ngày 2 đêm, Ngăm chúng con cũng chỉ được gặp gỡ, vui chơi với các em nhỏ trường Tiểu học La Văn Cầu vỏn vẹn có 8 giờ đồng hồ. Ấy vậy mà khi nhìn lại hành trình chuẩn bị cho chuyến đi tuyệt vời ấy, trong lòng Ngăm cảm thấy biết ơn vô cùng, vì hơn ai hết, chúng con hiểu rằng nếu không có những sự giúp đỡ từ biết bao cô chú, anh chị, bạn bè, thì "Toả" có thể sẽ chỉ mãi là giấc mơ đối với Ngăm mà thôi. Vì thế, Ngăm muốn cảm ơn mọi người thiệt nhiều - cảm ơn vì đã chọn đồng hành cùng với chúng con, cảm ơn vì đã tin tưởng và dành thời gian để cùng Ngăm chuẩn bị cho chuyến đi này.
 
