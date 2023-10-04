@@ -10,7 +10,7 @@ sections:
       title: |
         Ngăm
       image:
-        filename: homepage/dieu-ngam-luon-mong-uoc.jpg
+        filename: albums/2022/10/29/dieu-ngam-luon-mong-uoc.jpg
       text: |
         <br>
 
