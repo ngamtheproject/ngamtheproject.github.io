@@ -8,13 +8,13 @@ last_name: Nguyễn Lưu Bảo
 
 # Username (this should match the folder name)
 authors:
-  - ngocnlb
+  - harleyybng
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Người sáng lập
+role: Founder
 
 # Organizations/Affiliations
 organizations:
@@ -25,11 +25,11 @@ organizations:
 bio: Người sáng lập của Ngăm
 
 interests:
-  - Hoạt động thiện nguyện
+  - Chạy deadline
 
 education:
   courses:
-    - course: THPT
+    - course:
       institution: THPT chuyên Lê Hồng Phong
       year: 2021-Nay
 
@@ -38,12 +38,15 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-  - icon: envelope
-    icon_pack: fas
-    link: 'mailto:test@example.org'
+#  - icon: envelope
+#    icon_pack: fas
+#    link: 'mailto:test@example.org'
   - icon: facebook
     icon_pack: fab
-    link: https://facebook.com/Test
+    link: https://www.facebook.com/baongoc.nguyenluu.39
+  - icon: instagram
+    icon_pack: fab
+    link: https://www.instagram.com/harleyybng
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -59,4 +62,4 @@ user_groups:
   - Người sáng lập
 ---
 
-Đang tại trường THPT chuyên Lê Hồng Phong.
+hao xìn minh là bảo ngọc

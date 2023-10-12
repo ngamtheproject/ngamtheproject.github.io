@@ -14,7 +14,9 @@ authors:
 superuser: false
 
 # Role/position
-role: Đồng sáng lập
+role: |
+  Cofounder  
+  Designer
 
 # Organizations/Affiliations
 organizations:
@@ -25,25 +27,30 @@ organizations:
 bio: Đồng sáng lập Ngăm
 
 interests:
-  - Hoạt động thiện nguyện
+  - Vẽ
+  - Thiết kế
+  - Nghệ thuật
+  - Nghe nhạc
 
 education:
   courses:
-#    - course: THPT
-#      institution: THPT Đức Hoà
-#      year: 2021-Nay
-
+    - course: 12D1
+      institution: THPT Chuyên Lê Hồng Phong
+      year: 2021-Nay
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-  - icon: envelope
-    icon_pack: fas
-    link: 'mailto:test@example.org'
+#  - icon: envelope
+#    icon_pack: fas
+#    link: 'mailto:test@example.org'
   - icon: facebook
     icon_pack: fab
-    link: https://facebook.com/Test
+    link: https://www.facebook.com/profile.php?id=100016401787217
+  - icon: instagram
+    icon_pack: fab
+    link: https://www.instagram.com/__luyndoa/
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -59,4 +66,4 @@ user_groups:
   - Đồng sáng lập
 ---
 
-TODO.
+Là con người của công việc nhưng vẫn luôn sống hết mình với tình cảm của mọi người 

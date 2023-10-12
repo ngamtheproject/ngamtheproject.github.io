@@ -1,20 +1,23 @@
 ---
 # Display name
-title: Huỳnh Thị Vĩnh Tâm
+title: Vương Ngọc Thiên Kim
 
 # Full name (for SEO)
-first_name: Tâm
-last_name: Huỳnh Thị Vĩnh
+first_name: Kim
+last_name: Vương Ngọc Thiên
 
 # Username (this should match the folder name)
 authors:
-  - tamhtv
+  - kimvnt
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Đồng sáng lập
+role: |
+  Bà chủ nợ và nhân viên đa cấp  
+  Cofounder  
+  Tài chính và đối ngoại
 
 # Organizations/Affiliations
 organizations:
@@ -25,12 +28,13 @@ organizations:
 bio: Đồng sáng lập Ngăm
 
 interests:
-  - Hoạt động thiện nguyện
+  - Đi đây đi đó
+  - Ngắm
 
 education:
   courses:
-#    - course: THPT
-#      institution: THPT Đức Hoà
+#    - course: 12D1
+#      institution: THPT Chuyên Lê Hồng Phong
 #      year: 2021-Nay
 
 # Social/Academic Networking
@@ -38,12 +42,15 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-  - icon: envelope
-    icon_pack: fas
-    link: 'mailto:test@example.org'
+#  - icon: envelope
+#    icon_pack: fas
+#    link: 'mailto:test@example.org'
   - icon: facebook
     icon_pack: fab
-    link: https://facebook.com/Test
+    link: https://www.facebook.com/kimm.mnh
+  - icon: instagram
+    icon_pack: fab
+    link: https://www.instagram.com/kimm.mnh
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -59,4 +66,4 @@ user_groups:
   - Đồng sáng lập
 ---
 
-TODO.
+Gơ lạnh lùng, nồng cháy và lốc xoáy.
