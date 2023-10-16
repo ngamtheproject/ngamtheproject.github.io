@@ -1,5 +1,5 @@
 ---
-title: Recep sự kiện tại trường - Nắng 2023
+title: Recap sự kiện tại trường - Nắng 2023
 date: 2023-08-24
 image:
   filename: albums/2023/08/24/0.jpg
