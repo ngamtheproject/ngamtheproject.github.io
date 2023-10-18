@@ -1,0 +1,14 @@
+{{ $dir := string .gallery_dir }}
+<div class="gallery">
+{{ range (readDir $dir) }}
+  {{ if .IsDir }}
+  {{ else }}
+    {{ $image := resources.Get (replace (printf "%s/%s" $dir .Name) "assets/" "") }}
+    {{ $imageurl := printf "%s/%s" $dir .Name }}
+    {{ $imagetitle := index (split .Name ".") 0 }}
+    <a href="{{ ($image.Fit "1600x1600").Permalink }}" data-caption="{{ $imagetitle }}">
+      <img src="{{ ($image.Fill "200x200").Permalink }}" alt="{{ $imagetitle }}">
+    </a>
+  {{ end }}
+{{ end }}
+</div>

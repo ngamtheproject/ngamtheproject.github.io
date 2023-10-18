@@ -8,7 +8,7 @@
     {{ $relativePath := printf "%s/%s" $root .Name }}
     {{ $name := replace $relativePath "assets/media/albums/" ""}}
     <h{{print $level}} id={{ print $name }}>{{ println $name }}</h{{print $level}}>
-    {{ partial "image-gallery" (dict "gallery_dir" $relativePath) }}
+    {{ partial "album" (dict "gallery_dir" $relativePath) }}
     {{ partial "albums" (dict "root" $relativePath "level" (add $level 1)) }}
   {{ end }}
 {{ end }}

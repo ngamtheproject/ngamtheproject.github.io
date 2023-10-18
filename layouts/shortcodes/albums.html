@@ -1,3 +1,20 @@
+<!--Ref: https://github.com/feimosi/baguetteBox.js-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" async></script>
+
+<style>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  gap: 2rem;
+}
+
+.gallery a img {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+</style>
+
 <details class="toc-inpage d-print-none">
   <summary class="font-weight-bold">Mục Lục</summary>
   <nav id="TableOfContents" class="nav flex-column">
@@ -11,3 +28,9 @@
 {{ $albums := partial "albums" (dict "root" $root "level" $level) }}
 {{ $albums }}
 {{ partial "generate-toc" }}
+
+<script>
+window.addEventListener('load', function() {
+  baguetteBox.run('.gallery');
+});
+</script>
