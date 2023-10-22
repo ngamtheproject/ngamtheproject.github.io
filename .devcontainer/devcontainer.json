@@ -1,0 +1,12 @@
+{
+    "name": "Hugo",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "HUGO_VERSION": "0.118.2"
+        }
+    },
+    "forwardPorts": [
+        1313
+    ]
+}
