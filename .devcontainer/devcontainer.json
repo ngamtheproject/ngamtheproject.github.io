@@ -1,15 +1,13 @@
 {
     "name": "Hugo",
-    "forwardPorts": [
-        1313
-    ],
+    "image": "mcr.microsoft.com/devcontainers/go:1.21",
     "features": {
         "ghcr.io/devcontainers/features/hugo:1": {
-            "extended": true,
-            "version": "0.118.2"
-        },
-        "ghcr.io/devcontainers/features/go:1": {
-            "version": "1.21"
+            "version": "0.118.2",
+            "extended": true
         }
-    }
+    },
+    "forwardPorts": [
+        1313
+    ]
 }
