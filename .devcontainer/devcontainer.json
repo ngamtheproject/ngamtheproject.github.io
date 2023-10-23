@@ -1,7 +1,15 @@
 {
     "name": "Hugo",
-    "build": { "dockerfile": "Dockerfile" },
     "forwardPorts": [
         1313
-    ]
+    ],
+    "features": {
+        "ghcr.io/devcontainers/features/hugo:1": {
+            "extended": true,
+            "version": "0.118.2"
+        },
+        "ghcr.io/devcontainers/features/go:1": {
+            "version": "1.21"
+        }
+    }
 }
