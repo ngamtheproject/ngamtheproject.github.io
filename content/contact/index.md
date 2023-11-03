@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: Liên hệ
 date: 2022-10-24
 
 type: landing
@@ -7,7 +7,7 @@ type: landing
 sections:
   - block: contact
     content:
-      title: Contact
+      title: Liên hệ
       text: |-
         Mọi thông tin chi tiết xin vui lòng liên hệ:
       email: ngam.theproject@gmail.com
