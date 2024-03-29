@@ -81,10 +81,20 @@ gallery_item:
       Ngăm xin cảm ơn Cửa hàng xe đạp KH Bike đã trợ giá xe đạp cho cả chuyến Toả - Tết 2023 và Nắng - Hè 2023!
 ---
 
-Từ những ngày đầu ôm hi vọng đặt chân đến vùng đất La Ngâu đầy nắng và gió, Ngăm chúng con đã cật lực chuẩn bị để mang đến cho những đứa trẻ nơi đây một trải nghiệm thật mới, thật vui. Trong suốt những ngày tháng ấy, Ngăm đã nhận được những lời động viên, lời nhắn gửi, sự tin tưởng từ quý mạnh thường quân và cả những phụ huynh của chúng con.
+Từ những ngày đầu ôm hi vọng đặt chân đến vùng đất La Ngâu đầy nắng và gió, Ngăm chúng con đã cật lực chuẩn bị để mang
+đến cho những đứa trẻ nơi đây một trải nghiệm thật mới, thật vui. Trong suốt những ngày tháng ấy, Ngăm đã nhận được
+những lời động viên, lời nhắn gửi, sự tin tưởng từ quý mạnh thường quân và cả những phụ huynh của chúng con.
 
-Ngăm đã không biết bao lần vui mừng đến vỡ oà vì chúng con được cả nhà yêu thương và giúp đỡ nhiều hơn những gì chúng con có thể mơ tới. Nếu thiếu đi sự hỗ trợ và ủng hộ ấy, Ngăm tin chắc rằng chuyến đi Nắng - Hè 2023 đã chẳng thể trọn vẹn được như thế. Dẫu biết, Ngăm vẫn còn nhiều sai sót và vụng về, nhưng tình cảm mà mọi người gửi đến cũng là một phần động lực để chúng con hoàn thiện từng ngày. Từ đó cùng chung tay, góp sức để mang đến cho tụi nhỏ ngoài kia một luồng yêu thương mới.
+Ngăm đã không biết bao lần vui mừng đến vỡ oà vì chúng con được cả nhà yêu thương và giúp đỡ nhiều hơn những gì chúng
+con có thể mơ tới. Nếu thiếu đi sự hỗ trợ và ủng hộ ấy, Ngăm tin chắc rằng chuyến đi Nắng - Hè 2023 đã chẳng thể trọn
+vẹn được như thế. Dẫu biết, Ngăm vẫn còn nhiều sai sót và vụng về, nhưng tình cảm mà mọi người gửi đến cũng là một phần
+động lực để chúng con hoàn thiện từng ngày. Từ đó cùng chung tay, góp sức để mang đến cho tụi nhỏ ngoài kia một luồng
+yêu thương mới.
 
-Thêm lần nữa, Ngăm xin gửi lời cảm ơn sâu sắc và chân thành từ tận đáy lòng chúng con đến tất cả các quý mạnh thường quân, quý phụ huynh, các cô chú, anh chị vì đã tin tưởng Ngăm, giúp đỡ chúng con thật nhiều để cho Ngăm có cơ hội chạm đến ước mơ của mình. Thật vui vì mong muốn kết nối giữa người lớn và trẻ em, giữa cộng đồng với những hoàn cảnh khó khăn của Ngăm đang dần trở thành hiện thực. Chúng con sẽ tiếp tục cố gắng hơn thế nữa, để mang tình yêu lan toả đến mọi ngóc ngách của từng vùng đất nhỏ mà Ngăm được gặp gỡ.
+Thêm lần nữa, Ngăm xin gửi lời cảm ơn sâu sắc và chân thành từ tận đáy lòng chúng con đến tất cả các quý mạnh thường
+quân, quý phụ huynh, các cô chú, anh chị vì đã tin tưởng Ngăm, giúp đỡ chúng con thật nhiều để cho Ngăm có cơ hội chạm
+đến ước mơ của mình. Thật vui vì mong muốn kết nối giữa người lớn và trẻ em, giữa cộng đồng với những hoàn cảnh khó khăn
+của Ngăm đang dần trở thành hiện thực. Chúng con sẽ tiếp tục cố gắng hơn thế nữa, để mang tình yêu lan toả đến mọi ngóc
+ngách của từng vùng đất nhỏ mà Ngăm được gặp gỡ.
 
 {{< gallery album="2023/08/21" >}}
