@@ -91,7 +91,7 @@ features:
       repo_id: 'R_kgDOKSl_1A'
       category: 'Announcements'
       category_id: 'DIC_kwDOKSl_1M4CZj76'
-      theme: preferred_color_scheme
+      theme: light
       language_code: en
       mapping: pathname
   search:
