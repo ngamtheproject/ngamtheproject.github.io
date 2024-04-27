@@ -45,14 +45,14 @@ sections:
           captcha: false
     design:
       columns: # '1'
-  - block: contact
-    content:
-      text: |-
-        Hoặc điền vào form sau, chúng mình sẽ liên lạc sớm nhất có thể:
-      form:
-        provider: netlify
-        netlify:
-          captcha: false
+#  - block: contact
+#    content:
+#      text: |-
+#        Hoặc điền vào form sau, chúng mình sẽ liên lạc sớm nhất có thể:
+#      form:
+#        provider: netlify
+#        netlify:
+#          captcha: false
 
 #  - block: markdown
 #    content:

@@ -109,10 +109,10 @@ features:
 # Extensions
 
 extensions:
-  decap_cms:
-    branch: main
-    publish_mode: editorial_workflow
-    local_backend: false
+#  decap_cms:
+#    branch: main
+#    publish_mode: editorial_workflow
+#    local_backend: false
   academicons:
     enable: false
 

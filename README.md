@@ -1,12 +1,11 @@
-# [Ngăm](https://ngamtheproject.org)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/81ac1ab8-b624-4dd7-b97f-6a6a95a99597/deploy-status)](https://app.netlify.com/sites/ngamtheproject/deploys)
+# Ngam The Project
 
-Website for [Ngăm](https://ngamtheproject.org) - a charity organization founded by high school students.
+Website for [Ngăm](https://ngamtheproject.github.io) - a charity organization founded by high school students.
 
 ## Powered By
 
 - [Hugo](https://gohugo.io/): Our static site generator.
 - [Hugo Blox](https://hugoblox.com/): Our Hugo theme.
-- [Netlify](https://www.netlify.com/): Our hosting.
+- [GitHub Pages](https://pages.github.com/): Our hosting.
 
 We are grateful to the creators and maintainers of these tools and services for making our project possible.
