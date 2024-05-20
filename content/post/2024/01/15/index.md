@@ -7,10 +7,10 @@ image:
 
 Đã lâu không gặp, không biết các cô chú và các bạn có nhớ Ngăm không nhỉ? Còn Ngăm thì rất là nhớ mọi người luôn đó!
 
-Đã gần 5 tháng trôi qua kể từ ngày tụi con khép lại hành trình “Nắng" đến với các em nhỏ ở La Ngâu, và đã tròn 1 năm kể
-từ ngày chuyến đi đầu tiên của chúng con “Toả" diễn ra. Thời gian qua nhanh quá chừng, thế mà chúng con vẫn ngỡ mọi thứ
+Đã gần 5 tháng trôi qua kể từ ngày tụi con khép lại hành trình "Nắng" đến với các em nhỏ ở La Ngâu, và đã tròn 1 năm kể
+từ ngày chuyến đi đầu tiên của chúng con "Toả" diễn ra. Thời gian qua nhanh quá chừng, thế mà chúng con vẫn ngỡ mọi thứ
 chỉ mới là ngày hôm qua thôi. Ngăm không biết phải diễn tả sao cho hết niềm vui và sự biết ơn về những gì chúng con nhận
-được - sự ủng hộ, niềm tin tưởng, sự nhiệt huyết và những nụ cười của các em nhỏ…
+được - sự ủng hộ, niềm tin tưởng, sự nhiệt huyết và những nụ cười của các em nhỏ...
 
 Trong suốt những ngày vừa rồi, Ngăm đã nhận được nhiều câu hỏi từ anh chị em cùng bạn bè gần xa về những hoạt động tiếp
 theo của tụi con. Vậy nên Ngăm quyết định gửi đến cả nhà một lời thông báo chính thức về kế hoạch dự kiến trong tương
