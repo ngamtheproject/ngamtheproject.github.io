@@ -7,14 +7,14 @@ image:
 
 {{< figure src="albums/2024/05/22/avatar.jpg" >}}
 
-Ngăm,
+Ngăm,  
 những dòng nhật kí;
 
-Ngăm,
+Ngăm,  
 những cơn mơ;
 
-Ngăm,
+Ngăm,  
 những nẻo đường tập lớn;
 
-Ngăm,
+Ngăm,  
 the last chapter.
