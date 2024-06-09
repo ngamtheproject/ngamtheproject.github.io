@@ -5,8 +5,6 @@ image:
   filename: albums/2024/06/06/1.jpg
 ---
 
-KÍ SỰ SUỐI PHÈN 3: CÕNG
-
 (11.05.2024 từ “nhật kí của chú Hoàng”)
 
 Khi mọi người rủ nhau ra suối chơi thì tụi mình để ý thấy có một bé cỡ 3 tuổi, bé nhỏ xíu thôi, đứng thẳng lên cũng chỉ cao đến bụng mình. Thế mà em nằng nặc đòi đi chân đất ra suối cùng mọi người chứ nhất quyết không chịu ở lại. Đường xa, chưa kể nắng nóng rồi sỏi đá suốt dọc đường đi nữa. Mấy đứa nhỏ em mình ở nhà lỡ đạp phải một cục lego thôi đã khóc bù lu bù loa thì thật không nghĩ nổi sao bé con này chịu được. Thế là mọi người bảo chú Hoàng cõng em ra suối. Chân hơi sụi vì bị bong gân trước đó nhưng vì sức sung nên chú Hoàng đồng ý bế em, lúc đầu cứ sợ em ngại nhưng em lại dễ chịu phết :))). Ẵm, bồng, hay cõng - thế nào em cũng chịu, cứ ngoan ngoãn nằm yên trên lưng mình.
