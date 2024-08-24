@@ -1,6 +1,9 @@
 ---
 title: Suối Phèn trong lần gặp đầu tiên
 date: 2024-05-28
+image:
+  filename: logo.png
+  preview_only: true
 ---
 
 {{< video src="videos/2024/05/28/featured.mp4" controls="yes" >}}
