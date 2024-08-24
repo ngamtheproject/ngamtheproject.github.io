@@ -8,7 +8,7 @@ image:
 Khâu chuẩn bị cho cuộc hành trình đến thăm Suối Phèn vào mùa hè năm nay đã được Ngăm chúng mình bắt tay vào thực hiện. Ở
 chuyến đi lần này, chúng mình dự định sẽ chuẩn bị những món quà, vật phẩm cho trẻ em và những hộ gia đình có hoàn cảnh
 đặc biệt tại khu vực. Toàn bộ số tiền được trích từ quỹ còn dư của Ngăm sau chuyến đi mùa hè năm ngoái! Cả nhà hãy nhấn
-vào từng hình để khám phá xem những “món quà" cho Suối Phèn sẽ là gì nhé!
+vào từng hình để khám phá xem những "món quà" cho Suối Phèn sẽ là gì nhé!
 Thật nhanh thôi, sự kiện vào mùa hè này sẽ được khởi động. Và chúng mình thật mong rằng sẽ được tiếp tục đón nhận tình
 yêu thương và sự đồng hành của tất cả các cô chú, anh chị, cũng như những người bạn trẻ gần xa cùng với Ngăm hè này!  
 Mọi người hãy đón chờ những cập nhật mới nhất của Ngăm,
@@ -25,7 +25,7 @@ Nhận thấy mấy đứa nhỏ ở đây ít mang dép vì bị mất, thiếu
 
 Ngoài ra, Ngăm cũng sẽ mang đến cho các em bánh kẹo, sữa cùng những hoạt động vui chơi vào ngày diễn ra sự kiện như vẽ
 tranh cát, chiếu phim miễn phí, cắt tóc, và cho các em nhỏ ăn pizza - một món ăn mà các em đã thổ lộ trong cuộc gặp gỡ
-tiền trạm của chúng mình rằng: “Em chỉ mới nghe nói đến nhưng chưa bao giờ được ăn hết trơn!”.
+tiền trạm của chúng mình rằng: "Em chỉ mới nghe nói đến nhưng chưa bao giờ được ăn hết trơn!".
 
 {{< figure src="albums/2024/06/16/2.jpg" >}}
 
