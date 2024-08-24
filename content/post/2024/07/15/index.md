@@ -1,5 +1,4 @@
 ---
-title: RECAP BUỔI PHÁT CƠM TỪ THIỆN - THĂM HỎI BỆNH NHI UNG THƯ
 title: Recap buổi phát cơm từ thiện - Thăm hỏi bệnh nhi ung thư
 date: 2024-07-15
 image:
