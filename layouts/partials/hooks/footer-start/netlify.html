@@ -1,4 +1,6 @@
-<div class="powered-by" style="text-align: center">
-  This site is powered by
-  <a href="https://www.netlify.com" target="_blank">Netlify</a>
-</div>
+{{ if strings.HasSuffix (urls.Parse .Site.BaseURL).Host ".netlify.app" }}
+  <div class="powered-by" style="text-align: center">
+    This site is powered by
+    <a href="https://www.netlify.com" target="_blank">Netlify</a>
+  </div>
+{{ end }}
