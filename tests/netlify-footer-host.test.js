@@ -9,15 +9,17 @@ const template = fs.readFileSync(
   'utf8',
 );
 
-function creditIsHidden(hostname) {
+function insertedCredits(hostname) {
   const script = template.match(/<script>([\s\S]*?)<\/script>/);
   assert.ok(script, 'footer must check the browser hostname at runtime');
 
-  const credit = { hidden: true };
+  const insertions = [];
   vm.runInNewContext(script[1], {
     document: {
       currentScript: {
-        previousElementSibling: credit,
+        insertAdjacentHTML(position, html) {
+          insertions.push({ html, position });
+        },
       },
     },
     window: {
@@ -27,23 +29,37 @@ function creditIsHidden(hostname) {
     },
   });
 
-  return credit.hidden;
+  return insertions;
 }
 
-test('keeps the credit hidden until the hostname check runs', () => {
-  const credit = template.match(/<div\b[^>]*class="powered-by"[^>]*>/);
-  assert.ok(credit, 'footer must include the Netlify credit');
-  assert.match(credit[0], /\shidden(?:\s|>)/);
+test('does not render static credit markup', () => {
+  const staticMarkup = template.replace(/<script>[\s\S]*?<\/script>/, '');
+  assert.doesNotMatch(staticMarkup, /class="powered-by"/);
 });
 
-test('shows the credit on Netlify subdomains', () => {
-  assert.equal(creditIsHidden('ngamtheproject.netlify.app'), false);
-  assert.equal(creditIsHidden('deploy-preview-42--ngamtheproject.netlify.app'), false);
+test('inserts the credit on Netlify subdomains', () => {
+  for (const hostname of [
+    'ngamtheproject.netlify.app',
+    'deploy-preview-42--ngamtheproject.netlify.app',
+  ]) {
+    const insertions = insertedCredits(hostname);
+    assert.equal(insertions.length, 1);
+    assert.equal(insertions[0].position, 'beforebegin');
+    assert.equal(
+      insertions[0].html.replace(/\s+/g, ' ').trim(),
+      '<div class="powered-by" style="text-align: center"> This site is powered by ' +
+        '<a href="https://www.netlify.com" target="_blank">Netlify</a> </div>',
+    );
+  }
 });
 
-test('hides the credit on non-Netlify hosts', () => {
-  assert.equal(creditIsHidden('ngamtheproject.github.io'), true);
-  assert.equal(creditIsHidden('netlify.app'), true);
-  assert.equal(creditIsHidden('evilnetlify.app'), true);
-  assert.equal(creditIsHidden('netlify.app.example.com'), true);
+test('inserts nothing on non-Netlify hosts', () => {
+  for (const hostname of [
+    'ngamtheproject.github.io',
+    'netlify.app',
+    'evilnetlify.app',
+    'netlify.app.example.com',
+  ]) {
+    assert.deepEqual(insertedCredits(hostname), []);
+  }
 });

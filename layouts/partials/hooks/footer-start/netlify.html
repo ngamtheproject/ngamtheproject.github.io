@@ -1,8 +1,11 @@
-<div class="powered-by" style="text-align: center" hidden>
-  This site is powered by
-  <a href="https://www.netlify.com" target="_blank">Netlify</a>
-</div>
 <script>
-  document.currentScript.previousElementSibling.hidden =
-    !window.location.hostname.endsWith(".netlify.app");
+  if (window.location.hostname.endsWith(".netlify.app")) {
+    document.currentScript.insertAdjacentHTML(
+      "beforebegin",
+      `<div class="powered-by" style="text-align: center">
+        This site is powered by
+        <a href="https://www.netlify.com" target="_blank">Netlify</a>
+      </div>`,
+    );
+  }
 </script>
