@@ -1,0 +1,7 @@
+{{- define "main" -}}
+{{/* Local copy of the Kit landing layout: the page body goes into the Pagefind
+     search index (About, Contact), titled with the page title. */}}
+<div data-pagefind-body data-pagefind-meta="title:{{ .Title }}" style="display: contents">
+{{ partial "landing_page.html" . }}
+</div>
+{{- end -}}

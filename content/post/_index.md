@@ -2,10 +2,11 @@
 title: Bài viết gần đây
 
 # Listing view
-view: compact
+view: card
 
-# Optional banner image (relative to `assets/media/` folder).
-banner:
-  caption: ''
-  image: ''
+# Use the HugoBlox blog type (article structured data) for every post in this folder.
+cascade:
+  - target:
+      kind: page
+    type: blog
 ---

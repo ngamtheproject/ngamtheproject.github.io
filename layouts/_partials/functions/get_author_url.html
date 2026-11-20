@@ -1,0 +1,14 @@
+{{/*
+  Return the URL of an author's profile page, given the author slug
+  (the file name in data/authors/ and the folder in content/authors/).
+
+  The site keeps author pages at the taxonomy permalink /author/<title-slug>/
+  (hugo.yaml `permalinks.authors`), so the URL comes from the term page itself.
+  The Kit hard-codes /authors/<slug>/, which this site does not generate.
+  Returns "" when no author page exists.
+*/}}
+{{- $url := "" -}}
+{{- with site.GetPage (printf "/authors/%s" .) -}}
+  {{- $url = .RelPermalink -}}
+{{- end -}}
+{{- return $url -}}

@@ -1,0 +1,38 @@
+{{/* Gallery shortcode (ported from HugoBlox Bootstrap v5 for HugoBlox Kit, which has no inline gallery shortcode).
+
+     Parameters
+     ----------
+     album : default "gallery"
+         Album folder in `assets/media/albums/` to load images from.
+     order : default "asc"
+         Sort images by file name ascending (asc) or descending (desc).
+     resize_options : default "750x750"
+         Resize options passed to Hugo's `.Fit` for the thumbnails.
+
+     Captions come from the page's `gallery_item` front matter: a list of {album, image, caption}.
+     Clicking a thumbnail opens the full image in the baguetteBox lightbox (partial `lightbox`).
+*/}}
+{{- $album := (.Get "album") | default "gallery" -}}
+{{- $album_path := path.Join "media" "albums" $album "*" -}}
+{{- $sort_order := .Get "order" | default "asc" -}}
+{{- $resize_options := printf "%s webp" (.Get "resize_options" | default "750x750") -}}
+{{- $gallery_id := printf "gallery-%s" (anchorize $album) -}}
+
+{{- partial "lightbox" .Page -}}
+
+<div class="ngam-gallery not-prose" id="{{ $gallery_id }}">
+{{- range (sort (resources.Match $album_path) "Name" $sort_order) }}
+  {{- $image := .Fit $resize_options -}}
+  {{- $filename := path.Base .Name -}}
+  {{- $caption := "" -}}
+  {{- with $.Page.Params.gallery_item -}}
+    {{- range (where (where . "album" $album) "image" $filename) }}{{ $caption = .caption }}{{ end -}}
+  {{- end }}
+  <a class="ngam-gallery-item" href="{{ .RelPermalink }}"{{ with $caption }} data-caption="{{ . | markdownify | emojify | safeHTMLAttr }}"{{ end }}>
+    <img src="{{ $image.RelPermalink }}" loading="lazy" alt="{{ plainify $caption | default $filename }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+  </a>
+{{- else }}
+  {{- errorf "gallery: unable to load album %q in %s" $album_path .Page.File.Filename -}}
+{{- end }}
+</div>
+<script>window.addEventListener('load', function () { baguetteBox.run('#{{ $gallery_id }}'); });</script>

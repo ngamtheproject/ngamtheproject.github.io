@@ -1,0 +1,27 @@
+schema: hugoblox/author/v1
+slug: harleyybng
+is_owner: false
+name:
+  display: Nguyễn Lưu Bảo Ngọc
+  given: Ngọc
+  family: Nguyễn Lưu Bảo
+first_name: Ngọc
+role: Founder
+bio: Người sáng lập của Ngăm
+affiliations:
+- name: Ngăm
+  url: https://www.facebook.com/ngam.theproject
+links:
+- icon: brands/facebook
+  url: https://www.facebook.com/baongoc.nguyenluu.39
+- icon: brands/instagram
+  url: https://www.instagram.com/harleyybng
+interests:
+- Chạy deadline
+education:
+- degree: ''
+  institution: THPT chuyên Lê Hồng Phong
+  year: 2021-Nay
+email: ''
+user_groups:
+- Đồng sáng lập

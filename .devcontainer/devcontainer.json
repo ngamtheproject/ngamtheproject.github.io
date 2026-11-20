@@ -1,13 +1,22 @@
 {
-    "name": "Hugo",
-    "image": "mcr.microsoft.com/devcontainers/go:1.21",
-    "features": {
-        "ghcr.io/devcontainers/features/hugo:1": {
-            "version": "0.119.0",
-            "extended": true
-        }
-    },
-    "forwardPorts": [
-        1313
-    ]
+  "name": "Hugo",
+  "image": "ghcr.io/HugoBlox/hugo-blox-dev:hugo0.162.0",
+  "updateContentCommand": "npm ci --prefer-offline",
+  "postCreateCommand": "npm --version && hugo version",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ownable.ownable"
+      ]
+    }
+  },
+  "remoteUser": "vscode",
+  "forwardPorts": [
+    1313
+  ],
+  "portsAttributes": {
+    "1313": {
+      "label": "Hugo Server"
+    }
+  }
 }

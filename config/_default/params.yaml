@@ -1,123 +1,135 @@
-# SITE SETUP
-# Guide: https://wowchemy.com/docs/getting-started/
-# Documentation: https://wowchemy.com/docs/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# ══════════════════════════════════════════════════════════════════════════════
+# HUGO BLOX CONFIGURATION
+# Schema: hugoblox.com/schema/v2
+# Documentation: https://hugoblox.com/docs/
+# ══════════════════════════════════════════════════════════════════════════════
+hugoblox:
+  schema: "2.0"
 
-# Appearance
+  # ────────────────────────────────────────────────────────────────────────────
+  # IDENTITY
+  # Site-level branding (people profiles live in data/authors/)
+  # ────────────────────────────────────────────────────────────────────────────
+  identity:
+    name: "Ngăm"
+    organization: "Ngăm"
+    type: organization # person | organization | local_business
+    tagline: ""
+    description: "Charity Organization."
+    social:
+      twitter: ""
 
-appearance:
-  theme_day: ocean
-  theme_night: # minimal
-  font: native
-  font_size: L
+  # ────────────────────────────────────────────────────────────────────────────
+  # THEME
+  # ────────────────────────────────────────────────────────────────────────────
+  theme:
+    mode: system # light | dark | system
+    pack: "default"
+    colors:
+      primary: "indigo" # closest to the previous "ocean" theme colour #3f51b5
+      secondary: ""
+      neutral: ""
 
-# SEO
+  # ────────────────────────────────────────────────────────────────────────────
+  # TYPOGRAPHY
+  # ────────────────────────────────────────────────────────────────────────────
+  typography:
+    pack: "system" # native system fonts, as before
 
-marketing:
-  seo:
-    site_type: Organization
-    local_business_type: ''
-    org_name: 'Ngăm'
-    description: 'Charity Organization.'
-    twitter: ''
-  analytics:
-    google_analytics: 'G-74NLCD7XMJ'
-    baidu_tongji: ''
-    google_tag_manager: ''
-    microsoft_clarity: ''
-  verification:
-    google: ''
-    baidu: ''
-    bing: ''
+  # ────────────────────────────────────────────────────────────────────────────
+  # LAYOUT
+  # ────────────────────────────────────────────────────────────────────────────
+  layout:
+    radius: "md"
+    spacing: "comfortable"
+    avatar_shape: circle
 
-# Site header
-
-header:
-  navbar:
+  # ────────────────────────────────────────────────────────────────────────────
+  # HEADER
+  # ────────────────────────────────────────────────────────────────────────────
+  header:
     enable: true
-    align: r
-    show_logo: true
-    show_language: false
-    show_day_night: true
-    show_search: true
-    highlight_active_link: false
+    style: navbar
+    sticky: true
+    align: right
+    search: true
+    theme_toggle: true
+    theme_picker: false
+    language_switcher: false
+    cta:
+      enable: false
 
-# Site footer
+  # ────────────────────────────────────────────────────────────────────────────
+  # FOOTER
+  # ────────────────────────────────────────────────────────────────────────────
+  footer:
+    style: minimal
+    language_switcher: false
+    text: ""
 
-footer:
+  # ────────────────────────────────────────────────────────────────────────────
+  # COPYRIGHT
+  # ────────────────────────────────────────────────────────────────────────────
   copyright:
-    notice: '© {year} Ngăm. This work is licensed under {license}'
+    notice: "© {year} Ngăm. This work is licensed under {license}"
     license:
-      enable: true
+      type: cc
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
 
-# Localization
+  # ────────────────────────────────────────────────────────────────────────────
+  # CONTENT
+  # ────────────────────────────────────────────────────────────────────────────
+  content:
+    math:
+      enable: false
+    toc:
+      enable: true
+    reading_time:
+      enable: true
 
-locale:
-  date_format: '02/01/2006'
-  time_format: '3:04 PM'
-  address_format: en-us
+  # ────────────────────────────────────────────────────────────────────────────
+  # SEARCH (Pagefind index built after Hugo)
+  # ────────────────────────────────────────────────────────────────────────────
+  search:
+    enable: true
 
-# Site features
-
-features:
-  syntax_highlighter:
-    enable: false
-#    extra_languages:
-#      - r
-#      - latex
-  math:
-    enable: false
-  privacy_pack:
-    enable: false
-  repository:
-    url: 'https://github.com/ngamtheproject/ngamtheproject.github.io'
-    content_dir: content
-    branch: main
-  avatar:
-    gravatar: false
-    shape: circle
-  comment:
-    provider: 'giscus'
-    disqus:
-      shortname: ''
-      show_count: true
-    commento:
-      url: ''
+  # ────────────────────────────────────────────────────────────────────────────
+  # COMMENTS
+  # ────────────────────────────────────────────────────────────────────────────
+  comments:
+    enable: true
+    provider: giscus
     giscus:
-      repo: 'ngamtheproject/ngamtheproject.github.io'
-      repo_id: 'R_kgDOKSl_1A'
-      category: 'Announcements'
-      category_id: 'DIC_kwDOKSl_1M4CZj76'
+      repo: "ngamtheproject/ngamtheproject.github.io"
+      repo_id: "R_kgDOKSl_1A"
+      category: "Announcements"
+      category_id: "DIC_kwDOKSl_1M4CZj76"
       theme: light
       language_code: en
       mapping: pathname
-  search:
-    provider: wowchemy
-    algolia:
-      app_id: ''
-      api_key: ''
-      index_name: ''
-      show_logo: false
-  map:
-    provider: 'mapnik'
-    api_key: ''
-    zoom: 15
 
-# Extensions
+  # ────────────────────────────────────────────────────────────────────────────
+  # ANALYTICS
+  # ────────────────────────────────────────────────────────────────────────────
+  analytics:
+    google:
+      measurement_id: "G-74NLCD7XMJ"
 
-extensions:
-  decap_cms:
+  # ────────────────────────────────────────────────────────────────────────────
+  # REPOSITORY ("Edit this page" links)
+  # ────────────────────────────────────────────────────────────────────────────
+  repository:
+    enable: true
+    url: "https://github.com/ngamtheproject/ngamtheproject.github.io"
     branch: main
-    publish_mode: editorial_workflow
-    local_backend: false
-  academicons:
-    enable: false
+    content_dir: content
 
-# Citation style
-
-publications:
-  date_format: January 2006
-  citation_style: apa
+  # ────────────────────────────────────────────────────────────────────────────
+  # LOCALE
+  # ────────────────────────────────────────────────────────────────────────────
+  locale:
+    date_format: "02/01/2006"
+    time_format: "3:04 PM"
+    address_format: en-us

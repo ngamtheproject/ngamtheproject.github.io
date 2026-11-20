@@ -2,10 +2,11 @@
 title: Sự kiện đã tổ chức và sắp tới
 
 # Listing view
-view: compact
+view: card
 
-# Optional header image (relative to `assets/media/` folder).
-banner:
-  caption: ''
-  image: ''
+# Use the HugoBlox event layout for every event page in this folder.
+cascade:
+  - target:
+      kind: page
+    type: events
 ---

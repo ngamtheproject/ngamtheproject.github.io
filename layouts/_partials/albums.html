@@ -7,7 +7,7 @@
   {{ if .IsDir }}
     {{ $relativePath := printf "%s/%s" $root .Name }}
     {{ $name := replace $relativePath "assets/media/albums/" ""}}
-    <h{{print $level}} id={{ print $name }}>{{ println $name }}</h{{print $level}}>
+    <h{{ print $level }} id="{{ $name }}">{{ $name }}</h{{ print $level }}>
     {{ partial "album" (dict "gallery_dir" $relativePath) }}
     {{ partial "albums" (dict "root" $relativePath "level" (add $level 1)) }}
   {{ end }}

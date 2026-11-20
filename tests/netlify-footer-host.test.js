@@ -5,7 +5,7 @@ const test = require('node:test');
 const vm = require('node:vm');
 
 const template = fs.readFileSync(
-  path.join(__dirname, '..', 'layouts', 'partials', 'hooks', 'footer-start', 'netlify.html'),
+  path.join(__dirname, '..', 'layouts', '_partials', 'hooks', 'footer-start', 'netlify.html'),
   'utf8',
 );
 

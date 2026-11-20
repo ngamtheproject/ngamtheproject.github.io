@@ -1,19 +1,18 @@
 <script>
   function generateNestedTOC() {
     const toc = document.getElementById("TableOfContents");
-    const headings = document.querySelectorAll("h2, h3, h4, h5, h6");
+    // Only the album/video headings that follow the in-page TOC, not the site header or footer.
+    const headings = document.querySelectorAll(["h2", "h3", "h4", "h5", "h6"].map((h) => ".ngam-toc-inpage ~ " + h).join(", "));
 
     let currentLevel = 2;
     let currentUl = toc.querySelector("ul");
     headings.forEach((heading) => {
       const level = parseInt(heading.tagName.charAt(1));
       const li = document.createElement("li");
-      li.className = "nav-item";
 
       const link = document.createElement("a");
       link.href = `#${heading.id}`;
       link.textContent = heading.textContent;
-      link.className = "nav-link";
 
       li.appendChild(link);
 

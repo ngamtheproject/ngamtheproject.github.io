@@ -9,7 +9,9 @@
     {{ partial "videos" (dict "root" $relativePath "level" (add $level 1)) }}
   {{ else }}
     {{ $name := replace $relativePath "assets/media/videos/" ""}}
-    <h2 id={{ print $name }}>{{ println $name }}</h2>
-    {{ partial "video" (dict "videoURL" (replace $relativePath "assets" "")) }}
+    {{/* Publish the file through Hugo's asset pipeline so the page never depends on another page doing it. */}}
+    {{ $video := resources.Get (path.Clean (strings.TrimPrefix "assets/" $relativePath)) }}
+    <h2 id="{{ $name }}">{{ $name }}</h2>
+    {{ partial "video" (dict "videoURL" $video.RelPermalink) }}
   {{ end }}
 {{ end }}

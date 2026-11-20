@@ -1,10 +1,10 @@
 # Configuration of Hugo
-# Guide: https://wowchemy.com/docs/getting-started/
+# Guide: https://hugoblox.com/docs/
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Ngăm # Website name
-baseURL: 'https://ngamtheproject.github.io' # Website URL
+baseURL: 'https://ngamtheproject.github.io/' # Website URL
 
 ############################
 ## LANGUAGE
@@ -19,9 +19,12 @@ removePathAccents: true
 ## ADVANCED
 ############################
 
+build:
+  writeStats: true
 enableGitInfo: false
 summaryLength: 30
-paginate: 10
+pagination:
+  pagerSize: 10
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
@@ -33,12 +36,13 @@ permalinks:
   publication_types: '/publication-type/:slug/'
 disableAliases: true
 outputs:
-  home: [HTML, RSS, JSON, WebAppManifest]
+  home: [HTML, RSS, LLM, WebAppManifest]
   section: [HTML, RSS]
 imaging:
   resampleFilter: lanczos
   quality: 75
   anchor: smart
+  hint: picture
 timeout: 600000
 taxonomies:
   tag: tags
@@ -62,6 +66,7 @@ sitemap:
   _merge: deep
 
 cascade:
-  - _target:
+  - target:
       path: /**
-    commentable: true
+    params:
+      commentable: true

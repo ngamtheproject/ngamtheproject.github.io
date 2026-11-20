@@ -1,0 +1,23 @@
+schema: hugoblox/author/v1
+slug: ngam
+is_owner: true
+name:
+  display: Ngăm
+  given: Ngăm
+  family: ''
+first_name: Ngăm
+role: ''
+bio: Đủ nắng hoa sẽ nở<br> Đủ gió chong chóng sẽ quay<br> Đủ yêu thương hạnh phúc sẽ đong đầy...
+affiliations:
+- name: Ngăm
+  url: https://www.facebook.com/ngam.theproject
+links:
+- icon: envelope
+  url: mailto:ngam.theproject@gmail.com
+- icon: brands/facebook
+  url: https://www.facebook.com/ngam.theproject
+interests: []
+education: []
+email: ''
+user_groups:
+- Nhóm

@@ -1,0 +1,25 @@
+schema: hugoblox/author/v1
+slug: kimvnt
+is_owner: false
+name:
+  display: Vương Ngọc Thiên Kim
+  given: Kim
+  family: Vương Ngọc Thiên
+first_name: Kim
+role: "Bà chủ nợ và nhân viên đa cấp  \nCofounder  \nTài chính và đối ngoại\n"
+bio: Đồng sáng lập Ngăm
+affiliations:
+- name: Ngăm
+  url: https://www.facebook.com/ngam.theproject
+links:
+- icon: brands/facebook
+  url: https://www.facebook.com/kimm.mnh
+- icon: brands/instagram
+  url: https://www.instagram.com/kimm.mnh
+interests:
+- Đi đây đi đó
+- Ngắm
+education: []
+email: ''
+user_groups:
+- Đồng sáng lập

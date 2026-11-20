@@ -1,0 +1,22 @@
+{{/* Albums page: every folder under assets/media/albums/, newest first, with an in-page table of contents. */}}
+{{ partial "lightbox" .Page }}
+
+<details class="ngam-toc-inpage not-prose">
+  <summary>Mục Lục</summary>
+  <nav id="TableOfContents">
+    <ul>
+    </ul>
+  </nav>
+</details>
+{{ $root := "assets/media/albums" }}
+{{ $level := 2 }}
+
+{{ $albums := partial "albums" (dict "root" $root "level" $level) }}
+{{ $albums }}
+{{ partial "generate-toc" }}
+
+<script>
+window.addEventListener('load', function() {
+  baguetteBox.run('.gallery');
+});
+</script>

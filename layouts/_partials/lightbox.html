@@ -1,0 +1,7 @@
+{{/* Loads the baguetteBox.js lightbox once per page (used by the gallery and albums shortcodes).
+     Ref: https://github.com/feimosi/baguetteBox.js */}}
+{{- if not (.Store.Get "ngam_lightbox") -}}
+  {{- .Store.Set "ngam_lightbox" true -}}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" async></script>
+{{- end -}}

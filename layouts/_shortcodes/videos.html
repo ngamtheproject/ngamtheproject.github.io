@@ -1,0 +1,14 @@
+{{/* Videos page: every file under assets/media/videos/, newest first, with an in-page table of contents. */}}
+<details class="ngam-toc-inpage not-prose">
+  <summary>Mục Lục</summary>
+  <nav id="TableOfContents">
+    <ul>
+    </ul>
+  </nav>
+</details>
+{{ $root := "assets/media/videos/" }}{{/* Trailing slash kept: heading ids are "/YYYY/MM/DD/featured.mp4", as before. */}}
+{{ $level := 2 }}
+
+{{ $videos := partial "videos" (dict "root" $root "level" $level) }}
+{{ $videos }}
+{{ partial "generate-toc" }}
