@@ -1,14 +1,30 @@
-{{/* Videos page: every file under assets/media/videos/, newest first, with an in-page table of contents. */}}
-<details class="ngam-toc-inpage not-prose">
-  <summary>Mục Lục</summary>
-  <nav id="TableOfContents">
+{{- /*
+  Videos page: every MP4 under assets/media/videos/, newest first, at its
+  own path (/media/videos/YYYY/MM/DD/featured.mp4).
+*/ -}}
+{{- $videos := sort (resources.Match "media/videos/**.mp4") "Name" "desc" -}}
+<nav class="album-index" aria-label="Mục lục">
+  <details>
+    <summary>Mục Lục</summary>
     <ul>
+      {{- range $videos }}
+      {{- $id := strings.TrimPrefix "media/videos" (strings.TrimPrefix "/" .Name) }}
+      <li><a href="#{{ $id }}">{{ $id }}</a></li>
+      {{- end }}
     </ul>
-  </nav>
-</details>
-{{ $root := "assets/media/videos/" }}{{/* Trailing slash kept: heading ids are "/YYYY/MM/DD/featured.mp4", as before. */}}
-{{ $level := 2 }}
-
-{{ $videos := partial "videos" (dict "root" $root "level" $level) }}
-{{ $videos }}
-{{ partial "generate-toc" }}
+  </details>
+</nav>
+<div class="video-grid">
+  {{- range $videos }}
+  {{- $id := strings.TrimPrefix "media/videos" (strings.TrimPrefix "/" .Name) }}
+  <section class="video-item">
+    <h2 id="{{ $id }}">{{ $id }}</h2>
+    <figure class="video">
+      <video controls preload="metadata" playsinline>
+        <source src="{{ .RelPermalink }}" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video.
+      </video>
+    </figure>
+  </section>
+  {{- end }}
+</div>

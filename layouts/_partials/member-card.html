@@ -1,0 +1,11 @@
+{{- /* One team member. Context: the author term page. */ -}}
+<li class="member">
+  <a class="member-link" href="{{ .RelPermalink }}">
+    {{- with partial "media-image.html" (dict "path" .Params.avatar) -}}
+      {{- $a := .Fill "240x240 jpg Center" -}}
+      <img class="member-avatar" src="{{ $a.RelPermalink }}" width="120" height="120" loading="lazy" decoding="async" alt="">
+    {{- end -}}
+    <span class="member-name">{{ .Title }}</span>
+  </a>
+  {{- with .Params.role }}<span class="member-role">{{ . | $.Page.RenderString }}</span>{{ end -}}
+</li>

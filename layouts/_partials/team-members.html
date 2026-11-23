@@ -1,0 +1,18 @@
+{{- /*
+  Team members from content/authors/<id>/_index.md, grouped by `user_groups`.
+  Params: groups (list of group names, in display order).
+  Returns a slice of dict{name, members}; members sorted by first name.
+*/ -}}
+{{- $people := slice -}}
+{{- with site.GetPage "/authors" -}}
+  {{- $people = .Pages -}}
+{{- end -}}
+{{- $out := slice -}}
+{{- range .groups -}}
+  {{- $group := . -}}
+  {{- $members := where $people "Params.user_groups" "intersect" (slice $group) -}}
+  {{- with $members -}}
+    {{- $out = $out | append (dict "name" $group "members" (sort . "Params.first_name")) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $out -}}

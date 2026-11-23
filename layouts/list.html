@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="container page-list">
+  <header class="page-head">
+    <h1>{{ .Title }}</h1>
+    {{- with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  </header>
+  {{- $pager := .Paginate .Pages }}
+  {{- range $pager.Pages.GroupByDate "2006" }}
+  <section class="year-group" aria-labelledby="nam-{{ .Key }}">
+    <h2 class="year-label" id="nam-{{ .Key }}">{{ .Key }}</h2>
+    <div class="cards">
+      {{- range .Pages }}
+        {{ partial "post-card.html" . }}
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+  {{ partial "pagination.html" $pager }}
+</div>
+{{ end }}

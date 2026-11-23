@@ -1,0 +1,16 @@
+{{- $icon := resources.Get "media/icon.png" -}}
+{{- $icons := slice -}}
+{{- range slice 192 512 -}}
+  {{- $r := $icon.Resize (printf "%dx%d png" . .) -}}
+  {{- $icons = $icons | append (dict "src" $r.RelPermalink "sizes" (printf "%dx%d" . .) "type" "image/png") -}}
+{{- end -}}
+{{- dict
+  "name" site.Title
+  "short_name" site.Title
+  "lang" site.Language.LanguageCode
+  "theme_color" "#102360"
+  "background_color" "#fef4e6"
+  "display" "standalone"
+  "start_url" (printf "%s?utm_source=web_app_manifest" site.Home.RelPermalink)
+  "icons" $icons
+  | jsonify (dict "indent" "  ") -}}

@@ -1,0 +1,26 @@
+{{- /*
+  Video from the page bundle or assets/media/ (published at its own path,
+  e.g. /media/videos/2024/05/28/featured.mp4), or a remote URL.
+  Params: src, controls (yes|no, default yes), autoplay, loop, muted, poster.
+*/ -}}
+{{- $src := .Get "src" -}}
+{{- $url := $src -}}
+{{- if not (strings.HasPrefix $src "http") -}}
+  {{- with or (.Page.Resources.GetMatch $src) (resources.Get (path.Join "media" $src)) -}}
+    {{- $url = .RelPermalink -}}
+  {{- else -}}
+    {{- errorf "video: cannot find %q (page bundle or assets/media/) at %s" $src .Position -}}
+  {{- end -}}
+{{- end -}}
+{{- $yes := slice "yes" "true" -}}
+<figure class="video">
+  <video preload="metadata" playsinline
+    {{- if not (in (slice "no" "false") (.Get "controls")) }} controls{{ end }}
+    {{- if in $yes (.Get "autoplay") }} autoplay{{ end }}
+    {{- if in $yes (.Get "loop") }} loop{{ end }}
+    {{- if in $yes (.Get "muted") }} muted{{ end }}
+    {{- with .Get "poster" }} poster="{{ . }}"{{ end }}>
+    <source src="{{ $url }}" type="video/mp4">
+    Trình duyệt của bạn không hỗ trợ video.
+  </video>
+</figure>

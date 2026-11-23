@@ -1,9 +1,0 @@
-{{/* Get page summary with fallback priority: Params.summary > Params.description > Params.abstract > Summary */}}
-{{/* Local copy of the Kit function: the generated .Summary is reduced to plain
-     text, so a post that opens with a <video> shortcode does not put the video
-     markup into the JSON-LD description. HTML entities are kept, as before. */}}
-{{ $summary := .Params.summary | default .Params.description | default .Params.abstract }}
-{{ if not $summary }}
-  {{ $summary = .Summary | plainify | strings.TrimSpace | safeHTML }}
-{{ end }}
-{{ return $summary }}

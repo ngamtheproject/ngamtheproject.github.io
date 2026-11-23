@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="container page-list">
+  <header class="page-head">
+    {{- if eq .Data.Plural "authors" }}
+      {{- with partial "media-image.html" (dict "path" .Params.avatar) }}
+        {{- $a := .Fill "240x240 jpg Center" }}
+      <img class="member-avatar" src="{{ $a.RelPermalink }}" width="120" height="120" alt="">
+      {{- end }}
+    {{- end }}
+    <h1>{{ .Title }}</h1>
+    {{- with .Params.bio }}<p class="lead">{{ . | safeHTML }}</p>{{ end }}
+    {{- with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  </header>
+  {{- $pager := .Paginate .Pages }}
+  {{- with $pager.Pages }}
+  <div class="cards">
+    {{- range . }}{{ partial "post-card.html" . }}{{ end }}
+  </div>
+  {{- end }}
+  {{ partial "pagination.html" $pager }}
+</div>
+{{ end }}

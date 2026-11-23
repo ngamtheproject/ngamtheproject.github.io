@@ -1,8 +1,0 @@
-{{/* Head tags the Kit head leaves out. */}}
-{{/* Open Graph type: posts are articles, every other page is a website. */}}
-<meta property="og:type" content="{{ if and .IsPage (eq .Section "post") }}article{{ else }}website{{ end }}" />
-{{/* Web app manifest (the home page's WebAppManifest output). */}}
-{{ with site.Home.OutputFormats.Get "webappmanifest" }}
-<link rel="manifest" href="{{ .RelPermalink }}" />
-{{ end }}
-<meta name="theme-color" content="#3f51b5" />

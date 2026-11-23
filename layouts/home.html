@@ -1,0 +1,114 @@
+{{ define "main" }}
+{{- $p := .Params -}}
+{{ partial "hero.html" (dict "page" . "hero" $p.hero "years" site.Params.years) }}
+
+{{- with site.GetPage "/event" }}
+<section class="band band-events" aria-labelledby="events-title">
+  <div class="container">
+    <header class="section-head">
+      <h2 id="events-title">{{ $p.events.title | default .Title }}</h2>
+      {{- with $p.events.text }}<p>{{ . }}</p>{{ end }}
+    </header>
+    <div class="campaigns">
+      {{- range sort .Pages "Params.event_start" "asc" }}
+        {{ partial "campaign-card.html" . }}
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end }}
+
+{{- with site.GetPage "/post" }}
+{{- $section := . }}
+{{- $perYear := $p.posts.perYear | default 6 }}
+{{- /* Templates cannot read pagination.pagerSize; keep params.pagerSize equal to it. */}}
+{{- $pagerSize := site.Params.pagerSize | default 10 }}
+{{- $seen := 0 }}
+<section class="band band-journal" aria-labelledby="journal-title">
+  <div class="container">
+    <header class="section-head">
+      <h2 id="journal-title">{{ $p.posts.title | default .Title }}</h2>
+      {{- with $p.posts.text }}<p>{{ . }}</p>{{ end }}
+    </header>
+    <ol class="timeline">
+      {{- range .Pages.GroupByDate "2006" }}
+      <li class="timeline-year">
+        <h3 class="year-label">{{ .Key }}</h3>
+        <div class="cards">
+          {{- range first $perYear .Pages }}
+            {{ partial "post-card.html" . }}
+          {{- end }}
+        </div>
+        {{- $more := sub (len .Pages) $perYear }}
+        {{- if gt $more 0 }}
+          {{- /* Link to the list page that holds the first post not shown here. */}}
+          {{- $page := add (div (add $seen $perYear) $pagerSize) 1 }}
+          {{- $href := $section.RelPermalink }}
+          {{- if gt $page 1 }}{{ $href = printf "%spage/%d/" $section.RelPermalink $page }}{{ end }}
+        <p class="more"><a href="{{ $href }}">Xem thêm {{ $more }} bài viết năm {{ .Key }} →</a></p>
+        {{- end }}
+        {{- $seen = add $seen (len .Pages) }}
+      </li>
+      {{- end }}
+    </ol>
+    <p class="section-cta"><a class="button" href="{{ .RelPermalink }}">Tất cả bài viết</a></p>
+  </div>
+</section>
+{{- end }}
+
+{{- with $p.albums }}
+<section class="band band-albums" aria-labelledby="albums-title">
+  <div class="container">
+    <header class="section-head">
+      <h2 id="albums-title">{{ .title }}</h2>
+      {{- with .text }}<p>{{ . }}</p>{{ end }}
+    </header>
+  </div>
+  <div class="album-strip">
+    {{- range .photos }}
+      {{- with partial "media-image.html" (dict "page" $ "path" .) }}
+      <a class="album-strip-item" href="{{ (site.GetPage "/albums").RelPermalink }}">
+        {{- partial "picture.html" (dict "img" . "alt" "" "sizes" "(max-width: 600px) 60vw, 300px") -}}
+      </a>
+      {{- else }}
+        {{- errorf "home: album photo %q not found" . }}
+      {{- end }}
+    {{- end }}
+  </div>
+  <div class="container">
+    <p class="section-cta"><a class="button" href="{{ (site.GetPage "/albums").RelPermalink }}">Xem tất cả albums</a></p>
+  </div>
+</section>
+{{- end }}
+
+<section class="band band-team" aria-labelledby="team-title">
+  <div class="container team-contact">
+    {{- with site.GetPage "/about" }}
+    <div class="team-teaser">
+      <h2 id="team-title">{{ $p.team.title | default "Thành viên" }}</h2>
+      <ul class="members members-compact">
+        {{- range partial "team-members.html" (dict "groups" .Params.team.groups) }}
+          {{- range .members }}{{ partial "member-card.html" . }}{{ end }}
+        {{- end }}
+      </ul>
+      <p><a href="{{ .RelPermalink }}">{{ .Title }} →</a></p>
+    </div>
+    {{- end }}
+    {{- with site.GetPage "/contact" }}
+    {{- $c := .Params }}
+    <div class="contact-teaser">
+      <h2>{{ $p.contact.title | default .Title }}</h2>
+      {{- with $p.contact.text }}<p>{{ . }}</p>{{ end }}
+      <ul class="contact-list">
+        <li><span>Email</span> <a href="mailto:{{ $c.email }}">{{ $c.email }}</a></li>
+        <li><span>Điện thoại</span> <a href="tel:{{ site.Params.contact.phone }}">{{ $c.phone }}</a></li>
+        {{- range $c.social }}
+        <li><span>{{ .name }}</span> <a href="{{ .url }}" target="_blank" rel="noopener">{{ .url }}</a></li>
+        {{- end }}
+      </ul>
+      <p><a href="{{ .RelPermalink }}">{{ .Title }} →</a></p>
+    </div>
+    {{- end }}
+  </div>
+</section>
+{{ end }}

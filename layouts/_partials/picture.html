@@ -1,0 +1,40 @@
+{{- /*
+  Responsive <img> from an image resource: one derivative per width in
+  site.Params.imageWidths (never wider than the original), JPEG by default.
+
+  Params (dict):
+    img     image resource (required)
+    alt     alt text
+    sizes   sizes attribute (default: full column width)
+    class   class on the <img>
+    eager   true for above-the-fold images (no lazy loading, high priority)
+    link    true to wrap the image in a link to the largest derivative
+
+  Never call .RelPermalink (or .Permalink) on the original, and never inside
+  `cond`, which evaluates both branches: either publishes the original file.
+*/ -}}
+{{- $img := .img -}}
+{{- $sizes := .sizes | default "(max-width: 760px) 100vw, 760px" -}}
+{{- $format := site.Params.imageFormat | default "jpg" -}}
+{{- $set := slice -}}
+{{- $small := "" -}}
+{{- $medium := "" -}}
+{{- $large := "" -}}
+{{- if and (eq $img.ResourceType "image") (ne $img.MediaType.SubType "gif") -}}
+  {{- range site.Params.imageWidths -}}
+    {{- $w := . -}}
+    {{- if lt $img.Width $w }}{{ $w = $img.Width }}{{ end -}}
+    {{- $r := $img.Process (printf "resize %dx %s" $w $format) -}}
+    {{- $set = $set | append (printf "%s %dw" $r.RelPermalink $r.Width) -}}
+    {{- if not $small }}{{ $small = $r }}{{ else if not $medium }}{{ $medium = $r }}{{ end -}}
+    {{- $large = $r -}}
+  {{- end -}}
+{{- else -}}
+  {{- errorf "picture: %q cannot be processed as an image" $img.Name -}}
+{{- end -}}
+{{- $src := $medium | default $small -}}
+{{- if .link }}<a class="picture-link" href="{{ $large.RelPermalink }}">{{ end -}}
+<img src="{{ $src.RelPermalink }}" srcset="{{ delimit (uniq $set) ", " }}" sizes="{{ $sizes }}" width="{{ $src.Width }}" height="{{ $src.Height }}"
+  {{- with .class }} class="{{ . }}"{{ end }}
+  {{- if .eager }} fetchpriority="high"{{ else }} loading="lazy"{{ end }} decoding="async" alt="{{ .alt }}">
+{{- if .link }}</a>{{ end -}}

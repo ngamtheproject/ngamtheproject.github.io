@@ -1,52 +1,12 @@
-{{/* Local copy of the Kit 404 page with a search box added and side padding on the content wrapper (px-4, sm:px-6) so phones keep a margin. */}}
-{{- define "main" -}}
-{{/* Exclude 404 page from search indexing */}}
-<div data-pagefind-ignore class="flex flex-col justify-center">
-  <article class="container mx-auto px-4 sm:px-6 prose prose-slate lg:prose-xl dark:prose-invert">
-    <h1 class="lg:text-6xl">{{ i18n "page_not_found" }}</h1>
-
-    {{/* Search box, as the site's 404 page had before. Submitting opens the
-         site search (Pagefind modal) with the typed query. */}}
-    {{ if site.Params.hugoblox.search.enable }}
-    <form id="search-404" class="not-prose flex items-center gap-2 mb-6" role="search">
-      <input name="q" type="search" placeholder="{{ i18n "search_placeholder" | default "Tìm kiếm..." }}"
-             aria-label="{{ i18n "search_placeholder" | default "Tìm kiếm..." }}"
-             autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false"
-             class="w-full min-w-0 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 py-2 text-base text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500">
-    </form>
-    <script>
-      document.getElementById("search-404").addEventListener("submit", function (e) {
-        e.preventDefault();
-        var q = this.elements.q.value;
-        if (!(window.Alpine && Alpine.store("search"))) return;
-        Alpine.store("search").open = true;
-        setTimeout(function () {
-          var input = document.querySelector('[x-ref="searchInput"]');
-          if (input) {
-            input.value = q;
-            input.dispatchEvent(new Event("input"));
-          }
-        }, 100);
-      });
-    </script>
-    {{ end }}
-
-    {{/* Suggest recently published pages to the user. */}}
-
-    <p>{{ i18n "404_recommendations" }}</p>
-
-    {{ $query := where (where (where (where site.Pages.ByDate.Reverse "Title" "!=" "") "Kind" "in" (slice "page" "section")) "Params.private" "!=" true) "Permalink" "!=" "" }}
-    {{ $count := len $query }}
-    {{ if gt $count 0 }}
-    <h2>{{ i18n "user_profile_latest" }}</h2>
-    <ul>
-      {{ range first 10 $query }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-      {{ end }}
-    </ul>
-    {{ end }}
-
-  </article>
+{{ define "main" }}
+<div class="container-narrow page-404">
+  <h1>Không tìm thấy trang</h1>
+  <p>Trang bạn tìm không tồn tại hoặc đã được chuyển đi. Bạn có thể xem những bài viết gần đây:</p>
+  <ul>
+    {{- range first 10 (where site.RegularPages "Section" "post") }}
+    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+    {{- end }}
+  </ul>
+  <p><a class="button" href="{{ site.Home.RelPermalink }}">Về trang chủ</a></p>
 </div>
-
-{{- end -}}
+{{ end }}

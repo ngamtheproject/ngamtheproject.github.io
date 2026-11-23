@@ -1,0 +1,9 @@
+{{- /* Event date range as dd/mm/yyyy (– dd/mm/yyyy). Context: the event page. */ -}}
+{{- with .Params.event_start -}}
+  {{- $start := time.AsTime . -}}
+  <time datetime="{{ $start.Format "2006-01-02" }}">{{ $start.Format "02/01/2006" }}</time>
+  {{- with $.Params.event_end -}}
+    {{- $end := time.AsTime . -}}
+    {{- if ne ($end.Format "2006-01-02") ($start.Format "2006-01-02") }} – <time datetime="{{ $end.Format "2006-01-02" }}">{{ $end.Format "02/01/2006" }}</time>{{ end -}}
+  {{- end -}}
+{{- end -}}

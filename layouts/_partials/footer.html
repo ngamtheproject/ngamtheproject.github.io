@@ -1,0 +1,23 @@
+{{- $c := site.Params.contact -}}
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-contact">
+      <p>Mọi thông tin chi tiết xin vui lòng liên hệ:</p>
+      <ul>
+        <li>Facebook: <a href="{{ $c.facebook }}" target="_blank" rel="noopener">{{ $c.facebook }}</a></li>
+        <li>Instagram: <a href="{{ $c.instagram }}" target="_blank" rel="noopener">{{ $c.instagram }}</a></li>
+        <li>Email: <a href="mailto:{{ $c.email }}">{{ $c.email }}</a></li>
+        <li>Hotline: <a href="tel:{{ $c.phone }}">{{ $c.phoneLabel }}</a> ({{ $c.phoneOwner }})</li>
+      </ul>
+    </div>
+    <div class="footer-meta">
+      {{- with site.Params.creator }}
+      <p class="footer-credit">Made by <a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a> with ❤️</p>
+      {{- end }}
+      {{ partial "netlify-credit.html" . }}
+      {{- with site.Params.copyright }}
+      <p class="footer-credit">© {{ now.Year }} {{ .holder }}. This work is licensed under <a href="{{ .license.url }}" rel="noopener noreferrer license" target="_blank">{{ .license.name }}</a></p>
+      {{- end }}
+    </div>
+  </div>
+</footer>

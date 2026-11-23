@@ -1,0 +1,17 @@
+{{- /* Large campaign card for an event (Toả, Nắng). Context: the event page. */ -}}
+{{- $img := partial "page-image.html" . -}}
+<article class="campaign">
+  <a class="campaign-link" href="{{ .RelPermalink }}">
+    {{- with $img }}
+    <div class="campaign-media">
+      {{- partial "picture.html" (dict "img" . "alt" "" "sizes" "(max-width: 760px) 100vw, 560px") -}}
+    </div>
+    {{- end }}
+    <div class="campaign-body">
+      <p class="campaign-name">{{ .Params.event_name | default .LinkTitle }}</p>
+      <h3 class="campaign-title">{{ .LinkTitle }}</h3>
+      <p class="campaign-date">{{ partial "event-date.html" . }}</p>
+      {{- with .Params.location }}<p class="campaign-place">{{ . }}</p>{{ end }}
+    </div>
+  </a>
+</article>

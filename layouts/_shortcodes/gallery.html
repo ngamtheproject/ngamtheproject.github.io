@@ -1,38 +1,20 @@
-{{/* Gallery shortcode (ported from HugoBlox Bootstrap v5 for HugoBlox Kit, which has no inline gallery shortcode).
-
-     Parameters
-     ----------
-     album : default "gallery"
-         Album folder in `assets/media/albums/` to load images from.
-     order : default "asc"
-         Sort images by file name ascending (asc) or descending (desc).
-     resize_options : default "750x750"
-         Resize options passed to Hugo's `.Fit` for the thumbnails.
-
-     Captions come from the page's `gallery_item` front matter: a list of {album, image, caption}.
-     Clicking a thumbnail opens the full image in the baguetteBox lightbox (partial `lightbox`).
-*/}}
-{{- $album := (.Get "album") | default "gallery" -}}
-{{- $album_path := path.Join "media" "albums" $album "*" -}}
-{{- $sort_order := .Get "order" | default "asc" -}}
-{{- $resize_options := printf "%s webp" (.Get "resize_options" | default "750x750") -}}
-{{- $gallery_id := printf "gallery-%s" (anchorize $album) -}}
-
-{{- partial "lightbox" .Page -}}
-
-<div class="ngam-gallery not-prose" id="{{ $gallery_id }}">
-{{- range (sort (resources.Match $album_path) "Name" $sort_order) }}
-  {{- $image := .Fit $resize_options -}}
-  {{- $filename := path.Base .Name -}}
-  {{- $caption := "" -}}
-  {{- with $.Page.Params.gallery_item -}}
-    {{- range (where (where . "album" $album) "image" $filename) }}{{ $caption = .caption }}{{ end -}}
+{{- /*
+  Gallery: every image in assets/media/albums/<album>/.
+  Params: album (default "gallery"), order (asc|desc, by file name).
+  Captions come from the page's `gallery_item` front matter: a list of
+  {album, image, caption}.
+*/ -}}
+{{- $album := .Get "album" | default "gallery" -}}
+{{- $order := .Get "order" | default "asc" -}}
+{{- $images := resources.Match (path.Join "media/albums" $album "*") -}}
+{{- if not $images }}{{ errorf "gallery: album %q is empty or missing at %s" $album .Position }}{{ end -}}
+<div class="gallery" id="gallery-{{ anchorize $album }}">
+  {{- range sort $images "Name" $order }}
+    {{- $file := path.Base .Name -}}
+    {{- $caption := "" -}}
+    {{- range where (where ($.Page.Params.gallery_item | default slice) "album" $album) "image" $file }}{{ $caption = .caption }}{{ end }}
+  <figure class="gallery-item"{{ with $caption }} data-caption="{{ . | markdownify | emojify }}"{{ end }}>
+    {{- partial "picture.html" (dict "img" . "alt" (plainify $caption | strings.Truncate 120) "sizes" "(max-width: 600px) 50vw, 250px" "class" "gallery-image" "link" true) -}}
+  </figure>
   {{- end }}
-  <a class="ngam-gallery-item" href="{{ .RelPermalink }}"{{ with $caption }} data-caption="{{ . | markdownify | emojify | safeHTMLAttr }}"{{ end }}>
-    <img src="{{ $image.RelPermalink }}" loading="lazy" alt="{{ plainify $caption | default $filename }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
-  </a>
-{{- else }}
-  {{- errorf "gallery: unable to load album %q in %s" $album_path .Page.File.Filename -}}
-{{- end }}
 </div>
-<script>window.addEventListener('load', function () { baguetteBox.run('#{{ $gallery_id }}'); });</script>

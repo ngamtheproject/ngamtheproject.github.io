@@ -1,0 +1,15 @@
+{{- /*
+  Finds an image by path: first in the page bundle, then in assets/media/.
+  Params (dict): page, path. Returns the resource, or nil when not found.
+*/ -}}
+{{- $found := "" -}}
+{{- with .path -}}
+  {{- $path := strings.TrimPrefix "/" . -}}
+  {{- with $.page -}}
+    {{- $found = .Resources.GetMatch $path -}}
+  {{- end -}}
+  {{- if not $found -}}
+    {{- $found = resources.Get (path.Join "media" $path) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $found -}}

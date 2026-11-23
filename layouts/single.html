@@ -1,0 +1,45 @@
+{{ define "main" }}
+{{- $img := partial "page-image.html" . }}
+{{- $isEvent := isset .Params "event_start" }}
+<article class="article">
+  <header class="article-head container-narrow">
+    {{- if $isEvent }}
+    <p class="article-kicker">{{ .Params.event_name }}</p>
+    {{- end }}
+    <h1>{{ .Title }}</h1>
+    <p class="article-meta">
+      {{- if $isEvent }}
+      {{ partial "event-date.html" . }}{{ with .Params.location }} · {{ . }}{{ end }}
+      {{- else if not .Date.IsZero }}
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02/01/2006" }}</time>
+      {{- end }}
+    </p>
+    {{- with .Params.event_url }}
+    <p><a class="button" href="{{ . }}" target="_blank" rel="noopener">Xem trên Facebook</a></p>
+    {{- end }}
+  </header>
+  {{- if and $img (not .Params.image.preview_only) }}
+  <figure class="article-cover">
+    {{ partial "picture.html" (dict "img" $img "alt" "" "sizes" "(max-width: 1200px) 100vw, 1200px" "eager" true) }}
+  </figure>
+  {{- end }}
+  <div class="prose container-narrow">
+    {{ .Content }}
+  </div>
+  <footer class="article-foot container-narrow">
+    {{- with .GetTerms "tags" }}
+    <ul class="tags" aria-label="Từ khoá">
+      {{- range . }}<li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>{{ end }}
+    </ul>
+    {{- end }}
+    {{- if eq .Section "post" }}
+    <nav class="post-nav" aria-label="Bài viết khác">
+      {{- /* The section is sorted newest first: NextInSection is the newer post. */}}
+      {{- with .PrevInSection }}<a class="post-nav-prev" href="{{ .RelPermalink }}"><span>← Bài trước</span>{{ .LinkTitle }}</a>{{ end }}
+      {{- with .NextInSection }}<a class="post-nav-next" href="{{ .RelPermalink }}"><span>Bài sau →</span>{{ .LinkTitle }}</a>{{ end }}
+    </nav>
+    {{- end }}
+    {{ partial "comments.html" . }}
+  </footer>
+</article>
+{{ end }}

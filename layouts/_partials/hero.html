@@ -1,0 +1,20 @@
+{{- /*
+  Full-width photo with a navy overlay. Params (dict):
+    page   the page (for RenderString and bundle lookups)
+    hero   front matter map: title, text, image, alt
+    years  optional text shown after the title
+*/ -}}
+{{- $hero := .hero -}}
+{{- $img := partial "media-image.html" (dict "page" .page "path" $hero.image) -}}
+{{- if and $hero.image (not $img) }}{{ errorf "hero: image %q not found for %s" $hero.image .page.Path }}{{ end -}}
+<section class="hero">
+  {{- with $img }}
+  {{ partial "picture.html" (dict "img" . "alt" ($hero.alt | default "") "sizes" "100vw" "class" "hero-image" "eager" true) }}
+  {{- end }}
+  <div class="hero-content">
+    <h1 class="hero-title">{{ $hero.title }}{{ with .years }} <span class="hero-sep" aria-hidden="true">·</span> <span class="hero-years">{{ . }}</span>{{ end }}</h1>
+    {{- with $hero.text }}
+    <p class="hero-text">{{ . | $.page.RenderString }}</p>
+    {{- end }}
+  </div>
+</section>

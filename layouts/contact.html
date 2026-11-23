@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{- $p := .Params }}
+<div class="container-narrow page-contact">
+  <h1>{{ .Title }}</h1>
+  {{- with $p.text }}<p>{{ . }}</p>{{ end }}
+  <ul class="contact-list">
+    {{- with $p.email }}<li><span>Email</span> <a href="mailto:{{ . }}">{{ . }}</a></li>{{ end }}
+    {{- with $p.phone }}<li><span>Điện thoại</span> <a href="tel:{{ site.Params.contact.phone }}">{{ . }}</a></li>{{ end }}
+    {{- with $p.address }}<li><span>Địa chỉ</span> {{ delimit . ", " }}</li>{{ end }}
+    {{- with $p.office_hours }}<li><span>Giờ làm việc</span> {{ delimit . ", " }}</li>{{ end }}
+    {{- range $p.social }}<li><span>{{ .name }}</span> <a href="{{ .url }}" target="_blank" rel="noopener">{{ .url }}</a></li>{{ end }}
+  </ul>
+  {{- with $p.map_url }}<p><a class="button" href="{{ . }}" target="_blank" rel="noopener">Xem bản đồ</a></p>{{ end }}
+</div>
+{{ end }}

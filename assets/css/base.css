@@ -1,0 +1,99 @@
+/* Tokens, reset and typography.
+   Colours are sampled from the pinwheel logo (assets/media/logo.png):
+   navy #102360, brick #a22318, ochre #dd9134, cream #fef4e6.
+   light-dark() picks the light or dark value from color-scheme, which the
+   theme toggle sets through [data-theme]. */
+
+:root {
+  color-scheme: light dark;
+
+  --navy: #102360;
+  --brick: #a22318;
+  --ochre: #dd9134;
+  --cream: #fef4e6;
+
+  --bg: light-dark(var(--cream), #0b1838);
+  --surface: light-dark(#fffaf2, #12224f);
+  --band: light-dark(#f6e3c2, #0e1d45);
+  --text: light-dark(var(--navy), var(--cream));
+  --muted: light-dark(#4a5578, #c3cbe0);
+  --link: light-dark(var(--brick), #f4a487);
+  --line: light-dark(rgb(16 35 96 / 0.14), rgb(254 244 230 / 0.16));
+  --current-bg: light-dark(var(--navy), var(--ochre));
+  --current-text: light-dark(var(--cream), var(--navy));
+  --button-bg: var(--brick);
+  --button-text: var(--cream);
+  --header-bg: light-dark(rgb(254 244 230 / 0.94), rgb(11 24 56 / 0.94));
+
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --radius: 14px;
+  --shadow-color: light-dark(rgb(16 35 96 / 0.1), rgb(0 0 0 / 0.35));
+  --shadow: 0 1px 2px var(--shadow-color), 0 8px 24px var(--shadow-color);
+  --wide: 1180px;
+  --narrow: 720px;
+  --gutter: clamp(1rem, 4vw, 2rem);
+}
+
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+main { flex: 1; }
+
+img, video, iframe { max-width: 100%; }
+img { height: auto; display: block; }
+
+h1, h2, h3 {
+  line-height: 1.25;
+  margin: 0 0 0.5em;
+  text-wrap: balance;
+}
+h1 { font-size: clamp(1.9rem, 4.5vw, 2.75rem); }
+h2 { font-size: clamp(1.45rem, 3vw, 1.9rem); }
+h3 { font-size: 1.2rem; }
+
+p { margin: 0 0 1em; }
+
+a { color: var(--link); text-underline-offset: 0.18em; }
+a:hover { text-decoration-thickness: 2px; }
+
+:focus-visible {
+  outline: 3px solid var(--ochre);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  background: var(--navy);
+  color: var(--cream);
+  border-radius: 8px;
+}
+.skip-link:focus { top: 1rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; }
+}

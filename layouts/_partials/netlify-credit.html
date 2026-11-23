@@ -1,0 +1,11 @@
+<script>
+  if (window.location.hostname.endsWith(".netlify.app")) {
+    document.currentScript.insertAdjacentHTML(
+      "beforebegin",
+      `<p class="footer-credit">
+        This site is powered by
+        <a href="https://www.netlify.com" target="_blank" rel="noopener">Netlify</a>
+      </p>`,
+    );
+  }
+</script>

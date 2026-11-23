@@ -1,0 +1,10 @@
+{{- /*
+  The cover image of a page: `image.filename` in front matter (page bundle or
+  assets/media/), else a bundle file named featured.*. Returns nil when the
+  page has neither.
+*/ -}}
+{{- $img := partial "media-image.html" (dict "page" . "path" .Params.image.filename) -}}
+{{- if not $img -}}
+  {{- $img = .Resources.GetMatch "featured.*" -}}
+{{- end -}}
+{{- return $img -}}

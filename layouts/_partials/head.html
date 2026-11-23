@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{- $title := site.Title -}}
+{{- if not .IsHome }}{{ $title = printf "%s | %s" .Title site.Title }}{{ end }}
+<title>{{ $title }}</title>
+{{- $desc := site.Params.description -}}
+{{- if .IsPage }}{{ $desc = .Summary | plainify | strings.Truncate 160 | default $desc }}{{ end }}
+<meta name="description" content="{{ $desc }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:type" content="{{ if and .IsPage (eq .Section "post") }}article{{ else }}website{{ end }}">
+{{- with partial "page-image.html" . }}
+  {{- $w := 1200 }}{{ if lt .Width $w }}{{ $w = .Width }}{{ end }}
+  {{- $og := .Process (printf "resize %dx %s" $w (site.Params.imageFormat | default "jpg")) }}
+<meta property="og:image" content="{{ $og.Permalink }}">
+{{- end }}
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fef4e6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b1838" media="(prefers-color-scheme: dark)">
+{{- /* Apply the saved theme before first paint, so the page does not flash. */}}
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+{{- $css := slice (resources.Get "css/base.css") (resources.Get "css/layout.css") (resources.Get "css/components.css") | resources.Concat "css/site.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{- with resources.Get "media/icon.png" }}
+<link rel="icon" type="image/png" href="{{ (.Resize "32x32 png").RelPermalink }}">
+<link rel="apple-touch-icon" href="{{ (.Resize "180x180 png").RelPermalink }}">
+{{- end }}
+{{- with site.Home.OutputFormats.Get "webappmanifest" }}
+<link rel="manifest" href="{{ .RelPermalink }}">
+{{- end }}
+{{- with site.Home.OutputFormats.Get "rss" }}
+<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ site.Title }}">
+{{- end }}
+{{- partial "analytics.html" . }}

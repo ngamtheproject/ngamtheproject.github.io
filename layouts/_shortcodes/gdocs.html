@@ -1,10 +1,4 @@
-{{/* Google Docs / Drive embed shortcode (ported from HugoBlox Bootstrap v5 for HugoBlox Kit).
-
-     Parameters
-     ----------
-     src : str
-         Google Docs or Drive preview URL to embed.
-*/}}
-<div class="ngam-embed not-prose">
-  <iframe src="{{ .Get "src" }}" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" loading="lazy"></iframe>
+{{- /* Google Docs / Drive embed. Params: src (preview URL). */ -}}
+<div class="embed">
+  <iframe src="{{ .Get "src" }}" width="960" height="569" loading="lazy" allowfullscreen title="Google Docs"></iframe>
 </div>

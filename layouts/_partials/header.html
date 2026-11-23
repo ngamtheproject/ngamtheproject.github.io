@@ -1,0 +1,27 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="{{ site.Home.RelPermalink }}">
+      {{- with resources.Get "media/logo.png" }}
+        {{- $logo := .Resize "96x jpg" }}
+      <img class="brand-logo" src="{{ $logo.RelPermalink }}" width="40" height="40" alt="">
+      {{- end }}
+      <span class="brand-name">{{ site.Title }}</span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Menu chính">
+      <ul>
+        {{- range site.Menus.main }}
+        <li><a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button theme-toggle" type="button" aria-label="Giao diện sáng/tối" title="Giao diện sáng/tối">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+      </button>
+      <button class="icon-button menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Mở menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
