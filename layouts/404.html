@@ -1,7 +1,12 @@
 {{ define "main" }}
 <div class="container-narrow page-404">
   <h1>Không tìm thấy trang</h1>
-  <p>Trang bạn tìm không tồn tại hoặc đã được chuyển đi. Bạn có thể xem những bài viết gần đây:</p>
+  <p>Trang bạn tìm không tồn tại hoặc đã được chuyển đi. Bạn có thể tìm kiếm:</p>
+  <form id="search-404" class="search-inline" role="search">
+    <input name="q" type="search" placeholder="Tìm kiếm..." aria-label="Tìm kiếm" autocomplete="off">
+    <button class="button" type="submit">Tìm</button>
+  </form>
+  <p>Hoặc xem những bài viết gần đây:</p>
   <ul>
     {{- range first 10 (where site.RegularPages "Section" "post") }}
     <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>

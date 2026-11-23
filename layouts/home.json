@@ -1,0 +1,17 @@
+{{- /* Search index for assets/js/search.js: every regular page with text.
+     .Plain and strings.Truncate both HTML-escape, so the text is unescaped twice. */ -}}
+{{- $sections := dict "post" "Bài viết" "event" "Sự kiện" "albums" "Albums" "videos" "Videos" "about" "Giới thiệu" "contact" "Liên hệ" -}}
+{{- $out := slice -}}
+{{- range site.RegularPages -}}
+  {{- $item := dict
+    "title" .Title
+    "url" .RelPermalink
+    "section" (index $sections .Section | default .Section)
+    "content" (replace .Plain "Trình duyệt của bạn không hỗ trợ video." "" | strings.Truncate 2000 | htmlUnescape | htmlUnescape | strings.TrimSpace)
+  -}}
+  {{- if not .Date.IsZero -}}
+    {{- $item = merge $item (dict "date" (.Date.Format "2006-01-02") "dateText" (.Date.Format "02/01/2006")) -}}
+  {{- end -}}
+  {{- $out = $out | append $item -}}
+{{- end -}}
+{{- $out | jsonify -}}

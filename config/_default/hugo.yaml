@@ -47,7 +47,7 @@ outputFormats:
     notAlternative: true
 
 outputs:
-  home: [HTML, RSS, WebAppManifest]
+  home: [HTML, RSS, JSON, WebAppManifest]
   section: [HTML, RSS]
 
 imaging:

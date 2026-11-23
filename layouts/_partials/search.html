@@ -1,0 +1,12 @@
+{{- with site.Home.OutputFormats.Get "json" }}
+<dialog class="search" id="search" data-index="{{ .RelPermalink }}" aria-label="Tìm kiếm">
+  <div class="search-head">
+    <input type="search" placeholder="Tìm kiếm..." aria-label="Tìm kiếm" autocomplete="off" spellcheck="false">
+    <button type="button" class="icon-button search-close" aria-label="Đóng">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <p class="search-status" role="status"></p>
+  <ol class="search-results"></ol>
+</dialog>
+{{- end }}
