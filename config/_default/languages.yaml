@@ -1,22 +1,3 @@
-# Languages
-#   Create a section for each of your site's languages.
-#   Documentation: https://hugoblox.com/docs/
-
-# Default language
 vi:
-  locale: vi-vn
-  # Uncomment for multi-lingual sites, and move Vietnamese content into `vi` sub-folder.
-  #contentDir: content/vi
-
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  locale: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+  languageCode: vi
+  languageName: Tiếng Việt

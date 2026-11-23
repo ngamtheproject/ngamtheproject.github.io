@@ -1,56 +1,68 @@
-# Configuration of Hugo
-# Guide: https://hugoblox.com/docs/
-# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# Hugo configuration. Build with Hugo 0.154.5 extended; no modules, no Node.
+# Reference: https://gohugo.io/configuration/all/
 
-title: Ngăm # Website name
-baseURL: 'https://ngamtheproject.github.io/' # Website URL
-
-############################
-## LANGUAGE
-############################
+title: Ngăm
+baseURL: 'https://ngamtheproject.github.io/'
 
 defaultContentLanguage: vi
-hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
+# Keeps the live URLs: accents are stripped, but `đ` stays (/author/le-thanh-đat/).
 removePathAccents: true
 
-############################
-## ADVANCED
-############################
-
-build:
-  writeStats: true
-enableGitInfo: false
-summaryLength: 30
-pagination:
-  pagerSize: 10
 enableEmoji: true
 enableRobotsTXT: true
-footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
-permalinks:
-  authors: '/author/:slug/'
-  tags: '/tag/:slug/'
-  categories: '/category/:slug/'
-  publication_types: '/publication-type/:slug/'
-disableAliases: true
-outputs:
-  home: [HTML, RSS, LLM, WebAppManifest]
-  section: [HTML, RSS]
-imaging:
-  resampleFilter: lanczos
-  quality: 75
-  anchor: smart
-  hint: picture
+summaryLength: 30
+# The albums page waits on hundreds of image derivatives during a cold build.
 timeout: 600000
+
+disableAliases: true
+pagination:
+  pagerSize: 10
+  # false keeps the /…/page/1/ redirect pages the old site had.
+  disableAliases: false
+
+permalinks:
+  term:
+    authors: '/author/:slug/'
+    tags: '/tag/:slug/'
+    categories: '/category/:slug/'
+    publication_types: '/publication-type/:slug/'
+
 taxonomies:
   tag: tags
   category: categories
   publication_type: publication_types
   author: authors
+
+mediaTypes:
+  application/manifest+json:
+    suffixes: [webmanifest]
+
+outputFormats:
+  WebAppManifest:
+    mediaType: application/manifest+json
+    baseName: manifest
+    rel: manifest
+    isPlainText: true
+    notAlternative: true
+
+outputs:
+  home: [HTML, RSS, WebAppManifest]
+  section: [HTML, RSS]
+
+imaging:
+  resampleFilter: lanczos
+  quality: 75
+  anchor: smart
+  hint: photo
+  # Fills the transparent corners of PNGs (logo, icon) when JPEGs are made.
+  bgColor: '#fef4e6'
+
 markup:
-  _merge: deep
+  goldmark:
+    renderer:
+      unsafe: true
+
 related:
   threshold: 80
   includeNewer: true
@@ -60,10 +72,6 @@ related:
       weight: 100
     - name: categories
       weight: 70
-security:
-  _merge: deep
-sitemap:
-  _merge: deep
 
 cascade:
   - target:

@@ -1,24 +1,19 @@
-# Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-#     desired widget in your `content/home/` folder.
-#   The weight parameter defines the order that the links will appear in.
-
 main:
   - name: Bài viết
-    url: post
+    pageRef: /post
     weight: 10
   - name: Sự kiện
-    url: event
+    pageRef: /event
     weight: 20
   - name: Albums
-    url: albums
+    pageRef: /albums
     weight: 30
   - name: Videos
-    url: videos
+    pageRef: /videos
     weight: 40
   - name: Giới thiệu
-    url: about
+    pageRef: /about
     weight: 50
   - name: Liên hệ
-    url: contact
+    pageRef: /contact
     weight: 60

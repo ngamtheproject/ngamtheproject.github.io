@@ -1,135 +1,46 @@
-# ══════════════════════════════════════════════════════════════════════════════
-# HUGO BLOX CONFIGURATION
-# Schema: hugoblox.com/schema/v2
-# Documentation: https://hugoblox.com/docs/
-# ══════════════════════════════════════════════════════════════════════════════
-hugoblox:
-  schema: "2.0"
+description: Charity Organization.
+# The project is finished and kept as a memory of these years.
+years: 2022–2024
 
-  # ────────────────────────────────────────────────────────────────────────────
-  # IDENTITY
-  # Site-level branding (people profiles live in data/authors/)
-  # ────────────────────────────────────────────────────────────────────────────
-  identity:
-    name: "Ngăm"
-    organization: "Ngăm"
-    type: organization # person | organization | local_business
-    tagline: ""
-    description: "Charity Organization."
-    social:
-      twitter: ""
+# Image derivatives are JPEG (WebP encodes far slower in Hugo 0.154) at these
+# widths. Originals are never published: they would push the site past the
+# GitHub Pages size limit.
+imageWidths: [400, 800, 1200]
+imageFormat: jpg
 
-  # ────────────────────────────────────────────────────────────────────────────
-  # THEME
-  # ────────────────────────────────────────────────────────────────────────────
-  theme:
-    mode: system # light | dark | system
-    pack: "default"
-    colors:
-      primary: "indigo" # closest to the previous "ocean" theme colour #3f51b5
-      secondary: ""
-      neutral: ""
+# Must equal pagination.pagerSize in hugo.yaml (templates cannot read it).
+pagerSize: 10
 
-  # ────────────────────────────────────────────────────────────────────────────
-  # TYPOGRAPHY
-  # ────────────────────────────────────────────────────────────────────────────
-  typography:
-    pack: "system" # native system fonts, as before
+copyright:
+  holder: Ngăm
+  license:
+    name: CC BY NC ND 4.0
+    url: https://creativecommons.org/licenses/by-nc-nd/4.0
 
-  # ────────────────────────────────────────────────────────────────────────────
-  # LAYOUT
-  # ────────────────────────────────────────────────────────────────────────────
-  layout:
-    radius: "md"
-    spacing: "comfortable"
-    avatar_shape: circle
+contact:
+  email: ngam.theproject@gmail.com
+  phone: '+84974764823'
+  phoneLabel: (+84) 97 476 4823
+  phoneOwner: Bảo Ngọc
+  facebook: https://www.facebook.com/ngam.theproject
+  instagram: https://www.instagram.com/ngamngamnghi
 
-  # ────────────────────────────────────────────────────────────────────────────
-  # HEADER
-  # ────────────────────────────────────────────────────────────────────────────
-  header:
-    enable: true
-    style: navbar
-    sticky: true
-    align: right
-    search: true
-    theme_toggle: true
-    theme_picker: false
-    language_switcher: false
-    cta:
-      enable: false
+creator:
+  name: miti99
+  url: https://tiennm99.github.io
 
-  # ────────────────────────────────────────────────────────────────────────────
-  # FOOTER
-  # ────────────────────────────────────────────────────────────────────────────
-  footer:
-    style: minimal
-    language_switcher: false
-    text: ""
+giscus:
+  repo: ngamtheproject/ngamtheproject.github.io
+  repoId: R_kgDOKSl_1A
+  category: Announcements
+  categoryId: DIC_kwDOKSl_1M4CZj76
+  mapping: pathname
+  lang: en
+  theme: light
 
-  # ────────────────────────────────────────────────────────────────────────────
-  # COPYRIGHT
-  # ────────────────────────────────────────────────────────────────────────────
-  copyright:
-    notice: "© {year} Ngăm. This work is licensed under {license}"
-    license:
-      type: cc
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+# Loaded only in production builds (`hugo` without `server`).
+googleAnalytics: G-74NLCD7XMJ
 
-  # ────────────────────────────────────────────────────────────────────────────
-  # CONTENT
-  # ────────────────────────────────────────────────────────────────────────────
-  content:
-    math:
-      enable: false
-    toc:
-      enable: true
-    reading_time:
-      enable: true
-
-  # ────────────────────────────────────────────────────────────────────────────
-  # SEARCH (Pagefind index built after Hugo)
-  # ────────────────────────────────────────────────────────────────────────────
-  search:
-    enable: true
-
-  # ────────────────────────────────────────────────────────────────────────────
-  # COMMENTS
-  # ────────────────────────────────────────────────────────────────────────────
-  comments:
-    enable: true
-    provider: giscus
-    giscus:
-      repo: "ngamtheproject/ngamtheproject.github.io"
-      repo_id: "R_kgDOKSl_1A"
-      category: "Announcements"
-      category_id: "DIC_kwDOKSl_1M4CZj76"
-      theme: light
-      language_code: en
-      mapping: pathname
-
-  # ────────────────────────────────────────────────────────────────────────────
-  # ANALYTICS
-  # ────────────────────────────────────────────────────────────────────────────
-  analytics:
-    google:
-      measurement_id: "G-74NLCD7XMJ"
-
-  # ────────────────────────────────────────────────────────────────────────────
-  # REPOSITORY ("Edit this page" links)
-  # ────────────────────────────────────────────────────────────────────────────
-  repository:
-    enable: true
-    url: "https://github.com/ngamtheproject/ngamtheproject.github.io"
-    branch: main
-    content_dir: content
-
-  # ────────────────────────────────────────────────────────────────────────────
-  # LOCALE
-  # ────────────────────────────────────────────────────────────────────────────
-  locale:
-    date_format: "02/01/2006"
-    time_format: "3:04 PM"
-    address_format: en-us
+repository:
+  url: https://github.com/ngamtheproject/ngamtheproject.github.io
+  branch: main
