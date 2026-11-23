@@ -7,6 +7,8 @@ location: Trường TH & THCS La Ngâu (Bình Thuận)
 event_start: 2023-08-10
 event_end: 2023-08-11
 event_all_day: false
+# Crop of the poster on cards (CSS object-position).
+cover_position: 50% 8%
 
 date: 2023-07-26
 

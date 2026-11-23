@@ -7,6 +7,8 @@ location: Trường Tiểu học La Văn Cầu (thôn 10, xã Krong Buk, huyện
 event_start: 2023-01-14
 event_end:
 event_all_day: true
+# Crop of the poster on cards (CSS object-position).
+cover_position: 50% 50%
 
 date: 2022-11-20
 

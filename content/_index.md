@@ -7,7 +7,7 @@ date: 2022-10-24
 hero:
   title: Ngăm
   text: '**Ngăm** là dự án thiện nguyện được thành lập bởi các bạn học sinh cấp ba với mong muốn được mang lại hạnh phúc cho trẻ Tây Nguyên.'
-  image: albums/2022/10/29/dieu-ngam-luon-mong-uoc.jpg
+  image: albums/2024/07/31/75.jpg
   alt: Ngăm
 
 events:
