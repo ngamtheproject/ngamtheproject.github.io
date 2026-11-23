@@ -1,17 +1,7 @@
 # IDEs
 .idea/
 
-# Hugo
+# Hugo build output and caches
+/public/
 /resources/
-public/
-assets/jsconfig.json
 .hugo_build.lock
-hugo_stats.json
-go.sum
-
-# Node.js
-node_modules/
-
-# Pagefind search index
-pagefind/
-static/pagefind/
