@@ -1,99 +1,72 @@
-# Build the Hugo site with HugoBlox Kit (Tailwind CSS v4 + Pagefind search) and deploy it to GitHub Pages.
-# Based on the HugoBlox Kit template workflows (build.yml + deploy.yml), inlined into one file.
+# Build the site with Hugo 0.154.5 extended and deploy it to GitHub Pages.
+# Hugo is pinned to the version in the Ubuntu 26.04 LTS archive, which local
+# builds use; see README.md. The theme needs no Go modules and no npm.
 name: Deploy Hugo site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches:
       - main
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# One deployment at a time; never cancel a production deployment in progress.
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: false
 
-# Default to bash
 defaults:
   run:
     shell: bash
 
+env:
+  HUGO_VERSION: 0.154.5
+
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
-        with:
-          # Fetch history for Hugo's .GitInfo and .Lastmod
-          fetch-depth: 0
+        uses: actions/checkout@v7
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: 22
-          cache: npm
+      - name: Install Hugo extended
+        run: |
+          deb="hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+          curl -fsSL -o "${RUNNER_TEMP}/${deb}" \
+            "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${deb}"
+          sudo dpkg -i "${RUNNER_TEMP}/${deb}"
+          hugo version
 
-      # HugoBlox Kit pins the Hugo version in hugoblox.yaml (yq is preinstalled on GitHub runners)
-      - name: Get Hugo version
-        run: echo "HUGO_VERSION=$(yq '.build.hugo_version' hugoblox.yaml)" >> "$GITHUB_ENV"
-
-      - name: Install Node.js dependencies
-        run: npm ci
-
-      - name: Test
+      - name: Test the Netlify footer credit
         run: node --test tests/netlify-footer-host.test.js
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+      # Resized album images take minutes to make from scratch; reuse them.
+      - name: Cache processed images
+        uses: actions/cache@v6
         with:
-          hugo-version: ${{ env.HUGO_VERSION }}
-          extended: true
-
-      # Cache Hugo modules and processed images between runs
-      - name: Cache Hugo modules and resources
-        uses: actions/cache@v5
-        with:
-          path: |
-            /tmp/hugo_cache_runner/
-            resources/
-          key: ${{ runner.os }}-hugo-${{ hashFiles('go.mod', 'package-lock.json', 'config/**/*', 'assets/**/*') }}
+          path: resources/_gen
+          key: hugo-gen-${{ env.HUGO_VERSION }}-${{ hashFiles('assets/media/**', 'content/**/*.jpg', 'config/**', 'layouts/_partials/picture.html', 'layouts/_partials/video-poster.html') }}
           restore-keys: |
-            ${{ runner.os }}-hugo-
+            hugo-gen-${{ env.HUGO_VERSION }}-
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
-        run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
-
-      - name: Build Pagefind search index
-        run: npm run pagefind
+        run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
@@ -103,4 +76,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
