@@ -5,7 +5,7 @@ const test = require('node:test');
 const vm = require('node:vm');
 
 const template = fs.readFileSync(
-  path.join(__dirname, '..', 'layouts', '_partials', 'hooks', 'footer-start', 'netlify.html'),
+  path.join(__dirname, '..', 'layouts', '_partials', 'netlify-credit.html'),
   'utf8',
 );
 
@@ -34,7 +34,7 @@ function insertedCredits(hostname) {
 
 test('does not render static credit markup', () => {
   const staticMarkup = template.replace(/<script>[\s\S]*?<\/script>/, '');
-  assert.doesNotMatch(staticMarkup, /class="powered-by"/);
+  assert.doesNotMatch(staticMarkup, /class="footer-credit"/);
 });
 
 test('inserts the credit on Netlify subdomains', () => {
@@ -47,8 +47,8 @@ test('inserts the credit on Netlify subdomains', () => {
     assert.equal(insertions[0].position, 'beforebegin');
     assert.equal(
       insertions[0].html.replace(/\s+/g, ' ').trim(),
-      '<div class="powered-by" style="text-align: center"> This site is powered by ' +
-        '<a href="https://www.netlify.com" target="_blank">Netlify</a> </div>',
+      '<p class="footer-credit"> This site is powered by ' +
+        '<a href="https://www.netlify.com" target="_blank" rel="noopener">Netlify</a> </p>',
     );
   }
 });
