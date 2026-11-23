@@ -1,0 +1,10 @@
+# Netlify build: same Hugo version and command as the GitHub Pages workflow.
+[build]
+  command = "hugo --gc --minify"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.154.5"
+  HUGO_EXTENDED = "true"
+  HUGO_ENVIRONMENT = "production"
+
