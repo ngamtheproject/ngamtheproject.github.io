@@ -28,6 +28,6 @@ Content shortcodes: `figure`, `gallery`, `video`, `videos`, `albums` and `gdocs`
 ## Hosting
 
 - [GitHub Pages](https://pages.github.com/): every push to `main` deploys https://ngamtheproject.github.io.
-- [Netlify](https://www.netlify.com/): the site is also deployed on Netlify, which kindly hosts it on its Open Source plan; pages served from `*.netlify.app` show a "powered by Netlify" credit in the footer.
+- [Netlify](https://www.netlify.com/): the site is also deployed on Netlify, which kindly hosts it on its Open Source plan; every page credits GitHub Pages and Netlify in the footer.
 
 We are grateful to the creators and maintainers of [Hugo](https://gohugo.io/), GitHub Pages and Netlify for making this project possible.

@@ -1,65 +1,25 @@
+// Checks the hosting credit in the footer (layouts/_partials/netlify-credit.html): a static link to
+// Netlify, which its Open Source plan requires, shown on every host with no script.
+// Run with `node --test tests/*.test.js`; no dependencies.
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const test = require('node:test');
-const vm = require('node:vm');
 
-const template = fs.readFileSync(
-  path.join(__dirname, '..', 'layouts', '_partials', 'netlify-credit.html'),
-  'utf8',
-);
+const root = path.join(__dirname, '..', 'layouts', '_partials');
+const credit = fs.readFileSync(path.join(root, 'netlify-credit.html'), 'utf8');
+const footer = fs.readFileSync(path.join(root, 'footer.html'), 'utf8');
 
-function insertedCredits(hostname) {
-  const script = template.match(/<script>([\s\S]*?)<\/script>/);
-  assert.ok(script, 'footer must check the browser hostname at runtime');
-
-  const insertions = [];
-  vm.runInNewContext(script[1], {
-    document: {
-      currentScript: {
-        insertAdjacentHTML(position, html) {
-          insertions.push({ html, position });
-        },
-      },
-    },
-    window: {
-      location: {
-        hostname,
-      },
-    },
-  });
-
-  return insertions;
-}
-
-test('does not render static credit markup', () => {
-  const staticMarkup = template.replace(/<script>[\s\S]*?<\/script>/, '');
-  assert.doesNotMatch(staticMarkup, /class="footer-credit"/);
+test('links to Netlify and GitHub Pages in static markup', () => {
+  assert.match(credit, /<a href="https:\/\/www\.netlify\.com"[^>]*>Netlify<\/a>/);
+  assert.match(credit, /<a href="https:\/\/pages\.github\.com"[^>]*>GitHub Pages<\/a>/);
 });
 
-test('inserts the credit on Netlify subdomains', () => {
-  for (const hostname of [
-    'ngamtheproject.netlify.app',
-    'deploy-preview-42--ngamtheproject.netlify.app',
-  ]) {
-    const insertions = insertedCredits(hostname);
-    assert.equal(insertions.length, 1);
-    assert.equal(insertions[0].position, 'beforebegin');
-    assert.equal(
-      insertions[0].html.replace(/\s+/g, ' ').trim(),
-      '<p class="footer-credit"> This site is powered by ' +
-        '<a href="https://www.netlify.com" target="_blank" rel="noopener">Netlify</a> </p>',
-    );
-  }
+test('does not depend on the host or on JavaScript', () => {
+  assert.doesNotMatch(credit, /<script/);
+  assert.doesNotMatch(credit, /hostname/);
 });
 
-test('inserts nothing on non-Netlify hosts', () => {
-  for (const hostname of [
-    'ngamtheproject.github.io',
-    'netlify.app',
-    'evilnetlify.app',
-    'netlify.app.example.com',
-  ]) {
-    assert.deepEqual(insertedCredits(hostname), []);
-  }
+test('the footer includes the credit', () => {
+  assert.match(footer, /partial "netlify-credit\.html"/);
 });
