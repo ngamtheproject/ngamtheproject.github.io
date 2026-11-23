@@ -1,30 +1,19 @@
 ---
 title: Giới thiệu
 date: 2023-09-12
+layout: about
 
-type: landing
+# Read by layouts/about.html.
+hero:
+  title: Ngăm
+  text: '**Ngăm** là dự án thiện nguyện được thành lập bởi các bạn học sinh cấp ba với mong muốn được mang lại hạnh phúc cho trẻ Tây Nguyên.'
+  image: albums/2022/10/29/dieu-ngam-luon-mong-uoc.jpg
+  alt: Ngăm
 
-sections:
-  - block: hero-static
-    content:
-      title: Ngăm
-      text: '**Ngăm** là dự án thiện nguyện được thành lập bởi các bạn học sinh cấp ba với mong muốn được mang lại hạnh phúc cho trẻ Tây Nguyên.'
-      media:
-        src: albums/2022/10/29/dieu-ngam-luon-mong-uoc.jpg
-        alt: Ngăm
-    design:
-      layout: split-left
-
-  - block: team-showcase
-    content:
-      title: Thành viên
-      user_groups:
-        - Người sáng lập
-        - Đồng sáng lập
-      sort_by: first_name
-      sort_ascending: true
-    design:
-      show_interests: false
-      show_role: true
-      show_social: true
+team:
+  title: Thành viên
+  # Groups shown in this order; members sorted by first name.
+  groups:
+    - Người sáng lập
+    - Đồng sáng lập
 ---
