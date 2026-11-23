@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{- $img := partial "page-image.html" . }}
+{{- $name := .Params.event_name | default .LinkTitle }}
+<article class="article campaign-page">
+  <header class="campaign-hero">
+    {{- with $img }}
+    <div class="campaign-hero-media">
+      {{ partial "picture.html" (dict "img" . "alt" "" "sizes" "(max-width: 1200px) 100vw, 1200px" "eager" true) }}
+    </div>
+    {{- end }}
+    <div class="container-narrow campaign-hero-body">
+      <p class="campaign-name">{{ $name }}</p>
+      <h1>{{ .Title }}</h1>
+      <dl class="campaign-facts">
+        <div><dt>Thời gian</dt><dd>{{ partial "event-date.html" . }}</dd></div>
+        {{- with .Params.location }}<div><dt>Địa điểm</dt><dd>{{ . }}</dd></div>{{ end }}
+      </dl>
+      {{- with .Params.event_url }}
+      <p><a class="button" href="{{ . }}" target="_blank" rel="noopener">Xem trên Facebook</a></p>
+      {{- end }}
+    </div>
+  </header>
+  {{- with .Content }}
+  <div class="prose container-narrow">{{ . }}</div>
+  {{- end }}
+  {{- /* Posts about this campaign: their title names it ("Toả", "Nắng"). */}}
+  {{- $related := slice }}
+  {{- range where site.RegularPages "Section" "post" }}
+    {{- if strings.Contains .Title $name }}{{ $related = $related | append . }}{{ end }}
+  {{- end }}
+  {{- with $related }}
+  <section class="container campaign-posts" aria-labelledby="campaign-posts-title">
+    <h2 id="campaign-posts-title">Hành trình {{ $name }}</h2>
+    <div class="cards">
+      {{- range sort . "Date" "asc" }}{{ partial "post-card.html" . }}{{ end }}
+    </div>
+  </section>
+  {{- end }}
+  <footer class="article-foot container-narrow">
+    {{ partial "tags.html" . }}
+    {{ partial "comments.html" . }}
+  </footer>
+</article>
+{{ end }}

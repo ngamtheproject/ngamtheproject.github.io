@@ -1,9 +1,11 @@
-{{- /* Large campaign card for an event (Toả, Nắng). Context: the event page. */ -}}
+{{- /* Large campaign card for an event (Toả, Nắng). Context: the event page.
+     The poster is cropped to a fixed 2:1 frame; front matter `cover_position`
+     (CSS object-position) keeps its important part in view. */ -}}
 {{- $img := partial "page-image.html" . -}}
 <article class="campaign">
   <a class="campaign-link" href="{{ .RelPermalink }}">
     {{- with $img }}
-    <div class="campaign-media">
+    <div class="campaign-media"{{ with $.Params.cover_position }} style="{{ printf "--cover-position: %s" . | safeCSS }}"{{ end }}>
       {{- partial "picture.html" (dict "img" . "alt" "" "sizes" "(max-width: 760px) 100vw, 560px") -}}
     </div>
     {{- end }}

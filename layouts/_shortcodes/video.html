@@ -1,11 +1,14 @@
 {{- /*
   Video from the page bundle or assets/media/ (published at its own path,
   e.g. /media/videos/2024/05/28/featured.mp4), or a remote URL.
+  Uses poster.jpg beside the video when present.
   Params: src, controls (yes|no, default yes), autoplay, loop, muted, poster.
 */ -}}
 {{- $src := .Get "src" -}}
 {{- $url := $src -}}
+{{- $poster := .Get "poster" -}}
 {{- if not (strings.HasPrefix $src "http") -}}
+  {{- if not $poster }}{{ with partial "video-poster.html" $src }}{{ $poster = .RelPermalink }}{{ end }}{{ end -}}
   {{- with or (.Page.Resources.GetMatch $src) (resources.Get (path.Join "media" $src)) -}}
     {{- $url = .RelPermalink -}}
   {{- else -}}
@@ -19,7 +22,7 @@
     {{- if in $yes (.Get "autoplay") }} autoplay{{ end }}
     {{- if in $yes (.Get "loop") }} loop{{ end }}
     {{- if in $yes (.Get "muted") }} muted{{ end }}
-    {{- with .Get "poster" }} poster="{{ . }}"{{ end }}>
+    {{- with $poster }} poster="{{ . }}"{{ end }}>
     <source src="{{ $url }}" type="video/mp4">
     Trình duyệt của bạn không hỗ trợ video.
   </video>

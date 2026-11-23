@@ -1,7 +1,8 @@
 {{- /*
-  Albums page: every folder of images under assets/media/albums/, newest
-  first, each as a lazy grid. Uses resources.Match, not readDir, so mounted
-  assets are seen too.
+  Albums page: every folder of images under assets/media/albums/YYYY/MM/DD/,
+  grouped by year, newest first. Each album links the post of the same date
+  when there is one. Uses resources.Match, not readDir, so mounted assets
+  are seen too. Heading ids are the folder paths ("2023/01/09"), as before.
 */ -}}
 {{- $groups := dict -}}
 {{- range resources.Match "media/albums/**" -}}
@@ -12,23 +13,51 @@
 {{- end -}}
 {{- $keys := slice -}}
 {{- range $k, $_ := $groups }}{{ $keys = $keys | append $k }}{{ end -}}
+{{- $keys = sort $keys "value" "desc" -}}
+{{- $years := slice -}}
+{{- range $keys }}{{ $years = $years | append (index (split . "/") 0) }}{{ end -}}
+{{- $years = uniq $years -}}
+{{- $total := 0 }}{{ range $groups }}{{ $total = add $total (len .) }}{{ end -}}
+<p class="albums-summary">{{ len $keys }} albums · {{ $total }} ảnh</p>
 <nav class="album-index" aria-label="Mục lục">
   <details>
     <summary>Mục Lục</summary>
+    {{- range $years }}
+    {{- $y := . }}
+    <p class="album-index-year"><a href="#{{ $y }}">{{ $y }}</a></p>
     <ul>
-      {{- range sort $keys "value" "desc" }}<li><a href="#{{ . }}">{{ . }}</a></li>{{ end }}
+      {{- range $keys }}{{ if hasPrefix . (printf "%s/" $y) }}
+      {{- $t := time.AsTime (replace . "/" "-") }}
+      <li><a href="#{{ . }}">{{ $t.Format "02/01" }}</a></li>
+      {{- end }}{{ end }}
     </ul>
+    {{- end }}
   </details>
 </nav>
-{{- range sort $keys "value" "desc" }}
-<section class="album">
-  <h2 id="{{ . }}">{{ . }}</h2>
-  <div class="gallery">
-    {{- range sort (index $groups .) "Name" }}
-    <figure class="gallery-item">
-      {{- partial "picture.html" (dict "img" . "alt" (path.Base .Name) "sizes" "(max-width: 600px) 50vw, 250px" "class" "gallery-image" "link" true) -}}
-    </figure>
-    {{- end }}
-  </div>
+{{- range $years }}
+{{- $y := . }}
+<section class="album-year" aria-labelledby="{{ $y }}">
+  <h2 class="year-label" id="{{ $y }}">{{ $y }}</h2>
+  {{- range $keys }}{{ if hasPrefix . (printf "%s/" $y) }}
+  {{- $key := . }}
+  {{- $images := sort (index $groups $key) "Name" }}
+  {{- $t := time.AsTime (replace $key "/" "-") }}
+  {{- $post := site.GetPage (printf "/post/%s" $key) }}
+  <section class="album">
+    <header class="album-head">
+      <h3 id="{{ $key }}">
+        {{- with $post }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ else }}{{ $t.Format "02/01/2006" }}{{ end -}}
+      </h3>
+      <p class="album-meta"><time datetime="{{ $t.Format "2006-01-02" }}">{{ $t.Format "02/01/2006" }}</time> · {{ len $images }} ảnh</p>
+    </header>
+    <div class="gallery">
+      {{- range $images }}
+      <figure class="gallery-item">
+        {{- partial "picture.html" (dict "img" . "alt" (printf "Ảnh %s, %s" (path.Base .Name) ($t.Format "02/01/2006")) "sizes" "(max-width: 600px) 50vw, 250px" "class" "gallery-image" "link" true) -}}
+      </figure>
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}{{ end }}
 </section>
 {{- end }}

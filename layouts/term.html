@@ -1,15 +1,29 @@
 {{ define "main" }}
+{{- $isAuthor := eq .Data.Plural "authors" }}
 <div class="container page-list">
-  <header class="page-head">
-    {{- if eq .Data.Plural "authors" }}
+  <header class="page-head{{ if $isAuthor }} profile-head{{ end }}">
+    {{- if $isAuthor }}
       {{- with partial "media-image.html" (dict "path" .Params.avatar) }}
-        {{- $a := .Fill "240x240 jpg Center" }}
-      <img class="member-avatar" src="{{ $a.RelPermalink }}" width="120" height="120" alt="">
+        {{- $a := .Fill "320x320 jpg Center" }}
+      <img class="member-avatar" src="{{ $a.RelPermalink }}" width="160" height="160" alt="">
       {{- end }}
+    {{- else }}
+    <p class="article-kicker">{{ .Data.Singular | humanize }}</p>
     {{- end }}
     <h1>{{ .Title }}</h1>
-    {{- with .Params.bio }}<p class="lead">{{ . | safeHTML }}</p>{{ end }}
+    {{- if $isAuthor }}
+      {{- with .Params.role }}<p class="member-role">{{ . | $.Page.RenderString }}</p>{{ end }}
+      {{- with .Params.bio }}<p class="lead">{{ . | safeHTML }}</p>{{ end }}
+    {{- end }}
     {{- with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+    {{- if $isAuthor }}
+    <dl class="profile-facts">
+      {{- with .Params.interests }}<div><dt>Sở thích</dt><dd>{{ delimit . ", " }}</dd></div>{{ end }}
+      {{- range .Params.education }}<div><dt>Học vấn</dt><dd>{{ with .degree }}{{ . }}, {{ end }}{{ .institution }}{{ with .year }} ({{ . }}){{ end }}</dd></div>{{ end }}
+      {{- range .Params.affiliations }}<div><dt>Tổ chức</dt><dd><a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a></dd></div>{{ end }}
+    </dl>
+    {{ partial "profile-links.html" . }}
+    {{- end }}
   </header>
   {{- $pager := .Paginate .Pages }}
   {{- with $pager.Pages }}
@@ -18,5 +32,8 @@
   </div>
   {{- end }}
   {{ partial "pagination.html" $pager }}
+  {{- if $isAuthor }}
+  <p><a href="{{ (site.GetPage "/authors").RelPermalink }}">← Tất cả thành viên</a></p>
+  {{- end }}
 </div>
 {{ end }}

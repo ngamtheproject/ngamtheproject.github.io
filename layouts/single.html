@@ -1,21 +1,13 @@
 {{ define "main" }}
 {{- $img := partial "page-image.html" . }}
-{{- $isEvent := isset .Params "event_start" }}
-<article class="article">
-  <header class="article-head container-narrow">
-    {{- if $isEvent }}
-    <p class="article-kicker">{{ .Params.event_name }}</p>
-    {{- end }}
+{{- /* Pages with `wide: true` (Albums, Videos) use the full width; the rest read in a narrow column. */}}
+{{- $wide := .Params.wide | default false }}
+{{- $col := cond $wide "container" "container-narrow" }}
+<article class="article{{ if $wide }} article-wide{{ end }}">
+  <header class="article-head {{ $col }}">
     <h1>{{ .Title }}</h1>
-    <p class="article-meta">
-      {{- if $isEvent }}
-      {{ partial "event-date.html" . }}{{ with .Params.location }} · {{ . }}{{ end }}
-      {{- else if not .Date.IsZero }}
-      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02/01/2006" }}</time>
-      {{- end }}
-    </p>
-    {{- with .Params.event_url }}
-    <p><a class="button" href="{{ . }}" target="_blank" rel="noopener">Xem trên Facebook</a></p>
+    {{- if and (eq .Section "post") (not .Date.IsZero) }}
+    <p class="article-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02/01/2006" }}</time></p>
     {{- end }}
   </header>
   {{- if and $img (not .Params.image.preview_only) }}
@@ -23,15 +15,11 @@
     {{ partial "picture.html" (dict "img" $img "alt" "" "sizes" "(max-width: 1200px) 100vw, 1200px" "eager" true) }}
   </figure>
   {{- end }}
-  <div class="prose container-narrow">
+  <div class="prose {{ $col }}">
     {{ .Content }}
   </div>
-  <footer class="article-foot container-narrow">
-    {{- with .GetTerms "tags" }}
-    <ul class="tags" aria-label="Từ khoá">
-      {{- range . }}<li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>{{ end }}
-    </ul>
-    {{- end }}
+  <footer class="article-foot {{ $col }}">
+    {{ partial "tags.html" . }}
     {{- if eq .Section "post" }}
     <nav class="post-nav" aria-label="Bài viết khác">
       {{- /* The section is sorted newest first: NextInSection is the newer post. */}}

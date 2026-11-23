@@ -1,15 +1,26 @@
 {{ define "main" }}
 {{- $p := .Params }}
-<div class="container-narrow page-contact">
-  <h1>{{ .Title }}</h1>
-  {{- with $p.text }}<p>{{ . }}</p>{{ end }}
-  <ul class="contact-list">
-    {{- with $p.email }}<li><span>Email</span> <a href="mailto:{{ . }}">{{ . }}</a></li>{{ end }}
-    {{- with $p.phone }}<li><span>Điện thoại</span> <a href="tel:{{ site.Params.contact.phone }}">{{ . }}</a></li>{{ end }}
-    {{- with $p.address }}<li><span>Địa chỉ</span> {{ delimit . ", " }}</li>{{ end }}
-    {{- with $p.office_hours }}<li><span>Giờ làm việc</span> {{ delimit . ", " }}</li>{{ end }}
-    {{- range $p.social }}<li><span>{{ .name }}</span> <a href="{{ .url }}" target="_blank" rel="noopener">{{ .url }}</a></li>{{ end }}
-  </ul>
-  {{- with $p.map_url }}<p><a class="button" href="{{ . }}" target="_blank" rel="noopener">Xem bản đồ</a></p>{{ end }}
+<div class="container page-contact">
+  <header class="page-head section-head">
+    <h1>{{ .Title }}</h1>
+    {{- with $p.text }}<p>{{ . }}</p>{{ end }}
+  </header>
+  <div class="contact-grid">
+    <ul class="contact-cards">
+      {{- with $p.email }}<li class="contact-card"><span>Email</span><a href="mailto:{{ . }}">{{ . }}</a></li>{{ end }}
+      {{- with $p.phone }}<li class="contact-card"><span>Điện thoại</span><a href="tel:{{ site.Params.contact.phone }}">{{ . }}</a></li>{{ end }}
+      {{- range $p.social }}<li class="contact-card"><span>{{ .name }}</span><a href="{{ .url }}" target="_blank" rel="noopener">{{ .url }}</a></li>{{ end }}
+      {{- with $p.address }}<li class="contact-card"><span>Địa chỉ</span>{{ delimit . "<br>" | safeHTML }}</li>{{ end }}
+      {{- with $p.office_hours }}<li class="contact-card"><span>Giờ làm việc</span>{{ delimit . "<br>" }}</li>{{ end }}
+    </ul>
+    {{- with $p.location }}
+    {{- $d := 0.01 }}
+    <figure class="contact-map">
+      <iframe title="Bản đồ" loading="lazy" referrerpolicy="no-referrer"
+        src="https://www.openstreetmap.org/export/embed.html?bbox={{ sub .lng $d }}%2C{{ sub .lat $d }}%2C{{ add .lng $d }}%2C{{ add .lat $d }}&amp;layer=mapnik&amp;marker={{ .lat }}%2C{{ .lng }}"></iframe>
+      {{- with $p.map_url }}<figcaption><a href="{{ . }}" target="_blank" rel="noopener">Xem bản đồ lớn hơn</a></figcaption>{{ end }}
+    </figure>
+    {{- end }}
+  </div>
 </div>
 {{ end }}

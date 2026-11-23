@@ -1,12 +1,17 @@
 {{ define "main" }}
 {{ partial "hero.html" (dict "page" . "hero" .Params.hero) }}
+{{- with .Content }}
+<div class="container-narrow prose about-body">{{ . }}</div>
+{{- end }}
 <section class="band" aria-labelledby="team-title">
   <div class="container">
-    <h2 id="team-title">{{ .Params.team.title | default "Thành viên" }}</h2>
+    <header class="section-head">
+      <h2 id="team-title">{{ .Params.team.title | default "Thành viên" }}</h2>
+    </header>
     {{- range partial "team-members.html" (dict "groups" .Params.team.groups) }}
     <h3 class="team-group">{{ .name }}</h3>
-    <ul class="members">
-      {{- range .members }}{{ partial "member-card.html" . }}{{ end }}
+    <ul class="profiles">
+      {{- range .members }}{{ partial "member-profile.html" . }}{{ end }}
     </ul>
     {{- end }}
   </div>

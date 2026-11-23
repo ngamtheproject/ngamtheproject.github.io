@@ -1,8 +1,13 @@
 {{ define "main" }}
 <div class="container page-list">
-  <header class="page-head">
+  <header class="page-head section-head">
     <h1>{{ .Title }}</h1>
   </header>
+  {{- if eq .Data.Plural "authors" }}
+  <ul class="profiles">
+    {{- range sort .Pages "Params.first_name" }}{{ partial "member-profile.html" . }}{{ end }}
+  </ul>
+  {{- else }}
   {{- with .Pages }}
   <ul class="tags tags-large">
     {{- range .ByTitle }}
@@ -11,6 +16,7 @@
   </ul>
   {{- else }}
   <p>Chưa có mục nào.</p>
+  {{- end }}
   {{- end }}
 </div>
 {{ end }}

@@ -1,0 +1,11 @@
+{{- /*
+  Poster frame for a video: poster.jpg beside the file in assets/media/videos/.
+  Params: the video path below assets/media (e.g. "videos/2024/05/28/featured.mp4").
+  Returns a resized JPEG resource, or nil. The poster file itself is never published.
+*/ -}}
+{{- $out := "" -}}
+{{- with resources.Get (path.Join "media" (path.Dir (strings.TrimPrefix "/" .)) "poster.jpg") -}}
+  {{- $w := 1280 }}{{ if lt .Width $w }}{{ $w = .Width }}{{ end -}}
+  {{- $out = .Process (printf "resize %dx %s" $w (site.Params.imageFormat | default "jpg")) -}}
+{{- end -}}
+{{- return $out -}}

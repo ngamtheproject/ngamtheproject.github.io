@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="container page-list">
+  <header class="page-head section-head">
+    <h1>{{ .Title }}</h1>
+    {{- with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  </header>
+  <div class="campaigns">
+    {{- range sort .Pages "Params.event_start" "desc" }}
+      {{ partial "campaign-card.html" . }}
+    {{- end }}
+  </div>
+</div>
+{{ end }}

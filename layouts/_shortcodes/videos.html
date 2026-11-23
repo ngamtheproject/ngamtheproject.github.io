@@ -1,30 +1,27 @@
 {{- /*
-  Videos page: every MP4 under assets/media/videos/, newest first, at its
-  own path (/media/videos/YYYY/MM/DD/featured.mp4).
+  Videos page: every MP4 under assets/media/videos/YYYY/MM/DD/, newest
+  first, at its own path (/media/videos/YYYY/MM/DD/featured.mp4), with the
+  poster frame beside it and a link to the post of the same date.
+  Heading ids stay "/YYYY/MM/DD/featured.mp4", as before.
 */ -}}
 {{- $videos := sort (resources.Match "media/videos/**.mp4") "Name" "desc" -}}
-<nav class="album-index" aria-label="Mục lục">
-  <details>
-    <summary>Mục Lục</summary>
-    <ul>
-      {{- range $videos }}
-      {{- $id := strings.TrimPrefix "media/videos" (strings.TrimPrefix "/" .Name) }}
-      <li><a href="#{{ $id }}">{{ $id }}</a></li>
-      {{- end }}
-    </ul>
-  </details>
-</nav>
 <div class="video-grid">
   {{- range $videos }}
-  {{- $id := strings.TrimPrefix "media/videos" (strings.TrimPrefix "/" .Name) }}
-  <section class="video-item">
-    <h2 id="{{ $id }}">{{ $id }}</h2>
+  {{- $name := strings.TrimPrefix "/" .Name }}
+  {{- $id := strings.TrimPrefix "media/videos" $name }}
+  {{- $dir := path.Dir (strings.TrimPrefix "media/videos/" $name) }}
+  {{- $t := time.AsTime (replace $dir "/" "-") }}
+  {{- $post := site.GetPage (printf "/post/%s" $dir) }}
+  {{- $poster := partial "video-poster.html" (strings.TrimPrefix "media/" $name) }}
+  <article class="video-item">
     <figure class="video">
-      <video controls preload="metadata" playsinline>
+      <video controls preload="none" playsinline{{ with $poster }} poster="{{ .RelPermalink }}"{{ end }}>
         <source src="{{ .RelPermalink }}" type="video/mp4">
         Trình duyệt của bạn không hỗ trợ video.
       </video>
     </figure>
-  </section>
+    <h2 id="{{ $id }}">{{ with $post }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ else }}{{ $t.Format "02/01/2006" }}{{ end }}</h2>
+    <p class="video-meta"><time datetime="{{ $t.Format "2006-01-02" }}">{{ $t.Format "02/01/2006" }}</time></p>
+  </article>
   {{- end }}
 </div>

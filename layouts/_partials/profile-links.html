@@ -1,0 +1,8 @@
+{{- /* A person's links (Facebook, Instagram, Email). Context: the author term page. */ -}}
+{{- with .Params.links }}
+<ul class="profile-links">
+  {{- range . }}
+  <li><a href="{{ .url }}"{{ if hasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}>{{ .name }}</a></li>
+  {{- end }}
+</ul>
+{{- end }}

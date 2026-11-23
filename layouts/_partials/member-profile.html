@@ -1,0 +1,13 @@
+{{- /* Full team member card for About and /authors/. Context: the author term page. */ -}}
+<li class="profile">
+  <a class="profile-photo" href="{{ .RelPermalink }}" tabindex="-1" aria-hidden="true">
+    {{- with partial "media-image.html" (dict "path" .Params.avatar) -}}
+      {{- $a := .Fill "320x320 jpg Center" -}}
+      <img class="member-avatar" src="{{ $a.RelPermalink }}" width="140" height="140" loading="lazy" decoding="async" alt="">
+    {{- end -}}
+  </a>
+  <h3 class="profile-name"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  {{- with .Params.role }}<p class="member-role">{{ . | $.Page.RenderString }}</p>{{ end }}
+  {{- with .Params.bio }}<p class="profile-bio">{{ . | safeHTML }}</p>{{ end }}
+  {{ partial "profile-links.html" . }}
+</li>

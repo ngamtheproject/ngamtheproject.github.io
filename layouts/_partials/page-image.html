@@ -1,9 +1,21 @@
 {{- /*
   The cover image of a page: `image.filename` in front matter (page bundle or
-  assets/media/), else a bundle file named featured.*. Returns nil when the
-  page has neither.
+  assets/media/), else a bundle file named featured.*. Video posts name the
+  logo as their image; they use the poster of their video instead, found by
+  the post's date folder (post/YYYY/MM/DD/ -> videos/YYYY/MM/DD/poster.jpg).
+  Returns nil when the page has none.
 */ -}}
-{{- $img := partial "media-image.html" (dict "page" . "path" .Params.image.filename) -}}
+{{- $img := "" -}}
+{{- $name := .Params.image.filename -}}
+{{- if and (eq $name "logo.png") .File (eq .Section "post") -}}
+  {{- $dir := strings.TrimPrefix "post/" (strings.TrimSuffix "/" .File.Dir) -}}
+  {{- with resources.Get (path.Join "media/videos" $dir "poster.jpg") -}}
+    {{- $img = . -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $img -}}
+  {{- $img = partial "media-image.html" (dict "page" . "path" $name) -}}
+{{- end -}}
 {{- if not $img -}}
   {{- $img = .Resources.GetMatch "featured.*" -}}
 {{- end -}}
