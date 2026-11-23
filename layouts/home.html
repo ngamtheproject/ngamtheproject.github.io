@@ -67,7 +67,7 @@
   <div class="album-strip">
     {{- range .photos }}
       {{- with partial "media-image.html" (dict "page" $ "path" .) }}
-      <a class="album-strip-item" href="{{ (site.GetPage "/albums").RelPermalink }}">
+      <a class="album-strip-item" href="{{ (site.GetPage "/albums").RelPermalink }}" aria-label="Xem tất cả albums">
         {{- partial "picture.html" (dict "img" . "alt" "" "sizes" "(max-width: 600px) 60vw, 300px") -}}
       </a>
       {{- else }}

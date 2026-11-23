@@ -24,6 +24,7 @@
   --button-bg: var(--brick);
   --button-text: var(--cream);
   --header-bg: light-dark(rgb(254 244 230 / 0.94), rgb(11 24 56 / 0.94));
+  --focus: light-dark(var(--brick), var(--ochre));
 
   --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   --radius: 14px;
@@ -35,6 +36,24 @@
 }
 
 :root[data-theme="light"] { color-scheme: light; }
+
+/* Browsers without light-dark() (before 2024, such as iOS 16) get the light theme. */
+@supports not (color: light-dark(#000, #fff)) {
+  :root {
+    --bg: var(--cream);
+    --surface: #fffaf2;
+    --band: #f6e3c2;
+    --text: var(--navy);
+    --muted: #4a5578;
+    --link: var(--brick);
+    --line: rgb(16 35 96 / 0.14);
+    --current-bg: var(--navy);
+    --current-text: var(--cream);
+    --header-bg: rgb(254 244 230 / 0.94);
+    --shadow-color: rgb(16 35 96 / 0.1);
+    --focus: var(--brick);
+  }
+}
 :root[data-theme="dark"] { color-scheme: dark; }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -77,7 +96,7 @@ a { color: var(--link); text-underline-offset: 0.18em; }
 a:hover { text-decoration-thickness: 2px; }
 
 :focus-visible {
-  outline: 3px solid var(--ochre);
+  outline: 3px solid var(--focus);
   outline-offset: 2px;
   border-radius: 4px;
 }

@@ -49,7 +49,7 @@ jobs:
         uses: actions/cache@v6
         with:
           path: resources/_gen
-          key: hugo-gen-${{ env.HUGO_VERSION }}-${{ hashFiles('assets/media/**', 'content/**/*.jpg', 'config/**', 'layouts/_partials/picture.html', 'layouts/_partials/video-poster.html') }}
+          key: hugo-gen-${{ env.HUGO_VERSION }}-${{ hashFiles('assets/media/**', 'content/**/*.jpg', 'config/**', 'layouts/**') }}
           restore-keys: |
             hugo-gen-${{ env.HUGO_VERSION }}-
 

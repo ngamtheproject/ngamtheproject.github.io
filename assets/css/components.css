@@ -357,7 +357,7 @@
 }
 .lightbox::backdrop { background: rgb(6 12 30 / 0.9); }
 .lightbox-open { overflow: hidden; }
-.lightbox-stage { min-height: 0; display: grid; place-items: center; padding: 3.75rem 0.75rem 0.5rem; touch-action: pan-y; }
+.lightbox-stage { min-height: 0; display: grid; place-items: center; padding: 3.75rem 0.75rem 0.5rem; touch-action: pan-y pinch-zoom; }
 .lightbox-image { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; user-select: none; }
 .lightbox-bar {
   min-height: 3rem;

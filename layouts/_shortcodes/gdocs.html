@@ -1,4 +1,4 @@
 {{- /* Google Docs / Drive embed. Params: src (preview URL). */ -}}
 <div class="embed">
-  <iframe src="{{ .Get "src" }}" width="960" height="569" loading="lazy" allowfullscreen title="Google Docs"></iframe>
+  <iframe src="{{ .Get "src" | htmlUnescape }}" width="960" height="569" loading="lazy" allowfullscreen title="Google Docs"></iframe>
 </div>

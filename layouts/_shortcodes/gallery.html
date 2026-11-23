@@ -9,12 +9,13 @@
 {{- $images := resources.Match (path.Join "media/albums" $album "*") -}}
 {{- if not $images }}{{ errorf "gallery: album %q is empty or missing at %s" $album .Position }}{{ end -}}
 <div class="gallery" id="gallery-{{ anchorize $album }}">
-  {{- range sort $images "Name" $order }}
-    {{- $file := path.Base .Name -}}
+  {{- range $i, $img := sort $images "Name" $order }}
+    {{- $file := path.Base $img.Name -}}
     {{- $caption := "" -}}
     {{- range where (where ($.Page.Params.gallery_item | default slice) "album" $album) "image" $file }}{{ $caption = .caption }}{{ end }}
   <figure class="gallery-item"{{ with $caption }} data-caption="{{ . | markdownify | emojify }}"{{ end }}>
-    {{- partial "picture.html" (dict "img" . "alt" (plainify $caption | strings.Truncate 120) "sizes" "(max-width: 600px) 50vw, 250px" "class" "gallery-image" "link" true) -}}
+    {{- $alt := plainify $caption | strings.Truncate 120 | default (printf "Ảnh %d trong album" (add $i 1)) }}
+    {{- partial "picture.html" (dict "img" $img "alt" $alt "sizes" "(max-width: 600px) 50vw, 250px" "class" "gallery-image" "link" true) -}}
   </figure>
   {{- end }}
 </div>
