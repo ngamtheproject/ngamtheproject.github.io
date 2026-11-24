@@ -1,0 +1,17 @@
+{{- /* Author box under a post. Uses the post's `authors`, or the project page `ngam` when a post
+  names none, as the old site did. */ -}}
+{{- $slugs := .Params.authors | default (slice "ngam") }}
+{{- range $slugs }}
+  {{- with site.GetPage (printf "/authors/%s" (urlize .)) }}
+<aside class="author-card" aria-label="Tác giả">
+  {{- with partial "media-image.html" (dict "path" .Params.avatar) }}
+    {{- $a := .Fill "160x160 jpg Center" }}
+  <img class="author-card-avatar" src="{{ $a.RelPermalink }}" width="80" height="80" loading="lazy" decoding="async" alt="">
+  {{- end }}
+  <div>
+    <p class="author-card-name"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+    {{- with .Params.bio }}<p class="author-card-bio">{{ . | $.RenderString }}</p>{{ end }}
+  </div>
+</aside>
+  {{- end }}
+{{- end }}
